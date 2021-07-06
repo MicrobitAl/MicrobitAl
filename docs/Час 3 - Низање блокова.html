@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mësimi 3 - Renditja e blloqeve &#8212; Petlja - Microbit_Al</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="_static/Blob.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="_static/p5js.js"></script>
+    <script type="text/javascript" src="_static/gallery.js"></script>
+    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mësimi 4 –Ushtrimorja" href="Час 4 - Вежбаоница.html" />
+    <link rel="prev" title="Mësimi 2 - Ambienti i punës MakeCode" href="Час 2 - Радно окружење МејкКода.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host + '/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+  eBookConfig.course = 'Microbit_Al';
+  eBookConfig.logLevel = '0';
+  eBookConfig.loginRequired = 'false';
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = 'false';
+  eBookConfig.python3 = 'true';
+  eBookConfig.basecourse = 'Microbit_Al';
+  eBookConfig.runestone_version = '';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Petlja - Microbit_Al</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="mesimi-3-renditja-e-blloqeve">
+<h1>Mësimi 3 - Renditja e blloqeve<a class="headerlink" href="#mesimi-3-renditja-e-blloqeve" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>¬Në këtë mësim do të flasim për:  ­</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>blloqet në MakeCode</p></li>
+<li><p>lidhjen e blloqeve në programe</p></li>
+</ul>
+<p>Zgjidhja e një problemi, para së gjithash, varet nga përzgjedhja e hapave (veprimeve) që duhet të kryejë pajisja, në rastin tonë - pajisja Micro:bit.</p>
+<p>Kjo seri hapash në një mjedis MakeCode quhet program ose skenar dhe përbëhet nga blloqe të ndryshme që janë të lidhura.</p>
+<p>Në MakeCode, blloqet e komandave janë ndarë në kategori, siç mund të shihni në figurën më poshtë.</p>
+<a class="reference internal image-reference" href="_images/58.png"><img alt="_images/58.png" class="align-center" src="_images/58.png" style="width: 400px;" /></a>
+<p>Emri i kategorisë (p.sh. Muzika) e drejton përdoruesin drejt llojeve të komandave (blloqeve) që mund të gjenden në atë kategori. Të gjithë blloqet e një kategorie kanë të njëjtën ngjyrë.</p>
+<p>Në mësimin e mëparshëm, krijuam një program të thjeshtë për tregimin e mesazhit “Përshëndetje, botë!”, ku përdorëm disa të dhëna mes thonjëzash që në gjuhët e programimit quhet <em>varg</em>. Vargu përbëhet nga një sërë karakteresh, të paraqitura mes thonjëzave. Vargjet kanë një përdorim të madh në programim. Pajisja Micro:bit është e programuar vetëm për kodet e shenjave ASCII nga 32 deri 126, ndër të cilat bëjnë pjesë shkronja, numra, shenja pikësimi dhe disa simbole. Të gjithë shenjat e tjera shfaqen si ? në ekranin e Micro:bit-it.</p>
+<p><strong>Shënim:</strong> ASCII është një grup karakteresh, d.m.th. kodesh, të cilat përdoren më shpesh në informatikë, por edhe në pajisjet e komunikimit dhe administrimit në punën me tekstin.</p>
+<p>Le të krijojmë tani disa programe më të thjeshta nëpërmjet përdorimit të blloqeve nga kategoria <a class="reference internal" href="_images/59_1.png"><img alt="basic" src="_images/59_1.png" style="width: 150px;" /></a> dhe <a class="reference internal" href="_images/60_1.png"><img alt="music" src="_images/60_1.png" style="width: 150px;" /></a>. Në të gjitha këto programe, blloqet do t’i rendisim njëra pas tjetrës. Këto programe me të cilat blloqet ekzekutohen sipas renditjes në të cilën janë vendosur, quhen programe lineare.</p>
+<p>Le të marrim si shembull treguesin e zemrës që rreh (e cila simulon veprimin e zemrës) në ekranin e Micro:bit-it.</p>
+<p>Поступак решавања било ког задатка (проблема) подразумева прелазак кроз сваку од следећих фаза:</p>
+<blockquote>
+<div><p><strong>Faza 1</strong>: Mendoni për problemin dhe shkruani ose vizatoni algoritmin (hapat) për ta zgjidhur atë.</p>
+<p><strong>Faza 2</strong>: Sipas algoritmit, zgjidhni dhe rregulloni blloqet.</p>
+<p><strong>Faza 3</strong>: Testoni dhe analizoni punën e programit. Korrigjoni gabimet (në qoftë se ka).</p>
+</div></blockquote>
+<p><strong>Faza 1</strong></p>
+<p>Të menduarit për problemin: Shfaqja e zemrës që rreh (simulimi i një zemre që rreh) në ekranin e micro:bit-it përfaqëson ndezjen e diodave individuale LED në formë zemre dhe fikjen e tyre.</p>
+<blockquote>
+<div><p><strong>Hapi 1.</strong> Shfaqni pamjen e zemrës, duke ndezur diodat në ekranin e Micro:bit-it.</p>
+<p><strong>Hapi 2.</strong> Heqja e imazhit të zemrës nga ekrani i Micro:bit-it.</p>
+</div></blockquote>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim. Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin <em>New Project</em> <a class="reference internal" href="_images/61.png"><img alt="Dugme" src="_images/61.png" style="width: 100px;" /></a>.</p>
+<p>Për të shfaqur imazhin e zemrës në ekranin e micro:bit-it, është e nevojshme që nga kategoria Basic, në hapësirën për programim, të tërheqim bllokun <a class="reference internal" href="_images/62.png"><img alt="showLed" src="_images/62.png" style="width: 150px;" /></a> në bllok <a class="reference internal" href="_images/63.png"><img alt="onstart" src="_images/63.png" style="width: 150px;" /></a>.</p>
+<a class="reference internal image-reference" href="_images/64.png"><img alt="_images/64.png" class="align-center" src="_images/64.png" style="width: 600px;" /></a>
+<p>Duke klikuar në fusha të caktuara në bllokun <em>show leds</em>, vizatojmë një zemër.</p>
+<a class="reference internal image-reference" href="_images/65.png"><img alt="_images/65.png" class="align-center" src="_images/65.png" style="width: 400px;" /></a>
+<p>Më pas, shtojmë edhe një bllok <em>show leds</em>, me të cilat do të vizatojmë një zemër të plotë që do të simulojë rrahjet e zemrës</p>
+<a class="reference internal image-reference" href="_images/66.png"><img alt="_images/66.png" class="align-center" src="_images/66.png" style="width: 200px;" /></a>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ta nisim atë në simulator duke klikuar butonin <a class="reference internal" href="_images/54.png"><img alt="dugmence" src="_images/54.png" style="width: 50px;" /></a>.</p></li>
+<li><p>ta kalojmë atë në Micro:bit. Për ta kaluar programin në Micro:bit. duhet ta lidhim atë me kompjuterin me kabllo USB. Klikoni butonin  <a class="reference internal" href="_images/55.png"><img alt="download" src="_images/55.png" style="width: 200px;" /></a> për të shkarkuar skedarin .hex në kompjuterin tuaj. Duke tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
+</ul>
+</div></blockquote>
+<p>Pas ndryshimit të programit ai do të funksionojë në Micro:bit.</p>
+<p><strong>E rëndësishme:</strong> Micro:bit-i mund të ruajë vetëm një program. Micro:bit-i do të ekzekutojë një program të caktuar derisa të futet një program i ri.</p>
+<p>Në rast se nuk kemi pajisjen fizike, mund t’i testojmë programet edhe duke përdorur imituesin e integruar në ambientin e <em>MakeCode</em>.</p>
+<p>Pas testimit dhe analizës, ndodh një gabim: imazhet e dy zemrave ndryshohen, më saktë, ekzekutohen blloqet për shfaqjen e imazheve. Në program u ekzekutuan të gjitha blloqet, ndaj nuk patëm simulim të rrahjeve të zemrës. Gabimet në programe që shkaktojnë rezultate të papritura ose ekzekutim të pasaktë të programit quhen bugs (çimkë). Procesi i gjetjes dhe korrigjimit të gabimeve quhet heqja e bug-eve.  (angl. debugging).</p>
+<p><strong>Fakte Interesante</strong> Më 9 shtator 1947, kompjuteri Mark 2 paraqiti probleme në funksionim. Pas investigimit të plotë u zbulua një flutur nate brenda kompjuterit. Flutura u hoq dhe u ngjit në ditarin e punës. Teksti lexonte: “Rasti i parë i bug-ut të gjetur”.  Menjëherë pas kësaj u përhap lajmi se një ekip shkencëtarësh të Harvardit kishin “hequr bug-et” e kompjuterit. Kështu u krijua termi “heqja e bug-eve të programit kompjuterik”.</p>
+<a class="reference internal image-reference" href="_images/67.png"><img alt="_images/67.png" class="align-center" src="_images/67.png" style="width: 500px;" /></a>
+<p>Ja se si hiqen bug-et e një programi:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Parashikoni çfarë duhet të ndodhte në program. (Shpjegoni zgjidhjen tuaj. Ndërsa shpjegoni, ka një mundësi të madhe që do ta zbuloni se cili është problemi i zgjidhjes ekzistuese.).</p></li>
+<li><p>Gjeni gabimin. (Kur të përcaktoni se programi nuk po punon në mënyrën e pritur, analizoni programin (bllok për bllok). Në këtë mënyrë do të përcaktoni nëse gabimi ka ndodhur për shkak të një zgjidhjeje të menduar gabim ose për shkak të blloqeve të zgjedhura gabimisht në program.)</p></li>
+<li><p>Korrigjoni gabimet (Bëni korrigjimet dhe testoni përsëri programin. Në këtë mënyrë ju jepet një mundësi e shkëlqyer që të mësoni nga gabimet tuaja dhe kështu bëheni një programues më i mirë.).</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Gabimi 1.</strong> Blloqet bëhen vetëm një herë.</p>
+<p><strong>Korrigjimi i bug-eve.</strong> Do të ndryshojmë mënyrën e fillimit të programit, në vend të bllokut оn start, ku blloqet e renditura ekzekutohen vetëm një herë, do ta tërheqim bllokun <a class="reference internal" href="_images/68.png"><img alt="Forever" src="_images/68.png" style="width: 150px;" /></a> nga kategoria Basicnë hapësirën për programim. Коришћењем блока <em>forever</em> блокови се извршавају (приказују) непрекидно, све док се микробит не искључи са напајања или док се симулација не прекине кликом на дугме <a class="reference internal" href="_images/69.png"><img alt="break" src="_images/69.png" style="width: 50px;" /></a>.</p>
+<p>Pamja e kodit të ndryshuar:</p>
+<a class="reference internal image-reference" href="_images/70.png"><img alt="_images/70.png" class="align-center" src="_images/70.png" style="width: 200px;" /></a>
+<p><strong>Mendoni:</strong> Blloqe të tillë me pamje të dy zemrave, a simulojnë rrahjet e zemrës, a ndodh ndonjë ndryshim? Pse?</p>
+<p><strong>Gabimi 2.</strong> Imazhet ndryshojnë tepër shpejt.</p>
+<p><strong>Korrigjimi i bug-eve.</strong> Ndërmjet blloqeve show leds shtoni bllokun me të cilin përcaktohet intervali kohor për shembull gjysmë sekonde, ose 500 milisekonda. Blloku <a class="reference internal" href="_images/71.png"><img alt="pauza" src="_images/71.png" style="width: 150px;" /></a> që përcakton intervalin kohor me të cilin pritet ekzekutimi i bllokut tjetër për një numër të caktuar të milisekondave. Këtë bllok e tërheqim nga kategoria Basic.</p>
+<p>Pas korrigjimit të gabimeve, programi duhet të duket kështu:</p>
+<a class="reference internal image-reference" href="_images/72.png"><img alt="_images/72.png" class="align-center" src="_images/72.png" style="width: 200px;" /></a>
+<p>Testoni përsëri programin. Tani duket sikur zemra rreh. Shkarkojeni atë në micro:bit.</p>
+<p>Tani le të shkruajmë një program me të cilin do të bëjë melodinë e këngës “Në fund të fshatit, shtëpia e verdhë”.</p>
+<p><strong>Faza 1</strong></p>
+<p><strong>Të menduarit për problemin:</strong> Melodia e këngës “Në fund të fshatit shtëpia e verdhë“ shkruhet:</p>
+<ul class="simple">
+<li><p>d, f, g, g</p></li>
+<li><p>d, f, g, g</p></li>
+<li><p>d, f, g</p></li>
+<li><p>d, f, g, g</p></li>
+<li><p>d, f, g</p></li>
+<li><p>g, g, f, f, d</p></li>
+</ul>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.</p>
+<p>Në faqen e internetit në adresën <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> nisni një projekt të ri duke klikuar butonin <em>New Project</em> <a class="reference internal" href="_images/61.png"><img alt="Dugme" src="_images/61.png" style="width: 100px;" /></a>.</p>
+<p>Për të luajtur notën ose melodinë përdorim kategorinë Music dhe blloqet që ndodhen në të. Me ndihmën e bllokut <a class="reference internal" href="_images/73.png"><img alt="pesma" src="_images/73.png" style="width: 200px;" /></a> riprodhojmë notën me gjatësi të caktuar. Nota e parë që tërheqim në bllokun on start do të jetë nota d, me gjatësi një bit, ose më saktë një milisekondë.</p>
+<p>Pamja e kodit:</p>
+<a class="reference internal image-reference" href="_images/74.png"><img alt="_images/74.png" class="align-center" src="_images/74.png" style="width: 300px;" /></a>
+<p>Tani vetëm duhet të tërhiqni notat e tjera d, f, g, g, nën bllokun e dhënë.</p>
+<p>Pamja e kodit:</p>
+<a class="reference internal image-reference" href="_images/75.png"><img alt="_images/75.png" class="align-center" src="_images/75.png" style="width: 300px;" /></a>
+<p>Në të njëjtën mënyrë sistemojmë blloqet për notat e tjera:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>d, f, g, g</p></li>
+<li><p>d, f, g</p></li>
+<li><p>d, f, g, g</p></li>
+<li><p>d, f, g</p></li>
+<li><p>g, g, f, f, d</p></li>
+</ul>
+</div></blockquote>
+<p>Pamja përfundimtare e kodit:</p>
+<a class="reference internal image-reference" href="_images/76_1.png"><img alt="_images/76_1.png" class="align-center" src="_images/76_1.png" style="width: 300px;" /></a>
+<p>Kodin mund ta shikoni në linkun: <a class="reference external" href="https://makecode.microbit.org/_D1553sX4v5Cj">https://makecode.microbit.org/_D1553sX4v5Cj</a></p>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
+<ol class="arabic simple">
+<li><p>duke e hapur atë në simulator duke klikuar butonin <a class="reference internal" href="_images/54.png"><img alt="dugmence" src="_images/54.png" style="width: 50px;" /></a>.</p></li>
+<li><p>duke e kaluar atë në Micro:bit. Për ta transferuar programin në Micro:bit, duhet ta lidhim atë me kompjuterin duke përdorur një kabllo USB. Duke klikuar butonin  <a class="reference internal" href="_images/55.png"><img alt="download" src="_images/55.png" style="width: 200px;" /></a> në kompjuterin tuaj. Duke tërhequr skedarin (file) në Micro:bit, pajisja është e gatshme për punë.</p></li>
+</ol>
+<p>Pas hedhjes së programit ai do të hapet (funksionojë) në Micro:bit.</p>
+<p>Након пребацивања програма он ће се покренути на микробиту.</p>
+<p><strong>E rëndësishme:</strong> Në mënyrë që të mund të dëgjojmë muzikën në pajisje, është e nevojshme të lidhni kufjet me micro:bit-in, sepse micro:bit-i nuk ka altoparlantë të integruar. Mënyra e lidhjes së altoparlantëve dhe kufjeve me micro:bit-in tregohet në figurë.</p>
+<a class="reference internal image-reference" href="_images/77.png"><img alt="_images/77.png" class="align-center" src="_images/77.png" style="width: 300px;" /></a>
+<p>Pjesën e poshtme të lidhësit (më afër plastikës) e lidhim në kunjin GND, ndërsa majën e lidhësit me kunjin P0.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><strong>Çfarë mësuam?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Programi linear është programi me të cilin blloqet ekzekutohen sipas radhës në të cilën janë vendosur.</p></li>
+<li><p>Procedura e zgjidhjes së çfarëdo detyre (problemi) nënkupton kalimin përmes secilës nga fazat e mëposhtme:</p>
+<ul>
+<li><p>Faza 1: Mendoni për problemin dhe shkruani ose vizatoni një algoritëm (hapat) për zgjidhjen e tij.</p></li>
+<li><p>Faza 2: Në përputhje me algoritmin, zgjidhni dhe rregulloni blloqet.</p></li>
+<li><p>Faza 3: Testoni dhe analizoni punën e programit. Korrigjoni gabimet (nëse ka).</p></li>
+</ul>
+</li>
+<li><p>Blloqet për lëshimin e toneve ose melodive ndodhen në kategorinë Muzikë.</p></li>
+</ul>
+</div></blockquote>
+
+    </p></div></div>
+<div class="section" id="test">
+<h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P1">
+            <p>Q-447: Në cilën kategori ndodhet blloku i notës G?</p>
+
+            <li data-component="answer"  id="L3P1_opt_a">Input</li><li data-component="feedback" id="L3P1_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P1_opt_b">Loop</li><li data-component="feedback" id="L3P1_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer" data-correct id="L3P1_opt_c">Music</li><li data-component="feedback" id="L3P1_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+            <li data-component="answer"  id="L3P1_opt_d">Basic</li><li data-component="feedback" id="L3P1_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P2">
+            <p>Q-448: Studioni me kujdes kodin</p>
+<a class="reference internal image-reference" href="_images/78.png"><img alt="_images/78.png" class="align-center" src="_images/78.png" style="width: 500px;" /></a>
+<p>Çfarë do të ndodhë pas ekzekutimit të kodit të dhënë:</p>
+
+            <li data-component="answer" data-correct id="L3P2_opt_a">Do të luhet nota D, ndërsa pas pauzës do të luhet melodia dadadum një herë</li><li data-component="feedback" id="L3P2_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+            <li data-component="answer"  id="L3P2_opt_b">do të luhet toni D</li><li data-component="feedback" id="L3P2_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P2_opt_c">do të luhet melodia dadaum një herë</li><li data-component="feedback" id="L3P2_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P2_opt_d">nuk do të ndodhë asgjë</li><li data-component="feedback" id="L3P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P3">
+            <p>Q-449: Në cilën kategori ndodhet blloku për shfaqjen e fytyrës së qeshur?</p>
+
+            <li data-component="answer"  id="L3P3_opt_a">Input</li><li data-component="feedback" id="L3P3_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P3_opt_b">Loop</li><li data-component="feedback" id="L3P3_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P3_opt_c">Music</li><li data-component="feedback" id="L3P3_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer" data-correct id="L3P3_opt_d">Basic</li><li data-component="feedback" id="L3P3_opt_d">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P4">
+            <p>Q-450: Në cilën kategori ndodhet blloku që përcakton intervalin kohor që pason ekzekutimin e një blloku?</p>
+
+            <li data-component="answer"  id="L3P4_opt_a">Input</li><li data-component="feedback" id="L3P4_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P4_opt_b">Loop</li><li data-component="feedback" id="L3P4_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L3P4_opt_c">Music</li><li data-component="feedback" id="L3P4_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer" data-correct id="L3P4_opt_d">Basic</li><li data-component="feedback" id="L3P4_opt_d">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Mësimi 2 - Ambienti i punës MakeCode' data-toggle="tooltip"><a href="Час 2 - Радно окружење МејкКода.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Mësimi 4 –Ushtrimorja' data-toggle="tooltip"><a href="Час 4 - Вежбаоница.html">Next chapter</a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 2 - Ambienti i punës MakeCode' data-toggle="tooltip"><a href="Час 2 - Радно окружење МејкКода.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Mësimi 4 –Ushtrimorja' data-toggle="tooltip"><a href="Час 4 - Вежбаоница.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

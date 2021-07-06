@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Час 9 - Понављање &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="_static/Blob.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="_static/p5js.js"></script>
+    <script type="text/javascript" src="_static/gallery.js"></script>
+    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host + '/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+  eBookConfig.course = 'Programimi i një pajisje Micro:bit në MakeCode ';
+  eBookConfig.logLevel = '0';
+  eBookConfig.loginRequired = 'false';
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = 'false';
+  eBookConfig.python3 = 'true';
+  eBookConfig.basecourse = 'Programimi i një pajisje Micro:bit në MakeCode ';
+  eBookConfig.runestone_version = '';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Programimi i një pajisje Micro:bit në MakeCode </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>Час 9 - Понављање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>На овом часу говорићемо о: ­</p>
+<ul class="simple">
+<li><p>­понављању делова програма;</p></li>
+<li><p>понављању делова програма.</p></li>
+</ul>
+<p>У природи постоје процеси који се непрестано или с времена на време понављају (нпр. плима и осека). Као и у природи, у програмирању је, за решавање појединих задатака, неопходно да се неки делови програма изврше више пута.</p>
+<p>Програми код којих се одређени кораци понављају више пута називају се <strong>циклични програми</strong> или <strong>програми понављања</strong>.</p>
+<p>Да се једна иста наредба не би писала више пута, постоји програмска структура петље (циклуси) која омогућава понављање једне или више наредби. За такве програме кажемо да садрже понављања, које називамо циклуси.</p>
+<p>Понављање наредби је врло честа појава у програмирању.</p>
+<p>МејкКод садржи три врсте блокова у које се умећу други блокови чије извршавање треба да се понови:</p>
+<ul class="simple">
+<li><p>­     одређени број пута:</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/146.png"><img alt="_images/146.png" class="align-center" src="_images/146.png" style="width: 200px;" /></a>
+<p>Овај блок треба да користимо када унапред знамо тачан број понављања (каже се и итерација).
+­</p>
+<ul class="simple">
+<li><p>бесконачан број пута (непрестано, све док корисник не заустави програм):</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/147.png"><img alt="_images/147.png" class="align-center" src="_images/147.png" style="width: 200px;" /></a>
+<p>То је један од најчешће коришћених блокова. Његово извршавање зауставља се кликом на дугме за престанак рада програма (<a class="reference internal" href="_images/148.png"><img alt="dugme4" src="_images/148.png" style="width: 30px;" /></a>).</p>
+<ul class="simple">
+<li><p>све док не буде испуњен одређени услов:</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/149.png"><img alt="_images/149.png" class="align-center" src="_images/149.png" style="width: 200px;" /></a>
+<p>Овај блок треба да користимо када не знамо колико је пута потребно извршити блокове унутар блока за понављање и зато желимо да се оне извршавају све док не буде испуњен одређени услов.</p>
+<p>Хајде да направимо програм којим се активира звук који се понавља одређени број пута сваки пут када корисник помери микробит.</p>
+<p><strong>Фаза 1</strong></p>
+<p><strong>Разумевање проблема:</strong> Када се протресе или направи било какав покрет са микробит уређајем поновиће се звук 3 пута.</p>
+<blockquote>
+<div><p><strong>Корак 1:</strong> Детектуј покрет</p>
+<p><strong>Корак 2:</strong> Понови звук три пута</p>
+</div></blockquote>
+<p><strong>Фаза 2</strong></p>
+<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.</p>
+<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Да бисмо могли да детектујемо било какав покрет у простор за програмирање превлачимо  блок <em>on shake</em> из категорије <em>Input</em>:</p>
+<a class="reference internal image-reference" href="_images/150.png"><img alt="_images/150.png" class="align-center" src="_images/150.png" style="width: 400px;" /></a>
+<p>Како желимо да поновимо звук три пута, у блок <em>on shake</em> превлачимо блок  <em>repeat .. for</em> из категорије <em>Loops</em>. У делу за унос вредности (броја) уносимо број 3.</p>
+<a class="reference internal image-reference" href="_images/151.png"><img alt="_images/151.png" class="align-center" src="_images/151.png" style="width: 200px;" /></a>
+<p>У горњи блок ћемо превући блок <em>play tone … for…</em> из категорије <em>Music</em> којим се репродукује звук.</p>
+<a class="reference internal image-reference" href="_images/152.png"><img alt="_images/152.png" class="align-center" src="_images/152.png" style="width: 400px;" /></a>
+<p>У датом блоку из падајућих листа бирамо тон и дужину истог.</p>
+<a class="reference internal image-reference" href="_images/153.png"><img alt="_images/153.png" class="align-center" src="_images/153.png" style="width: 350px;" /></a>
+<p>Коначан изглед програма:</p>
+<a class="reference internal image-reference" href="_images/154.png"><img alt="_images/154.png" class="align-center" src="_images/154.png" style="width: 300px;" /></a>
+<p><strong>Фаза 3</strong></p>
+<p>Тестирање и анализа програма.</p>
+<p>Да бисмо тестирали програм имамо две могућности:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+</ol>
+</div></blockquote>
+<p>Након тестирања и анализе, постоји грешка, јасно треба да се чује три пута звук.</p>
+<p><strong>Грешка 1.</strong> Не чује се јасно понављање звука.</p>
+<p><strong>Исправљање грешака.</strong> Да бисмо постигли да се јасно звук чује три пута увешћемо блок <em>pause ..</em> из категорије <em>Basic</em>. Поставићемо да је временски интервал након кога се понавља звук 1 секунда (или 1000 милисекунди).</p>
+<p>Након исправљеног кода, коначан изглед програма:</p>
+<a class="reference internal image-reference" href="_images/155.png"><img alt="_images/155.png" class="align-center" src="_images/155.png" style="width: 400px;" /></a>
+<p>Поново тестирамо програм. Сада он ради како треба.</p>
+<p>Хајде да направимо још један програм којим се активира паљење лед диодица на средини екрана микробита све док је температура у просторији мања од 30.</p>
+<p><strong>Фаза 1</strong></p>
+<p><strong>Разумевање проблема:</strong> Све док је измерена температура мања од 30 пали се лед диода на средини екрана микробита.</p>
+<p><strong>Фаза 2</strong></p>
+<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.
+На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Да бисмо извршили одређене наредбе (паљење лед диода) док не буде испуњен неки услов (температура мања од 30), у блок <em>forever</em> превлачимо блок <em>while..do..</em>:</p>
+<p>Изглед кода:</p>
+<a class="reference internal image-reference" href="_images/156.png"><img alt="_images/156.png" class="align-center" src="_images/156.png" style="width: 400px;" /></a>
+<p>Да бисмо упалили лед диоду на средини екрана, тачније на позицији (2, 2) из менија <em>Led</em> превлачимо блок: <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> .</p>
+<p>Коначан изглед програма:</p>
+<a class="reference internal image-reference" href="_images/157.png"><img alt="_images/157.png" class="align-center" src="_images/157.png" style="width: 400px;" /></a>
+<p><strong>Фаза 3</strong></p>
+<p>Тестирање и анализа програма.</p>
+<p>Да бисмо тестирали програм имамо две могућности:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Размисли:</strong></p>
+<p>Пажљиво проучи горње блокове. Шта се дешава када температура порасте, и буде већа од 30? Зашто?</p>
+<p>Допуни горњи кôд како би лед диода била упаљена само док је температура мања од 30.</p>
+<p>Могуће решење: <a class="reference external" href="https://makecode.microbit.org/_92LeH58vY4je">https://makecode.microbit.org/_92LeH58vY4je</a></p>
+<p>Сећаш се задатка из Лекције 3 – Унос података, помоћу кога смо укључивали лед диоде на главној дијагонали екрана микробита.</p>
+<a class="reference internal image-reference" href="_images/158.png"><img alt="_images/158.png" class="align-center" src="_images/158.png" style="width: 300px;" /></a>
+<p><strong>Фаза 1</strong></p>
+<p><strong>Разумевање проблема:</strong> Главна дијагонала представља линију која повезује горњи леви угао екрана са доњим десним. Тај задатак смо решили линијским програмом, ређајући блокове <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> из категорије <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a> један за другим.</p>
+<p>Изглед кода је следећи:</p>
+<a class="reference internal image-reference" href="_images/159.png"><img alt="_images/159.png" class="align-center" src="_images/159.png" style="width: 200px;" /></a>
+<p><strong>Фаза 2</strong></p>
+<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.</p>
+<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Међутим, овај задатак ћемо решити елегантније користећи блок <a class="reference internal" href="_images/160.png"><img alt="blok" src="_images/160.png" style="width: 200px;" /></a> из категорије <em>Loops</em>. Овај блок се користи за понављање дела програма онолико пута колико желите (граница се означава у блоку to <a class="reference internal" href="_images/161.png"><img alt="b1" src="_images/161.png" style="width: 60px;" /></a>) користећи променљиву <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>. (О променљивима ћемо причати детаљније у следећој лекцији, можеш их схватити као „чуваре“ различитих вредности, било нумеричких било текстуалних).</p>
+<p>У блок <em>forever</em> превлачимо блок <em>for .. from to …</em> Граница од које креће бројање је 0, а до које се завршава је 4, зато што је у овом случају положај лед диода на екрану микробита дефинисан по хоризонтали и вертикали од 0 до 4.</p>
+<p>Изглед кода:</p>
+<a class="reference internal image-reference" href="_images/163.png"><img alt="_images/163.png" class="align-center" src="_images/163.png" style="width: 300px;" /></a>
+<p>У горњи блок превучемо <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> из категорије <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a>. Координату x дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>, координату y дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>.</p>
+<p>Корак по корак извршавање блока <em>for .. from to …</em></p>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">Tабела компоненти Микробита</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Променљива <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a></p></th>
+<th class="head"><p>Блока <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a></p></th>
+<th class="head"><p>Извршавање кода на екрану микробита</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>index = 0</p></td>
+<td><p><a class="reference internal" href="_images/108.png"><img alt="plot11" src="_images/108.png" style="width: 150px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/164.png"><img alt="s1" src="_images/164.png" style="width: 150px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>index = 1</p></td>
+<td><p><a class="reference internal" href="_images/165.png"><img alt="plot1" src="_images/165.png" style="width: 150px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/166.png"><img alt="s2" src="_images/166.png" style="width: 150px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>index = 2</p></td>
+<td><p><a class="reference internal" href="_images/167.png"><img alt="plot2" src="_images/167.png" style="width: 150px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/168.png"><img alt="s3" src="_images/168.png" style="width: 150px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>index = 3</p></td>
+<td><p><a class="reference internal" href="_images/169.png"><img alt="plot3" src="_images/169.png" style="width: 150px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/170.png"><img alt="s4" src="_images/170.png" style="width: 150px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>index = 4</p></td>
+<td><p><a class="reference internal" href="_images/171.png"><img alt="plot4" src="_images/171.png" style="width: 150px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/172.png"><img alt="s5" src="_images/172.png" style="width: 150px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Блок ће се поновити пет пута.</p>
+<p>Коначан изглед кода:</p>
+<a class="reference internal image-reference" href="_images/173.png"><img alt="_images/173.png" class="align-center" src="_images/173.png" style="width: 300px;" /></a>
+<p><strong>Фаза 3</strong></p>
+<p>Тестирање и анализа програма.</p>
+<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p>1       да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p>
+<p>2       да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p>
+<a class="reference internal image-reference" href="_images/174.png"><img alt="_images/174.png" class="align-center" src="_images/174.png" style="width: 300px;" /></a>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
+<li><p>да програми код којих се одређени блокови понављају више пута називају се циклични програми или програми понављања.</p></li>
+<li><p>да постоје различити блокови за понављање (бројачки, бесконачни, условни) и када се они користе.</p></li>
+<li><p>да се бројачки извршавају када тачно знамо колико ће се пута поновити нека радња.</p></li>
+<li><p>да се условна понављања користимо када не знамо колико је пута потребно извршити неку радњу. Тај блок се извршава све док не буде испуњен одређени услов.</p></li>
+<li><p>које вредности узима index у блоку понављања, тачније која је почетна, а која крајња вредност.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+<div class="section" id="id2">
+<h2>Квиз<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P1">
+            <p>Q-47: Пажљиво проучи код:</p>
+<a class="reference internal image-reference" href="_images/175.png"><img alt="_images/175.png" class="align-center" src="_images/175.png" style="width: 300px;" /></a>
+<p>Шта ће бити приказано на микробиту?</p>
+
+            <li data-component="answer"  id="L9P1_opt_a">На екрану ће бити приказано срце.</li><li data-component="feedback" id="L9P1_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer" data-correct id="L9P1_opt_b">На екрану ће бити приказано срце све док је дугме А притиснуто.</li><li data-component="feedback" id="L9P1_opt_b">Браво! Твој одговор је тачан.</li>
+            
+            <li data-component="answer"  id="L9P1_opt_c">На екрану ће бити приказано срце све док је температура већа од 30.</li><li data-component="feedback" id="L9P1_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer"  id="L9P1_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P1_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P2">
+            <p>Q-48: Пажљиво проучи код:</p>
+<a class="reference internal image-reference" href="_images/176.png"><img alt="_images/176.png" class="align-center" src="_images/176.png" style="width: 300px;" /></a>
+<p>Шта ће бити приказано на микробиту?</p>
+
+            <li data-component="answer"  id="L9P2_opt_a">На екрану ће бити приказана измерена тренутно вредност температуре и срце.</li><li data-component="feedback" id="L9P2_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer"  id="L9P2_opt_b">На екрану ће три пута бити приказано срце.</li><li data-component="feedback" id="L9P2_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer" data-correct id="L9P2_opt_c">На екрану ће три пута бити приказана измерена тренутна вредност температура и срце.</li><li data-component="feedback" id="L9P2_opt_c">Браво! Твој одговор је тачан.</li>
+            
+            <li data-component="answer"  id="L9P2_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P2_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P3">
+            <p>Q-49: Пажљиво проучи код:</p>
+<a class="reference internal image-reference" href="_images/177.png"><img alt="_images/177.png" class="align-center" src="_images/177.png" style="width: 300px;" /></a>
+<p>Шта ће бити приказано на микробиту?</p>
+
+            <li data-component="answer" data-correct id="L9P3_opt_a">На екрану ће бити редом бројеви од 0 до 4.</li><li data-component="feedback" id="L9P3_opt_a">Браво! Твој одговор је тачан.</li>
+            
+            <li data-component="answer"  id="L9P3_opt_b">На екрану ће бити приказан број 5.</li><li data-component="feedback" id="L9P3_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer"  id="L9P3_opt_c">На екрану ће пет пута бити приказан број 4.</li><li data-component="feedback" id="L9P3_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer"  id="L9P3_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P3_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P4">
+            <p>Q-50: Пажљиво проучи код:</p>
+<a class="reference internal image-reference" href="_images/178.png"><img alt="_images/178.png" class="align-center" src="_images/178.png" style="width: 300px;" /></a>
+<p>Шта ће бити приказано на микробиту?</p>
+
+            <li data-component="answer"  id="L9P4_opt_a">На екрану ће се четири пута појавити срце (симулација рада срца).</li><li data-component="feedback" id="L9P4_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer"  id="L9P4_opt_b">На екрану ће се приказати срце.</li><li data-component="feedback" id="L9P4_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            
+            <li data-component="answer" data-correct id="L9P4_opt_c">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P4_opt_c">Браво! Твој одговор је тачан.</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

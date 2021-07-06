@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mësimi 7 –Vendimmarrja &#8212; Petlja - Microbit_Al</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="_static/Blob.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="_static/p5js.js"></script>
+    <script type="text/javascript" src="_static/gallery.js"></script>
+    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Latn.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Час 8 - Вежбаоница" href="Час 8 - Вежбаоница.html" />
+    <link rel="prev" title="Mësimi 6 –Kontrolli i diodave LED të ekranit" href="Час 6 - Контрола лед диода екрана.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host + '/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+  eBookConfig.course = 'Microbit_Al';
+  eBookConfig.logLevel = '0';
+  eBookConfig.loginRequired = 'false';
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = 'false';
+  eBookConfig.python3 = 'true';
+  eBookConfig.basecourse = 'Microbit_Al';
+  eBookConfig.runestone_version = '';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Petlja - Microbit_Al</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="mesimi-7-vendimmarrja">
+<h1>Mësimi 7 –Vendimmarrja<a class="headerlink" href="#mesimi-7-vendimmarrja" title="Permalink to this headline">¶</a></h1>
+<p>Në këtë mësim do të flasim për:</p>
+<ul class="simple">
+<li><p>vendimmarrjen në program;</p></li>
+<li><p>blloqet e vendimmarrjes;</p></li>
+<li><p>operatorët e krahasimit dhe operatorët logjikë.</p></li>
+</ul>
+<p>Sa herë ballafaqoheni gjatë ditës me vendimet nga të cilat varet si do ta kaloni ditën, p.sh., nëse do të mësoni apo do të shkoni për të luajtur me shoqet dhe shokët tuaj?</p>
+<p>Edhe programet në MakeCode mund të marrin vendime.</p>
+<p>A mund ta përfytyroni si bëhet kjo?</p>
+<p>Deri më tani, të gjitha programet që kemi shkruar ishin programe të linjës, më saktësisht, programe që ekzekutohen nga blloku i parë, bllok pas blloku, nga fillimi në fund.</p>
+<p>Në dallim nga këto programe ku çdo hap, respektivisht secila komandë, zbatohet vetëm një herë, në programet e vendimmarrjes, ose më saktë në <strong>programet e degëzuara (të kushtëzuara)</strong>, disa urdhëresa do të zbatohen, ndërsa disa jo, varësisht nga plotësimi i kushteve (ose më saktë nga vendimi i marrë).</p>
+<p>Për të siguruar të kuptuarit e plotë të programeve të kushtëzuara do të bëjmë një program me anë të të cilit, kur temperatura e dhomës është më e lartë se 28 gradë, Micro:bit-i do të dërgojë informatën te Micro:bit-i tjetër për të reaguar. Vetëm nëse temperatura kalon 28 gradë pajisja do ta dërgojë informatën te pajisja tjetër për të reaguar. Nëse përgjigja nuk është e saktë (nëse temperatura nuk kalon 28 gradë), blloqet që sigurojnë dërgimin e informatës nuk do të ekzekutohen. Pra, në bazë të vendimit nëse temperatura e “shënuar” është apo nuk është më e lartë se 28 gradë, disa blloqe do të ekzekutohen, e të tjerët jo.</p>
+<p><strong>Faza 1</strong></p>
+<p><strong>Të menduarit e problemit:</strong> Me ndihmën e sensorëve për temperaturën në Micro:bit paraqitet temperatura ekzistuese e cila krahasohet me temperaturën e caktuar. Nëse është më e lartë nga vlera e caktuar, informata i dërgohet Micro:bit-it tjetër. Kur duam të vendosim komunikim (të përdorim radio-komunikimin) ndërmjet Micro:bit-ëve, të gjithë Micro:bit-ët e ndezur duhet t’i takojnë të njëjtit grup, pra të përdorin të njëjtin ID të grupit.</p>
+<blockquote>
+<div><p><strong>Hapi 1:</strong> Krijohet hapësira për komunikim ndërmjet dy pajisjeve Micro:bit.</p>
+<p><strong>Hapi 2:</strong> “Leximi” i vlerës nga sensori i temperaturës.</p>
+<p><strong>Hapi 3:</strong> Krahasimi i vlerës së sensorit me vlerën e caktuar (më shumë se 28).</p>
+<p><strong>Hapi 4:</strong> Nëse kushti është i saktë informata i dërgohet Micro:bit-it tjetër.</p>
+<p><strong>Hapi 5:</strong> Kur Micro:bit-i tjetër pranon informatën, zbatohet blloku për riprodhimin e tingullit.</p>
+</div></blockquote>
+<p><strong>Faza 2</strong></p>
+<p>Hapeni MakeCode-in për t’i zgjedhur dhe renditur blloqet në hapësirën për programim.</p>
+<p>Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin NewProject <a class="reference internal" href="_images/86.png"><img alt="dugme3" src="_images/86.png" style="width: 70px;" /></a>.</p>
+<p>Me krijimin e ID-së së grupit, në fakt krijohet hapësira në të cilën do të komunikojnë dy Micro:bit-ët.</p>
+<p>Për të krijuar ID-në e grupit nga kategoria Radio në bllok tërheqim on start radio bllokun <strong>set group …</strong> Në hapësirën ku shënohet numri ose teksti shënojmë numrin e dëshiruar për ID-në e grupit, i cili mund të jetë çfarëdo numri. Ne do ta lemë 1. Kështu kemi krijuar grupin me ID-në 1 në të cilin do të komunikojnë dy Micro:bit-ët.</p>
+<a class="reference internal image-reference" href="_images/116.png"><img alt="_images/116.png" class="align-center" src="_images/116.png" style="width: 300px;" /></a>
+<p><strong>Shënim:</strong> Kur përdorim radio-blloqet nga kategoria Radio në Simulator, do të paraqiten dy Micro:bit-ë.</p>
+<p>Njëjtë si në orën e matematikës, MakeCode mundëson krahasimin e vlerave duke përdorur krahasimet që janë në kategorinë <em>Logic</em>.</p>
+<a class="reference internal image-reference" href="_images/118.png"><img alt="_images/118.png" class="align-center" src="_images/118.png" style="width: 300px;" /></a>
+<p>Si rezultat të krahasimit marrim vlerën saktë ose pasaktë.</p>
+<p><strong>Mendoni:</strong></p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex1">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlerat përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/142.png"><img alt="slika11" src="_images/142.png" style="width: 200px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Pasakt\u00eb|pasakt\u00eb|Pasakte|pasakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex2">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlerat përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/143.png"><img alt="slika21" src="_images/143.png" style="width: 200px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Sakt\u00eb|sakt\u00eb|Sakte|sakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex3">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlerat përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/144.png"><img alt="slika31" src="_images/144.png" style="width: 200px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Sakt\u00eb|sakt\u00eb|Sakte|sakte *$", "regexFlags": "i", "feedback": "<p>:Sakt\u00eb|sakt\u00eb|Sakte|sakte:.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex4">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlerat përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/145.png"><img alt="slika41" src="_images/145.png" style="width: 200px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Pasakt\u00eb|pasakt\u00eb|Pasakte|pasakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Krahasimi kthen vlerën saktë në rastin kur vlera e “lexuar” nga sensori i temperaturës është më e lartë se 28. Në të gjitha rastet tjera e kthen pasaktë.</p>
+<p>Në bllokun forever tërheqim bllokun if… then nga kategoria Logic. Në pjesën për kushtin duhet të tërheqim blloqet me të cilat përkufizohet kushti që temperatura të jetë më e lartë se 28.</p>
+<p>Në rastin tonë, kushtin që temperatura të jetë më e lartë se 28 e përkufizojmë me bllokun <a class="reference internal" href="_images/119.png"><img alt="uslov" src="_images/119.png" style="width: 200px;" /></a>. Vlera e lexuar e sensorit të temperaturës ruhet në bllokun e temperaturës (në gradë Celsius).</p>
+<p>Kushti nga supozimi i detyrës së paraqitur përkufizohet si vijon:</p>
+<a class="reference internal image-reference" href="_images/120.png"><img alt="_images/120.png" class="align-center" src="_images/120.png" style="width: 500px;" /></a>
+<p>Kur plotësohet kushti, ose më saktë kur temperatura e lexuar është më e lartë se 28, Micro:bit-i dërgon vlerën duke shfrytëzuar radio-bllokun <em>send number…</em> nga kategoria <em>Logic</em>. Në fushën për numër shënojmë çfarëdo vlere (p.sh. 10). Që sensori të reagojë, ose më saktë të detektojë lëvizjet do ta konfigurojmë që për këtë të nevojitet një kohë e caktuar, p.sh., 3 sekonda (ose 3000 milisekonda). Për këtë do të përdorim bllokun pause (ms) nga kategoria <em>Basic</em>. Në fushë shënojmë 3000 ms që do të jetë koha kur sensori reagon ndaj ndryshimit që ndodh.</p>
+<a class="reference internal image-reference" href="_images/121.png"><img alt="_images/121.png" class="align-center" src="_images/121.png" style="width: 500px;" /></a>
+<p>Në fund, duhet të programohet Micro:bit-i i dytë (i cili lëshon tingullin), pra pasi të pranojë informatën nga Micro:bit-i të lëshojë tingullin.</p>
+<p>Duhet të krijojmë grupin e njëjtë me ID-në 1.</p>
+<p>Micro:bit-i duhet të pranojë informatën (në rastin tonë numrin - 10) në bazë të së cilës do të “reagojë” duke dëgjuar tingullin. Për këtë, nga kategoria Radio do të tërheqim bllokun:</p>
+<a class="reference internal image-reference" href="_images/122.png"><img alt="_images/122.png" class="align-center" src="_images/122.png" style="width: 500px;" /></a>
+<p>Aty do të tërheqim bllokun <em>if… then</em>. Tërheqim bllokun për krahasimin me të cilin kontrollohet nëse vlera e pranuar (blloku receivedNumber) është e barabartë me 10.</p>
+<a class="reference internal image-reference" href="_images/123.png"><img alt="_images/123.png" class="align-center" src="_images/123.png" style="width: 500px;" /></a>
+<p>Nëse vlera e pranuar është e barabartë me 10, kushti është plotësuar dhe tingulli riprodhohet. Për riprodhimin e tingullit tërheqim bllokun nga kategoria Music. Përveç këtij blloku shtojmë edhe intervalin kohor prej një sekonde për të regjistruar të gjitha ndryshimet që ndodhin.</p>
+<p>Коначан изглед кода:</p>
+<a class="reference internal image-reference" href="_images/124.png"><img alt="_images/124.png" class="align-center" src="_images/124.png" style="width: 500px;" /></a>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për ta testuar programin i kemi dy mundësi:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>ta nisim në simulator duke klikuar butonin  <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me kompjuter me kabllo USB. Pasi të klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Mendo:</strong></p>
+<p>Studiojeni shembullin e mësipërm edhe një herë. Çfarë do të ndodhë me programin nëse temperatura është më e ulët se 26?</p>
+<p>Do të ishte mirë nëse programi jep informatën kthyese edhe kur temperatura është më e vogël se 28. Në këtë rast, nga kategoria Logic mund të zgjedhim bllokun:</p>
+<a class="reference internal image-reference" href="_images/125.png"><img alt="_images/125.png" class="align-center" src="_images/125.png" style="width: 200px;" /></a>
+<p>ose në bllokun <em>if… then</em> përdorim shenjën  <a class="reference internal" href="_images/126.png"><img alt="plus" src="_images/126.png" style="width: 30px;" /></a> dhe fusim një degë të re (<em>else</em>), në të cilën do të zbatohen blloqet nëse temperatura është më e vogël ose është 28 gradë. Nëse temperatura është më e vogël ose e barabartë me 28 gradë do të tregohet temperatura e momentit. Për paraqitjen e temperaturës së momentit tërheqim bllokun shownumber… nga kategoria <em>Basic</em>. Në fushën për numrin tërheqim bllokun <em>temperature (C)</em>.</p>
+<a class="reference internal image-reference" href="_images/127.png"><img alt="_images/127.png" class="align-center" src="_images/127.png" style="width: 500px;" /></a>
+<p>Testo programin përsëri.</p>
+<p>Kushtet mund të jenë të ndërlikuara (krijohen me lidhjen e kushteve të thjeshta). Për lidhjen e kushteve të thjeshta përdorim operatorët logjikë: EDHE (ang. AND), OSE (ang. OR), JO (ang. NOT)).</p>
+<p>Me këto kushte ballafaqoheni në jetën e përditshme kur merrni vendime, për shembull dhurata që do t’i blini për ditëlindje shoqes (varësisht nga shuma e parave që keni do t’i blini një libër edhe/ose biletë për koncert).</p>
+<p>Në MakeCode operatorët logjikë janë të paraqitur si vijon:</p>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">Operatorët logjikë</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Emri i operatorit</p></th>
+<th class="head"><p>Përshkrimi i operatorit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/128.png"><img alt="and" src="_images/128.png" style="width: 200px;" /></a></p></td>
+<td><p>Lidh dy kushte dhe si rezultat kthen Saktë vetëm nëse <strong>dy kushtet janë të sakta</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/129.png"><img alt="or" src="_images/129.png" style="width: 200px;" /></a></p></td>
+<td><p>Lidh dy kushte dhe si rezultat kthen Saktë kur së paku <strong>një kusht është i saktë</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/130.png"><img alt="not" src="_images/130.png" style="width: 200px;" /></a></p></td>
+<td><p>Vendoset para njërit kusht dhe si rezultat kthen <strong>Saktë</strong> në rast se <strong>nuk plotësohet kushti</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex5">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlera përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/139.png"><img alt="slika1" src="_images/139.png" style="width: 300px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Sakt\u00eb|sakt\u00eb|Sakte|sakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex6">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlera përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/140.png"><img alt="slika2" src="_images/140.png" style="width: 300px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Pasakt\u00eb|pasakt\u00eb|Pasakte|pasakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fitb-ex7">
+            <p>Provoni të plotësoni vendet e zbrazëta me vlera përkatëse Saktë ose Pasaktë.</p>
+<p><a class="reference internal" href="_images/141.png"><img alt="slika3" src="_images/141.png" style="width: 300px;" /></a></p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *Pasakt\u00eb|pasakt\u00eb|Pasakte|pasakte *$", "regexFlags": "i", "feedback": "<p>Sakt\u00eb.\n:x: E pasakt\u00eb</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Le të bëjmë edhe një detyrë të vogël me të cilën do të mundësojmë që në ekranin e Micro:bit-it të paraqitet numri i pinit të prekur.</p>
+<p><strong>Faza 1</strong></p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Të menduarit e problemit: ** Gjendja e pinit (nëse është i shtypur ose jo) “ruhet” nga blloku <a class="reference internal" href="_images/133.png"><img alt="pin1" src="_images/133.png" style="width: 200px;" /></a> i cili gjendet në kategorinë Input. Vlera që kthehet nga ky bllok është Saktë, nëse pini është i shtypur, dhe Pasaktë, nëse pini nuk është i shtypur. Programi shfaq emrin e pinit të shtypur.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">F:\petlja\bc\albanci priručnik\Microbit_Al\_sources\Час 7 - Одлучивање.rst</span>, line 293); <em><a href="#id2">backlink</a></em></p>
+<p>Inline strong start-string without end-string.</p>
+</div>
+<blockquote>
+<div><p><strong>Hapi 1.</strong> Nëse është i shtypur pini P0, shfaqet emri i tij në ekranin e Micro:bit-it.</p>
+<p><strong>Hapi 2.</strong> Në të kundërt, verifikohet nëse është i shtypur pini P1. Nëse është i shtypur pini P1, shfaqet emri i tij në ekranin e Micro:bit-it.</p>
+<p><strong>Hapi 3.</strong> Në të kundërt, verifikohet nëse është i shtypur pini P2. Nëse është i shtypur pini P2, të shfaqet emri i tij në ekranin e Micro:bit-it.</p>
+<p><strong>Hapi 4.</strong> Në të kundërt, ndizen të gjitha diodat LED në ekranin e Micro:bit-it.</p>
+</div></blockquote>
+<p><strong>Faza 2</strong></p>
+<p>Hapeni MakeCode për t’i zgjedhur dhe renditur blloqet në hapësirën për programim.</p>
+<blockquote>
+<div><p>Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin NewProject  <a class="reference internal" href="_images/86.png"><img alt="dugme3" src="_images/86.png" style="width: 70px;" /></a>.</p>
+</div></blockquote>
+<p>Në bllokun forever tërheqim bllokun if… then…else nga kategoria Logic. Për të shfaqur emrin e pinit të shtypur do të përdorim bllokun e rrënjosur if. Në pjesën për kushtin duhet të tërheqim bllokun me të cilin përcaktohet kushti nëse është i shtypur pini P0.</p>
+<p>Nëse është i shtypur pini P0, shfaqet emri i tij në ekranin e Micro:bit-it.</p>
+<p>Si duket kodi:</p>
+<a class="reference internal image-reference" href="_images/134.png"><img alt="_images/134.png" class="align-center" src="_images/134.png" style="width: 500px;" /></a>
+<p>në të kundërt, verifikohet nëse është i shtypur pini P1.</p>
+<p>Nëse është i shtypur pini P1, shfaqet emri i tij në ekranin e Micro:bit-it, në të kundërt, verifikohet nëse është i shtypur pini P2.</p>
+<p>Nëse është i shtypur pini P2, shfaqet emri i tij në ekranin e Micro:bit-it, në të kundërt, ndizen të gjitha diodat LED në pozitën (2, 2).</p>
+<p>Dukja e kodit në fund:</p>
+<a class="reference internal image-reference" href="_images/135.png"><img alt="_images/135.png" class="align-center" src="_images/135.png" style="width: 500px;" /></a>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>ta nisim në simulator duke klikuar butonin <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me kompjuter me kabllo USB. Pasi të klikoni butonin  <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar</p></li>
+</ol>
+</div></blockquote>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Çfarë mësuam?</strong></dt><dd><ul class="simple">
+<li><p>në programet e vendimmarrjes, më saktë programet e degëzuar (kushtëzuar) disa komanda do të zbatohen, ndërsa disa të tjera jo, varësisht nga plotësimi i kushteve (respektivisht nga vendimi i marrë).</p></li>
+<li><p>për të krijuar kushte përdorim operatorët e krahasimit.</p></li>
+<li><p>për të krijuar një kusht të ndërlikuar përdorim operatorët logjik and, or dhe not.</p></li>
+<li><p>Për të pasur më shumë kushte përdorim strukturat e degëzuara (të kushtëzuara)</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+<div class="section" id="testi">
+<h2>Testi<a class="headerlink" href="#testi" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L7P1">
+            <p>Q-1341:  Studioni me kujdes bllokun e komandave.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/136.png"><img alt="_images/136.png" class="align-center" src="_images/136.png" style="width: 400px;" /></a>
+<p>Çfarë do të shfaqet pas ekzekutimit të bllokut të komandave më poshtë?</p>
+</div></blockquote>
+
+            <li data-component="answer" data-correct id="L7P1_opt_a">kur shtypet butoni A do të shfaqet zemra në ekranin e Micro:bit-it.</li><li data-component="feedback" id="L7P1_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+            <li data-component="answer"  id="L7P1_opt_b">nëse nuk është i shtypur butoni A do të shfaqet zemra në ekranin e Micro:bit-it.</li><li data-component="feedback" id="L7P1_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer"  id="L7P1_opt_c">kur shtypet butoni A nuk do të shfaqet asgjë.</li><li data-component="feedback" id="L7P1_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="L7P2">
+            <p>Q-1342:  Studioni me kujdes bllokun e komandave.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/137.png"><img alt="_images/137.png" class="align-center" src="_images/137.png" style="width: 400px;" /></a>
+<p>Çfarë do të shfaqet pas ekzekutimit të bllokut të komandave më poshtë? Zgjidhni të gjitha përgjigjet e sakta.</p>
+</div></blockquote>
+
+            <li data-component="answer" data-correct id="L7P2_opt_a">kur shtypet butoni A do të shfaqet zemra në ekranin e Micro:bit-it.</li><li data-component="feedback" id="L7P2_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+            <li data-component="answer"  id="L7P2_opt_b">nëse nuk është i shtypur butoni A do të shfaqet zemra në ekranin e Micro:bit-it.</li><li data-component="feedback" id="L7P2_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer" data-correct id="L7P2_opt_c">nëse nuk është i shtypur butoni A do të shfaqet një kryq i vogël në ekranin e</li><li data-component="feedback" id="L7P2_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+            <li data-component="answer"  id="L7P2_opt_d">kur shtypet butoni A nuk do të shfaqet asgjë.</li><li data-component="feedback" id="L7P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L7P3">
+            <p>Q-1343: A “ruan” blloku  <a class="reference internal" href="_images/138.png"><img alt="isshake" src="_images/138.png" style="width: 200px;" /></a> nëse ka ndodh ndonjë lëvizje?</p>
+
+            <li data-component="answer"  id="L7P3_opt_a">Saktë</li><li data-component="feedback" id="L7P3_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
+            
+            <li data-component="answer" data-correct id="L7P3_opt_b">E pasaktë</li><li data-component="feedback" id="L7P3_opt_b">Ju lumtë! Përgjigja juaj është e saktë.</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Mësimi 6 –Kontrolli i diodave LED të ekranit' data-toggle="tooltip"><a href="Час 6 - Контрола лед диода екрана.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Час 8 - Вежбаоница' data-toggle="tooltip"><a href="Час 8 - Вежбаоница.html">Next chapter</a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 6 –Kontrolli i diodave LED të ekranit' data-toggle="tooltip"><a href="Час 6 - Контрола лед диода екрана.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Час 8 - Вежбаоница' data-toggle="tooltip"><a href="Час 8 - Вежбаоница.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
