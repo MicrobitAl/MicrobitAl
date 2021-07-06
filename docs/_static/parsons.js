@@ -2197,7 +2197,7 @@ Parsons.prototype.solutionIndent = function() {
 ==== ACTION ============================================================
 ===================================================================== */
 
-// The "Check Me" button was pressed.
+// The "Kontrolloni" button was pressed.
 Parsons.prototype.checkMe = function() {
 	if (!this.hasSolved)
 	{
