@@ -83,7 +83,7 @@ Si rezultat të krahasimit marrim vlerën saktë ose pasaktë.
 
    |slika11|
 
-   -   :Pasaktë|pasaktë|Pasakte|pasakte: Saktë.
+   -   :^\s*[Pp]asakt[eë]\s*$: Saktë.
        :x: E pasaktë
 
 .. fillintheblank:: fitb-ex2
@@ -93,7 +93,7 @@ Si rezultat të krahasimit marrim vlerën saktë ose pasaktë.
 
    |slika21|
 
-   -   :Saktë|saktë|Sakte|sakte: Saktë
+   -   :^\s*[Ss]akt[eë]\s*$: Saktë
        :x: E pasaktë
 
 
@@ -104,7 +104,7 @@ Si rezultat të krahasimit marrim vlerën saktë ose pasaktë.
 
    |slika31|
 
-   -   :Saktë|saktë|Sakte|sakte: :Saktë|saktë|Sakte|sakte:.
+   -   :^\s*[Ss]akt[eë]\s*$: Saktë
        :x: E pasaktë
 
 
@@ -115,7 +115,7 @@ Si rezultat të krahasimit marrim vlerën saktë ose pasaktë.
 
    |slika41|
 
-   -   :Pasaktë|pasaktë|Pasakte|pasakte: Saktë.
+   -   :^\s*[Pp]asakt[eë]\s*$: Saktë
        :x: E pasaktë
 
 
@@ -158,7 +158,7 @@ Aty do të tërheqim bllokun *if... then*. Tërheqim bllokun për krahasimin me 
 
 Nëse vlera e pranuar është e barabartë me 10, kushti është plotësuar dhe tingulli riprodhohet. Për riprodhimin e tingullit tërheqim bllokun nga kategoria Music. Përveç këtij blloku shtojmë edhe intervalin kohor prej një sekonde për të regjistruar të gjitha ndryshimet që ndodhin.
 
-Коначан изглед кода:
+Si duket kodi:
 
 .. image:: ../_images/124.png
      :align: center
@@ -258,8 +258,8 @@ Në MakeCode operatorët logjikë janë të paraqitur si vijon:
 
    |slika1|
 
-   -   :Saktë|saktë|Sakte|sakte: Saktë.
-       :x: E pasaktë
+   - :^\s*[Ss]akt[eë]\s*$: Saktë.
+     :x: E pasaktë
 
 
 .. fillintheblank:: fitb-ex6
@@ -269,7 +269,7 @@ Në MakeCode operatorët logjikë janë të paraqitur si vijon:
 
    |slika2|
 
-   -   :Pasaktë|pasaktë|Pasakte|pasakte: Saktë.
+   -   :^\s*[Pp]asakt[eë]\s*$: Saktë
        :x: E pasaktë
 
 .. fillintheblank:: fitb-ex7
@@ -279,8 +279,8 @@ Në MakeCode operatorët logjikë janë të paraqitur si vijon:
 
    |slika3|
 
-   -  :Pasaktë|pasaktë|Pasakte|pasakte: Saktë.
-       :x: E pasaktë
+   -  :^\s*[Pp]asakt[eë]\s*$: Saktë
+      :x: E pasaktë
 
 
 Le të bëjmë edhe një detyrë të vogël me të cilën do të mundësojmë që në ekranin e Micro:bit-it të paraqitet numri i pinit të prekur.

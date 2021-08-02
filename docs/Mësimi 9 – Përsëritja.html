@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mësimi 9 –Përsëritja &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
+<title>Mësimi 9 – Përsëritja &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -173,6 +173,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mësimi 10 – Operacionet aritmetike dhe variablat" href="Mësimi 10 – Operacionet aritmetike dhe variablat.html" />
+    <link rel="prev" title="Mësimi 8 –Ushtrimorja" href="Mësimi 8 –Ushtrimorja.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -235,7 +237,7 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
   <div class="section" id="mesimi-9-perseritja">
-<h1>Mësimi 9 –Përsëritja<a class="headerlink" href="#mesimi-9-perseritja" title="Permalink to this headline">¶</a></h1>
+<h1>Mësimi 9 – Përsëritja<a class="headerlink" href="#mesimi-9-perseritja" title="Permalink to this headline">¶</a></h1>
 <p>Në këtë mësim do të flasim për:</p>
 <ul class="simple">
 <li><p>përsëritjen e pjesëve të programit;</p></li>
@@ -276,82 +278,76 @@
 <a class="reference internal image-reference" href="_images/150.png"><img alt="_images/150.png" class="align-center" src="_images/150.png" style="width: 400px;" /></a>
 <p>Pasi duam që zëri të përsëritet tri herë, në bllokun <em>on shake</em> tërheqim bllokun <em>repeat</em> .. for nga kategoria <em>Loops</em>. Në hapësirën ku shënohet vlera (numri) shënojmë numrin 3.</p>
 <a class="reference internal image-reference" href="_images/151.png"><img alt="_images/151.png" class="align-center" src="_images/151.png" style="width: 200px;" /></a>
-<p>Në bllokun e mësipërm do të tërheqim bllokun <em>play tone … for</em>… nga kategoria <a href="#id1"><span class="problematic" id="id2">*</span></a>Musi*c me të cilin riprodhohet tingulli.</p>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">F:\petlja\bc\albanci priručnik\MicrobitAl\_sources\Час 9 - Понављање.rst</span>, line 80); <em><a href="#id2">backlink</a></em></p>
-<p>Inline emphasis start-string without end-string.</p>
-</div>
+<p>Në bllokun e mësipërm do të tërheqim bllokun <em>play tone</em> … <em>for</em> … nga kategoria <em>Music</em> me të cilin riprodhohet tingulli.</p>
 <a class="reference internal image-reference" href="_images/152.png"><img alt="_images/152.png" class="align-center" src="_images/152.png" style="width: 400px;" /></a>
 <p>Në bllokun e paraqitur nga lista rënëse zgjedhim tonin dhe gjatësinë.</p>
 <a class="reference internal image-reference" href="_images/153.png"><img alt="_images/153.png" class="align-center" src="_images/153.png" style="width: 350px;" /></a>
 <p>Si duket kodi në fund:</p>
 <a class="reference internal image-reference" href="_images/154.png"><img alt="_images/154.png" class="align-center" src="_images/154.png" style="width: 300px;" /></a>
 <p><strong>Faza 3</strong></p>
-<p>Тестирање и анализа програма.</p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+<li><p>ta nisim në simulator duke klikuar butonin  <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me një kompjuter me kabllo USB. Pasi të klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
 </ol>
 </div></blockquote>
-<p>Након тестирања и анализе, постоји грешка, јасно треба да се чује три пута звук.</p>
-<p><strong>Грешка 1.</strong> Не чује се јасно понављање звука.</p>
-<p><strong>Исправљање грешака.</strong> Да бисмо постигли да се јасно звук чује три пута увешћемо блок <em>pause ..</em> из категорије <em>Basic</em>. Поставићемо да је временски интервал након кога се понавља звук 1 секунда (или 1000 милисекунди).</p>
-<p>Након исправљеног кода, коначан изглед програма:</p>
+<p>Pas testimit dhe analizës nëse ekzistojnë gabime, tingulli duhet të dëgjohet qartë tri herë</p>
+<p><strong>Gabimi 1.</strong> Nuk dëgjohet qartë përsëritja e tingullit.</p>
+<p><strong>Korrigjimi i gabimeve.</strong> Për të bërë që tingulli të dëgjohet qartë tri herë do të ndërfusim bllokun <em>pause</em> … nga kategoria <em>Basic</em>. Do të caktojmë që intervali kohor pas së cilit përsëritet tingulli të jetë 1 sekondë (ose 1000 milisekonda).</p>
+<p>Si duket programi në fund pas kodit të përmirësuar:</p>
 <a class="reference internal image-reference" href="_images/155.png"><img alt="_images/155.png" class="align-center" src="_images/155.png" style="width: 400px;" /></a>
-<p>Поново тестирамо програм. Сада он ради како треба.</p>
-<p>Хајде да направимо још један програм којим се активира паљење лед диодица на средини екрана микробита све док је температура у просторији мања од 30.</p>
-<p><strong>Фаза 1</strong></p>
-<p><strong>Разумевање проблема:</strong> Све док је измерена температура мања од 30 пали се лед диода на средини екрана микробита.</p>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.
-На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Да бисмо извршили одређене наредбе (паљење лед диода) док не буде испуњен неки услов (температура мања од 30), у блок <em>forever</em> превлачимо блок <em>while..do..</em>:</p>
-<p>Изглед кода:</p>
+<p>Testojmë përsëri programin. Tani punon si duhet.</p>
+<p>Le të bëjmë edhe një program i cili aktivizon ndezjen e diodave LED në mes të ekranit të Micro:bit-it për sa kohë temperatura e dhomës është më e vogël se 30.</p>
+<p><strong>Faza 1</strong></p>
+<p><strong>Të menduarit e problemit:</strong> Për sa kohë temperatura e matur është më e vogël se 30 ndizet dioda LED në mes të ekranit të Micro:bit-it.</p>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim. Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar butonin New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Për të ekzekutuar komanda të caktuara (ndezjen e diodave LED) derisa të plotësohet një kusht (temperatura më e ulët se 30), në bllokun <em>forever</em> tërheqim bllokun <em>while…do</em> …:</p>
+<p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/156.png"><img alt="_images/156.png" class="align-center" src="_images/156.png" style="width: 400px;" /></a>
-<p>Да бисмо упалили лед диоду на средини екрана, тачније на позицији (2, 2) из менија <em>Led</em> превлачимо блок: <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> .</p>
-<p>Коначан изглед програма:</p>
+<p>Për të ndezur diodën LED në mes të ekranit, më saktë në pozitën (2, 2) nga menyja <em>Led</em> tërheqim bllokun:  <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> .</p>
+<p>Si duket programi në fund:</p>
 <a class="reference internal image-reference" href="_images/157.png"><img alt="_images/157.png" class="align-center" src="_images/157.png" style="width: 400px;" /></a>
-<p><strong>Фаза 3</strong></p>
-<p>Тестирање и анализа програма.</p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+<li><p>ta nisim në simulator duke klikuar butonin <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me një kompjuter me kabllo USB. Pasi të klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
 </ol>
 </div></blockquote>
-<p><strong>Размисли:</strong></p>
-<p>Пажљиво проучи горње блокове. Шта се дешава када температура порасте, и буде већа од 30? Зашто?</p>
-<p>Допуни горњи кôд како би лед диода била упаљена само док је температура мања од 30.</p>
-<p>Могуће решење: <a class="reference external" href="https://makecode.microbit.org/_92LeH58vY4je">https://makecode.microbit.org/_92LeH58vY4je</a></p>
-<p>Сећаш се задатка из Лекције 3 – Унос података, помоћу кога смо укључивали лед диоде на главној дијагонали екрана микробита.</p>
+<p><strong>Mendoni:</strong></p>
+<p>Studioni me kujdes blloqet e mësipërm. Çfarë ndodh kur temperatura rritet dhe bëhet më e lartë se 30? Pse?</p>
+<p>Plotësoni kodin e mësipërm që dioda LED të ndizet vetëm kur temperatura është më e ulët se 30.</p>
+<p>Zgjidhja e mundshme: <a class="reference external" href="https://makecode.microbit.org/_92LeH58vY4je">https://makecode.microbit.org/_92LeH58vY4je</a></p>
+<p>Ju kujtohet detyra nga Mësimi 3 – Futja e të dhënave - me të cilën kemi ndezur diodat LED në diagonalen kryesore të ekranit të Micro:bit-it.</p>
 <a class="reference internal image-reference" href="_images/158.png"><img alt="_images/158.png" class="align-center" src="_images/158.png" style="width: 300px;" /></a>
-<p><strong>Фаза 1</strong></p>
-<p><strong>Разумевање проблема:</strong> Главна дијагонала представља линију која повезује горњи леви угао екрана са доњим десним. Тај задатак смо решили линијским програмом, ређајући блокове <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> из категорије <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a> један за другим.</p>
-<p>Изглед кода је следећи:</p>
+<p><strong>Faza 1</strong></p>
+<p><strong>Të menduarit e problemit:</strong> Diagonalja kryesore paraqet vijën e cila lidh pjesën e sipërme majtas të ekranit me atë poshtë djathtas. Këtë detyrë e kemi zgjidhur me një program të vijës duke renditur blloqet <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> nga kategoria <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a> një pas tjetrit.</p>
+<p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/159.png"><img alt="_images/159.png" class="align-center" src="_images/159.png" style="width: 200px;" /></a>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.</p>
-<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Међутим, овај задатак ћемо решити елегантније користећи блок <a class="reference internal" href="_images/160.png"><img alt="blok" src="_images/160.png" style="width: 200px;" /></a> из категорије <em>Loops</em>. Овај блок се користи за понављање дела програма онолико пута колико желите (граница се означава у блоку to <a class="reference internal" href="_images/161.png"><img alt="b1" src="_images/161.png" style="width: 60px;" /></a>) користећи променљиву <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>. (О променљивима ћемо причати детаљније у следећој лекцији, можеш их схватити као „чуваре“ различитих вредности, било нумеричких било текстуалних).</p>
-<p>У блок <em>forever</em> превлачимо блок <em>for .. from to …</em> Граница од које креће бројање је 0, а до које се завршава је 4, зато што је у овом случају положај лед диода на екрану микробита дефинисан по хоризонтали и вертикали од 0 до 4.</p>
-<p>Изглед кода:</p>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim. Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin New Project  <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Megjithatë, kjo detyrë zgjidhet në një mënyrë më elegante me përdorimin e bllokut  <a class="reference internal" href="_images/160.png"><img alt="blok" src="_images/160.png" style="width: 200px;" /></a> nga kategoria <em>Loops</em>. Овај блок се користи за понављање дела програма онолико пута колико желите (граница се означава у блоку to <a class="reference internal" href="_images/161.png"><img alt="b1" src="_images/161.png" style="width: 60px;" /></a>) користећи променљиву <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>. (Për variablat do të flasim më me hollësi në mësimin e ardhshëm, e mund t’i konsideroni si “kujdestarë” të vlerave të ndryshme, numerike apo tekstuale).
+Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufiri nga i cili nis numërimi është 0, ndërsa aty ku përfundon është 4 sepse, në këtë rast, pozita e diodave LED në ekranin e Micro:bit-it përkufizohet sipas horizontales dhe vertikales nga 0 deri 4.</p>
+<p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/163.png"><img alt="_images/163.png" class="align-center" src="_images/163.png" style="width: 300px;" /></a>
-<p>У горњи блок превучемо <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> из категорије <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a>. Координату x дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>, координату y дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>.</p>
-<p>Корак по корак извршавање блока <em>for .. from to …</em></p>
-<table class="colwidths-given docutils align-default" id="id4">
-<caption><span class="caption-text">Tабела компоненти Микробита</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<p>Në bllokun lart tërheqim <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a> nga kategoria <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a>. Координату x дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>, координату y дефинишемо превлачењем <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>.</p>
+<p>Hap pas hapi ekzekutohet blloku <em>for … from to</em> …</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Tabela e përbërësve të Micro:bit-it</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Променљива <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a></p></th>
-<th class="head"><p>Блока <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a></p></th>
-<th class="head"><p>Извршавање кода на екрану микробита</p></th>
+<tr class="row-odd"><th class="head"><p>Variabla  <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a></p></th>
+<th class="head"><p>E bllokut <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 200px;" /></a></p></th>
+<th class="head"><p>Ekzekutimi i kodit në ekranin e Micro:bit-it</p></th>
 </tr>
 </thead>
 <tbody>
@@ -377,47 +373,47 @@
 </tr>
 </tbody>
 </table>
-<p>Блок ће се поновити пет пута.</p>
-<p>Коначан изглед кода:</p>
+<p>Blloku do të përsëritet pesë herë.</p>
+<p>Si duket kodi në fund:</p>
 <a class="reference internal image-reference" href="_images/173.png"><img alt="_images/173.png" class="align-center" src="_images/173.png" style="width: 300px;" /></a>
-<p><strong>Фаза 3</strong></p>
-<p>Тестирање и анализа програма.</p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
-<p>1       да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p>
-<p>2       да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
+<p>1       ta nisim në simulator duke klikuar butonin  <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p>
+<p>2       ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me kompjuter me kabllo USB. Pasi të klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p>
 <a class="reference internal image-reference" href="_images/174.png"><img alt="_images/174.png" class="align-center" src="_images/174.png" style="width: 300px;" /></a>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
-<dl class="simple">
-<dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>да програми код којих се одређени блокови понављају више пута називају се циклични програми или програми понављања.</p></li>
-<li><p>да постоје различити блокови за понављање (бројачки, бесконачни, условни) и када се они користе.</p></li>
-<li><p>да се бројачки извршавају када тачно знамо колико ће се пута поновити нека радња.</p></li>
-<li><p>да се условна понављања користимо када не знамо колико је пута потребно извршити неку радњу. Тај блок се извршава све док не буде испуњен одређени услов.</p></li>
-<li><p>које вредности узима index у блоку понављања, тачније која је почетна, а која крајња вредност.</p></li>
+<p><strong>Çfarë mësuam?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>programet tek të cilët blloqet e caktuara përsëriten disa herë quhen programe ciklike ose programe të përsëritjes.</p></li>
+<li><p>ekzistojnë blloqe të ndryshme për përsëritje (numerikë, të pafund dhe të kushtëzuar) dhe kur përdoren ata</p></li>
+<li><p>blloqet numerike ekzekutohen kur dihet saktë sa herë do të përsëritet një veprim.</p></li>
+<li><p>përsëritjet e kushtëzuara përdoren kur nuk dihet sa herë duhet të ekzekutohet një veprim. Ky bllok ekzekutohet derisa të plotësohet një kusht i veçantë.</p></li>
+<li><p>cilat vlera merr index-i në bllokun e përsëritjes, më saktë, cila është vlera fillestare dhe cila është përfundimtare.</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 
     </p></div></div>
-<div class="section" id="id3">
-<h2>Квиз<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="testi">
+<h2>Testi<a class="headerlink" href="#testi" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P1">
-            <p>Q-187: Пажљиво проучи код:</p>
+            <p>Q-39: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/175.png"><img alt="_images/175.png" class="align-center" src="_images/175.png" style="width: 300px;" /></a>
-<p>Шта ће бити приказано на микробиту?</p>
+<p>Çfarë do të shfaqet në Micro:bit?</p>
 
-            <li data-component="answer"  id="L9P1_opt_a">На екрану ће бити приказано срце.</li><li data-component="feedback" id="L9P1_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P1_opt_a">Në ekran do të shfaqet një zemër.</li><li data-component="feedback" id="L9P1_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L9P1_opt_b">На екрану ће бити приказано срце све док је дугме А притиснуто.</li><li data-component="feedback" id="L9P1_opt_b">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L9P1_opt_b">Në ekran do të shfaqet një zemër për sa kohë mbahet shtypur butoni А.</li><li data-component="feedback" id="L9P1_opt_b">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L9P1_opt_c">На екрану ће бити приказано срце све док је температура већа од 30.</li><li data-component="feedback" id="L9P1_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P1_opt_c">Në ekran do të shfaqet një zemër derisa temperatura është të jetë e lartë se 30.</li><li data-component="feedback" id="L9P1_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L9P1_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P1_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P1_opt_d">Në ekran nuk do të shfaqet asgjë.</li><li data-component="feedback" id="L9P1_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -425,17 +421,15 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P2">
-            <p>Q-188: Пажљиво проучи код:</p>
+            <p>Q-40: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/176.png"><img alt="_images/176.png" class="align-center" src="_images/176.png" style="width: 300px;" /></a>
-<p>Шта ће бити приказано на микробиту?</p>
+<p>Çfarë do të shfaqet në Micro:bit?</p>
 
-            <li data-component="answer"  id="L9P2_opt_a">На екрану ће бити приказана измерена тренутно вредност температуре и срце.</li><li data-component="feedback" id="L9P2_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P2_opt_a">Në ekran do të shfaqet vlera e matur e temperaturës momentale dhe një zemër.</li><li data-component="feedback" id="L9P2_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L9P2_opt_b">На екрану ће три пута бити приказано срце.</li><li data-component="feedback" id="L9P2_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer" data-correct id="L9P2_opt_c">Në ekran do të shfaqet një zemër tri herë.</li><li data-component="feedback" id="L9P2_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer" data-correct id="L9P2_opt_c">На екрану ће три пута бити приказана измерена тренутна вредност температура и срце.</li><li data-component="feedback" id="L9P2_opt_c">Браво! Твој одговор је тачан.</li>
-            
-            <li data-component="answer"  id="L9P2_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P2_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P2_opt_d">Në ekran do të shfaqet tri herë vlera e matur e temperaturës momentale dhe një zemër.</li><li data-component="feedback" id="L9P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -443,17 +437,17 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P3">
-            <p>Q-189: Пажљиво проучи код:</p>
+            <p>Q-41: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/177.png"><img alt="_images/177.png" class="align-center" src="_images/177.png" style="width: 300px;" /></a>
-<p>Шта ће бити приказано на микробиту?</p>
+<p>Çfarë do të shfaqet në Micro:bit?</p>
 
-            <li data-component="answer" data-correct id="L9P3_opt_a">На екрану ће бити редом бројеви од 0 до 4.</li><li data-component="feedback" id="L9P3_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L9P3_opt_a">Në ekran do të renditen numrat nga 0 deri 4.</li><li data-component="feedback" id="L9P3_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L9P3_opt_b">На екрану ће бити приказан број 5.</li><li data-component="feedback" id="L9P3_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P3_opt_b">Në ekran do të shfaqet numri 5.</li><li data-component="feedback" id="L9P3_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L9P3_opt_c">На екрану ће пет пута бити приказан број 4.</li><li data-component="feedback" id="L9P3_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P3_opt_c">Në ekran do të shfaqet pesë herë numri 4.</li><li data-component="feedback" id="L9P3_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L9P3_opt_d">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P3_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P3_opt_d">Në ekran nuk do të shfaqet asgjë.</li><li data-component="feedback" id="L9P3_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -461,15 +455,15 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P4">
-            <p>Q-190: Пажљиво проучи код:</p>
+            <p>Q-42: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/178.png"><img alt="_images/178.png" class="align-center" src="_images/178.png" style="width: 300px;" /></a>
-<p>Шта ће бити приказано на микробиту?</p>
+<p>Çfarë do të shfaqet në Micro:bit?</p>
 
-            <li data-component="answer"  id="L9P4_opt_a">На екрану ће се четири пута појавити срце (симулација рада срца).</li><li data-component="feedback" id="L9P4_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P4_opt_a">Në ekran do të paraqitet një zemër katër herë (simulim i rrahjes së zemrës).</li><li data-component="feedback" id="L9P4_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L9P4_opt_b">На екрану ће се приказати срце.</li><li data-component="feedback" id="L9P4_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L9P4_opt_b">Në ekran do të shfaqet një zemër.</li><li data-component="feedback" id="L9P4_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L9P4_opt_c">На екрану неће бити приказано ништа.</li><li data-component="feedback" id="L9P4_opt_c">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L9P4_opt_c">Në ekran nuk do të shfaqet asgjë.</li><li data-component="feedback" id="L9P4_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
 
             </ul>
@@ -481,10 +475,17 @@
   
       <div class="col-md-12">
 <ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Mësimi 8 –Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 8 –Ushtrimorja.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Mësimi 10 – Operacionet aritmetike dhe variablat' data-toggle="tooltip"><a href="Mësimi 10 – Operacionet aritmetike dhe variablat.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 8 –Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 8 –Ushtrimorja.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Mësimi 10 – Operacionet aritmetike dhe variablat' data-toggle="tooltip"><a href="Mësimi 10 – Operacionet aritmetike dhe variablat.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

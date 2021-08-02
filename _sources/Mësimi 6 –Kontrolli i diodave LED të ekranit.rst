@@ -126,10 +126,10 @@ Test
     :answer_b: (0,1)
     :answer_c: (0,0)
     :answer_d: (1,0)
-    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :feedback_b: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_b: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :feedback_c: Ju lumtë! Përgjigja juaj është e saktë.
-    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :correct: c
 
     Cila është pozita (koordinatat) e diodës LED lart majtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.
@@ -140,10 +140,10 @@ Test
     :answer_b: (4,4)
     :answer_c: (0,0)
     :answer_d: (1,1)
-    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :feedback_b: Ju lumtë! Përgjigja juaj është e saktë.
-    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :correct: b
 
     Cila është pozita (koordinatat) e diodës LED poshtë djathtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.
@@ -154,10 +154,10 @@ Test
     :answer_b: (2,3)
     :answer_c: (2,4)
     :answer_d: (4,2)
-    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_a: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :feedback_b: Ju lumtë! Përgjigja juaj është e saktë.
-    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :correct: b
 
     Cila është pozita (koordinatat) e diodës LED së ndezur në ekranin e Micro:bit-it të paraqitur në fotografinë poshtë?
@@ -175,10 +175,10 @@ Test
     :answer_c: Diodat LED në (3,2) dhe (4,1) të ndezura.
     :answer_d: Nuk do të paraqitet asgjë.
     :feedback_a: Ju lumtë! Përgjigja juaj është e saktë.
-    :feedback_b: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!Përgjigja juaj nuk është e saktë. Provoni përsëri!
-    :correct: а
+    :feedback_b: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_c: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!
+    :correct: a
 
     Studioni kodin me kujdes:
 

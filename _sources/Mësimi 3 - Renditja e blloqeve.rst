@@ -216,8 +216,6 @@ Për të testuar programin kemi dy mundësi:
 
 Pas hedhjes së programit ai do të hapet (funksionojë) në Micro:bit.
 
-Након пребацивања програма он ће се покренути на микробиту.
-
 **E rëndësishme:** Në mënyrë që të mund të dëgjojmë muzikën në pajisje, është e nevojshme të lidhni kufjet me micro:bit-in, sepse micro:bit-i nuk ka altoparlantë të integruar. Mënyra e lidhjes së altoparlantëve dhe kufjeve me micro:bit-in tregohet në figurë. 
 
 .. image:: ../_images/77.png

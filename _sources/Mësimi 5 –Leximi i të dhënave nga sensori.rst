@@ -39,7 +39,7 @@ Në faqen e internetit në https://makecode.microbit.org filloni një projekt t�
 
 Për të mundësuar pranimin e informatës së përdoruesit nga Micro:bit-i, pasi përdoruesi të shtypë butonin A, nga kategoria *Input* zgjedhim dhe tërheqim në hapësirën programuese bllokun:|dugmeA|. Nga lista rënëse zgjedhim butonin A.
 
-Për ta paraqitur nivelin e ndriçimit në dhomë fillimisht duhet ta tërheqim në bllokun e sipërm bllokun |shownumber| из категорије *Basic*, nga kategoria Basic, i cili përdoret për paraqitjen e vlerave numerike. Këtë bllok e shfrytëzojmë për paraqitje pasi niveli momental i ndriçimit në dhomë paraqitet nga 0 deri në 255, ku 0 paraqet errësirën në dhomë, ndërsa 255 paraqet ndriçim të fortë.
+Për ta paraqitur nivelin e ndriçimit në dhomë fillimisht duhet ta tërheqim në bllokun e sipërm bllokun |shownumber| nga kategoria *Basic*, nga kategoria Basic, i cili përdoret për paraqitjen e vlerave numerike. Këtë bllok e shfrytëzojmë për paraqitje pasi niveli momental i ndriçimit në dhomë paraqitet nga 0 deri në 255, ku 0 paraqet errësirën në dhomë, ndërsa 255 paraqet ndriçim të fortë.
 
 Si duket kodi:
 
@@ -102,7 +102,7 @@ Për ta testuar programin kemi dy mundësi:
 
      1. ta nisim në simulator duke klikuar butonin |dugmence|.
 
-     2. ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me një kompjuter me kabllo USB. Pasi të klikoni butonin |download| преузмите .hex фајл на ваш рачунар. shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar. 
+     2. ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me një kompjuter me kabllo USB. Pasi të klikoni butonin |download| shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar. 
 
 Programin mund ta kontrolloni edhe në simulues:
 
@@ -180,7 +180,7 @@ Test
     :feedback_d: Përgjigja juaj nuk është e saktë. Provoni përsëri!
     :correct: a
 
-    Шта ће бити приказано на микробиту када се изврши доњи код:
+    Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:
 
     .. image:: ../_images/104.png
          :align: center

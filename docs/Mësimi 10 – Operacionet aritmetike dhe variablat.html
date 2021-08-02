@@ -173,6 +173,8 @@
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mësimi 11 –Algoritmi i Euklidit" href="Mësimi 11 – Algoritmi i Euklidit.html" />
+    <link rel="prev" title="Mësimi 9 – Përsëritja" href="Mësimi 9 – Përsëritja.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -236,72 +238,71 @@
   
   <div class="section" id="mesimi-10-operacionet-aritmetike-dhe-variablat">
 <h1>Mësimi 10 – Operacionet aritmetike dhe variablat<a class="headerlink" href="#mesimi-10-operacionet-aritmetike-dhe-variablat" title="Permalink to this headline">¶</a></h1>
-<p>На овом часу говорићемо о: ­</p>
+<p>Në këtë mësim do të flasim për:</p>
 <ul class="simple">
-<li><p>­чување међурезултата;</p></li>
-<li><p>креирање променљивих;</p></li>
-<li><p>аритметичке операције и рачунања у МејкКоду;</p></li>
-<li><p>целобројном дељењу и додатним математичким операцијама.</p></li>
+<li><p>ruajtjen e rezultatit të ndërmjetëm;</p></li>
+<li><p>krijimin e variablave;</p></li>
+<li><p>operacionet aritmetike dhe llogaritjet në MakeCode;</p></li>
+<li><p>pjesëtimin e numrave të plotë dhe operacionet aritmetike shtesë.</p></li>
 </ul>
-<p>Приликом прављења педометра (уређаја који броји (рачуна) кораке препознајући покрете које је корисник направио) важно да имамо информацију о броју корака које је корисник направио, како бисмо знали колико је растојање пређено.</p>
-<p>Било би добро да програм, у сваком тренутку, приказује број остварених корака. А, да кликом на дугме А, приказује колико је пређено километара.</p>
-<p><strong>Фаза 1</strong></p>
-<p><strong>Разумевање проблема:</strong></p>
-<dl>
-<dt>Свако кретање корисника мора да буде забележено. За одређивање пређеног растојања у километрима дефинишемо дужину корака, нпр. 50 cm, коју претварамо у km (у нашем примеру 50cm=0.0005km) и множимо са бројем корака.</dt><dd><p><strong>Корак 1:</strong> Број корака на почетку је нула.</p>
-<p><strong>Корак 2:</strong> Сваки пут када се направи покрет (кретање) вредност бројача корака се увећава за један.</p>
-<p><strong>Корак 3:</strong> Приказује се број тренутно остварених корака.</p>
-<p><strong>Корак 4:</strong> Када корисник кликне на дугме А: приказује се број пређених километара на основу броја корака (множи се дужина корака са бројем корака).</p>
-</dd>
-</dl>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.</p>
-<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme6" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Да би захтев о пређеној километражи на основу броја корака могао да буде испуњен, морамо да пронађемо начин да чувамо и по потреби мењамо вредност бројача корака. Решење за овај проблем јесте увођење <strong>променљиве</strong>. Променљиву можеш да схватиш као простор у меморији рачунара, сличан кутији, у коме се, за време извршавања програма, чувају неке међувредности. Променљиве имају своја имена. Када у програму желиш да користиш вредност променљиве, довољно је да наведеш њено име.</p>
-<p>Променљиву креирамо тако што, у категорији <em>Variables</em> (1), кликнемо на дугме <em>Make a variable</em> (Направи променљиву) (2) и у поље уносимо име променљиве (3), у нашем случају <strong>Brojac</strong>. Кликом на дугме ОК (4), креирана је променљива (5).</p>
+<p>Gjatë krijimit të pedometrit (pajisje që numëron (njehson) hapat duke njohur lëvizjet që ka bërë përdoruesi) është e rëndësishme të kemi informatën për numrin e hapave që ka bërë përdoruesi, për të ditur çfarë distance është përshkuar.</p>
+<p>Do të ishte mirë që programi, në çdo moment, të tregojë numrin e hapave të bërë. Ndërsa pas klikimit në butonin A, të tregojë sa kilometra janë përshkuar.</p>
+<p><strong>Faza 1</strong></p>
+<p><strong>Të menduarit e problemit:</strong></p>
+<p>Duhet të regjistrohet secila lëvizje e përdoruesit. Për të përcaktuar distancën e kaluar përkufizojmë gjatësinë e hapit, p.sh. 50 cm, të cilën e shndërrojmë në km (në rastin tonë 50cm=0.0005 km) dhe e shumëzojmë me numrin e hapave.</p>
+<blockquote>
+<div><p><strong>Hapi 1:</strong> Numri i hapave në fillim është zero.</p>
+<p><strong>Hapi 2:</strong> Sa herë bëhet një lëvizje, vlera e numrit të hapave rritet me një.</p>
+<p><strong>Hapi 3:</strong> Paraqitet numri i hapave të bërë për momentin.</p>
+<p><strong>Hapi 4:</strong> Pasi përdoruesi të klikojë butonin А: paraqitet numri i kilometrave të kaluara në bazë të numrit të hapave (shumëzohet gjatësia e hapave me numrin e hapave).</p>
+</div></blockquote>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.
+Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin <a class="reference internal" href="_images/86.png"><img alt="dugme6" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Për të ekzekutuar kërkesën për kilometrat e përshkuara në bazë të numrit të hapave, duhet të gjejmë mënyrën për të ruajtur dhe, sipas nevojës, për të ndryshuar vlerën e numëruesit të hapave. Zgjidhja për këtë problem është futja e <strong>variablës</strong>. Variabla mund të kuptohet si hapësirë në memorien e kompjuterit, e ngjashme me një kuti, në të cilën, gjatë ekzekutimit të programit, ruhen vlerat e ndërmjetme. Variablat kanë emrat e tyre. Kur doni të përdorni vlerën e variablës në program, duhet të përmendni emrin e saj.</p>
+<p>Variablat krijohen duke klikuar në kategorinë <em>Variables</em> (1), pastaj butonin <em>Make a variable</em> (Krijo një variabël) (2) dhe në fushë futet emri i variablës (3), në rastin tonë <strong>Numëruesi (Brojac)</strong>. Pasi të klikohet butoni OK (4), krijohet një variabël (5).</p>
 <a class="reference internal image-reference" href="_images/179.png"><img alt="_images/179.png" class="align-center" src="_images/179.png" style="width: 700px;" /></a>
-<p>Постављамо да је почетна вредност променљиве <strong>Brojac</strong> постављена на нулу. То је могуће урадити превлачењем блока set Brojac to 0 из категорије <em>Variables</em> у блок <em>on start</em>.</p>
+<p>Vlera fillestare e variablës <strong>Numëruese (Brojac)</strong> caktohet zero. Kjo mund të bëhet pasi të tërhiqet blloku set Numërues (Brojac) to 0 nga kategoria <em>Variables</em> në bllokun <em>on start</em>.</p>
 <a class="reference internal image-reference" href="_images/180.png"><img alt="_images/180.png" class="align-center" src="_images/180.png" style="width: 300px;" /></a>
-<p>Поред променљиве Brojac корака дефинисаћемо променљиву <strong>DuzinaKoraka</strong>, чија је вредност постављена на 50cm.</p>
+<p>Përveç variablës Numëruese (Brojac) të hapave përkufizohet edhe variabla <strong>GjatësiaEHapave (DuzinaKoraka)</strong>, vlera e së cilës caktohet 50 cm.</p>
 <a class="reference internal image-reference" href="_images/181.png"><img alt="_images/181.png" class="align-center" src="_images/181.png" style="width: 300px;" /></a>
-<p>Промена броја корака дешава се сваки пут када корисник направи неки покрет. Другим речима, вредност променљивом <strong>Brojac</strong> ће се увећавати за један сваки пут када се направи покрет.</p>
-<p>То ћемо постићи коришћењем блока <em>on shake</em>, у оквиру кога упацујемо блок <em>change DuzinaKoraka by 1</em>.</p>
+<p>Ndryshimi i numrit të hapave ndodh sa herë që përdoruesi bën një lëvizje. Me fjalë të tjera, vlera e variablës <strong>Numëruese (Brojac)</strong> do të rritet me një, sa herë që bëhet një lëvizje.</p>
+<p>Këtë e bëjmë me përdorimin e bllokut on shake, brenda të cilit vendosim bllokun <em>change GjatësiaEHapave (DuzinaKoraka) by 1</em>.</p>
 <a class="reference internal image-reference" href="_images/182.png"><img alt="_images/182.png" class="align-center" src="_images/182.png" style="width: 300px;" /></a>
-<p>Потребно је сваки промену броја корака приказати на екрану микробита, коришћењем блока <em>show number..</em> у пољу за број превлачимо променљиву <strong>Brojac</strong> из категорије <em>Variables</em>.</p>
+<p>Çdo ndryshim i numrit të hapave duhet të shfaqet në ekranin e Micro:bit-it. Pas shfrytëzimit të bllokut <em>show number..</em> në fushën për numër tërheqim variablën <strong>Numëruese (Brojac)</strong> nga kategoria <em>Variables</em>.</p>
 <a class="reference internal image-reference" href="_images/183.png"><img alt="_images/183.png" class="align-center" src="_images/183.png" style="width: 300px;" /></a>
-<p><strong>Фаза 3</strong></p>
-<p>Тестирање и анализа програма.</p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+<li><p>ta nisim atë në simulator duke klikuar butonin <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë atë në Micro:bit. Për ta kaluar programin në Micro:bit. duhet ta lidhim atë me kompjuterin me kabllo USB. Klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> për të shkarkuar skedarin .hex në kompjuterin tuaj. Duke tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
 </ol>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/184.png"><img alt="_images/184.png" class="align-center" src="_images/184.png" style="width: 500px;" /></a>
-<p>Програм за сада ради како треба, када се оствари покрет бројач корака се увећава за један.
-Сада је потребно да кликом на дугме А добијемо приказ укупне километраже на основу броја корака.</p>
-<p>Километражу (дужина које је пређена) рачунамо тако што број корака помножимо са дефинисаном дужином корака. У нашем случају дужина корака је 50 cm. Да бисмо добили резултат у километрима потребно га је поделити са 100000 (1km=100000cm)</p>
-<p>Да бисмо све то постигли користимо рачунске операције попут сабирања, одузимања, множења и дељења. То су операције које непрестано користимо у свакодневном животу. Блокови који омогућавају рачунање називају се <strong>аритметички оператори</strong>. Рачунске операције попут сабирања, одузимања, множења и дељења немају значај само на часовима математике.</p>
-<p>Како је програмирање покушај да олакшамо свакодневни живот, у МејкKоду је могуће извршити одређени број рачунских, кажемо и аритметичких, операција.</p>
-<p>Блокови који омогућавају рачунање налазе се у категорији <em>Math</em>.</p>
+<p>Për momentin, programi punon siç duhet; kur bëhet një lëvizje numëruesi i hapave rritet me një. Tani, pas klikimit në butonin A, duhet të shfaqet kilometrazhi total bazuar në numrin e hapave.</p>
+<p>Kilometrazhi (gjatësia e përshkuar) njehsohet duke shumëzuar numrin e hapave me gjatësinë e përkufizuar të hapave. Në rastin tonë, gjatësia e hapave është 50 cm. Për të përftuar rezultatin në kilometra duhet të pjesëtohet me 100000 (1km=100000cm)</p>
+<p>Për t’i bërë të gjitha këto duhet të përdoren operacionet llogaritëse siç janë mbledhja, zbritja, shumëzimi dhe pjesëtimi. Këto operacione i përdorim përherë në jetën e përditshme. Blloqet që e mundësojnë këtë quhen <strong>operatorë aritmetikë</strong>. Operacionet njehsuese siç janë mbledhja, zbritja, shumëzimi dhe pjesëtimi nuk janë të rëndësishme në orët e matematikës.</p>
+<p>Pasi programimi paraqet përpjekje për të lehtësuar jetën e përditshme, në MakeCode mund të bëhet një numër operacionesh llogaritëse, ose siç i quajmë ndryshe - aritmetike.</p>
+<p>Blloqet që mundësojnë llogaritjen janë në kategorinë <em>Math</em>.</p>
 <a class="reference internal image-reference" href="_images/185.png"><img alt="_images/185.png" class="align-center" src="_images/185.png" style="width: 400px;" /></a>
-<p>Резултат њиховог извршавања је <strong>број</strong>.</p>
-<p>Ако желиш да провериш како аритметички оператори за сабирање, одузимање, множење и дељење раде, довољно је да у празна поља блока унесеш бројеве, два пута кликнеш на њега и видиш резултат извршавања.</p>
+<p>Rezultati i ekzekutimit të tyre është një <strong>numër</strong>.</p>
+<p>Nëse doni të verifikoni si punojnë operatorët aritmetikë për mbledhje, zbritje, shumëzim dhe pjesëtim, mjafton që në fushat e zbrazëta të bllokut të fusni numra, të klikoni dy herë mbi ta dhe të shikoni rezultatin e ekzekutimit.</p>
 <a class="reference internal image-reference" href="_images/186.png"><img alt="_images/186.png" class="align-center" src="_images/186.png" style="width: 600px;" /></a>
-<p>Примећујеш да се рачунска операција множење означава са (*), а дељење са ÷.</p>
-<p>Сложеније математичке изразе (оне са заградама) можеш да израчунаваш у МејкКоду.</p>
-<p>Аритметички израз: (12 + 32) * (56 - 5) може да изгледа овако:</p>
+<p>Vini re se operacioni llogaritës i shumëzimit shënohet me (*), ndërsa pjesëtimi me ÷.</p>
+<p>Shprehjet më të ndërlikuara matematikore (ato me kllapa) mund të njehsohen në MakeCode.</p>
+<p>Shprehja aritmetike: (12 + 32) * (56 - 5) mund të duket kështu:</p>
 <a class="reference internal image-reference" href="_images/187.png"><img alt="_images/187.png" class="align-center" src="_images/187.png" style="width: 600px;" /></a>
-<p>Уради:
-У Мејккоду сложи одговарајуће блокове и у празна места упиши резултате њиховог извршавања.</p>
+<p>Kryeni:</p>
+<p>Renditni blloqet e duhura dhe në fushat e zbrazëta shënoni rezultatet e ekzekutimit.</p>
 
         <div class="course-box course-box-question course-content">
         <div data-component="fillintheblank" id="fitb-exL10P1">
             <p>(25∙25-255)-525:25</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [346, 346], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [346, 346], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
@@ -312,7 +313,7 @@
             <p>23∙9-10</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [197, 197], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [197, 197], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
@@ -323,7 +324,7 @@
             <p>27/3+(23∙9-10)</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [197, 197], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [197, 197], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
@@ -334,7 +335,7 @@
             <p>5∙(27/3+(23∙9-10))</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [206, 206], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [206, 206], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
@@ -345,7 +346,7 @@
             <p>210+3∙(42+634)</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [676, 676], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [676, 676], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
@@ -356,79 +357,79 @@
             <p>(618-(312:4+344)):14-13</p>
 <input type="text">
         <script type="application/json">
-            [[{"number": [1, 1], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e.</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>\u041d\u0438\u0458\u0435 \u0442\u0430\u0447\u043d\u043e.</p>\n"}]]
+            [[{"number": [1, 1], "feedback": "<p>Sakt\u00eb</p>\n"}, {"regex": "^ *x *$", "regexFlags": "i", "feedback": "<p>E pasakt\u00eb</p>\n"}]]
         </script>
 
         </div>
         </div>
-            <p>Вредности истих израза израчунај у свесци и упореди са резултатима добијеним у МејкКоду. Ако уочиш грешке, анализирај поступак решавања и исправи их.</p>
-<p>Дефинишемо променљиву <em>DuzinaPuta</em> која ће да чува вредност пређеног пута у километрима израчунату помоћу доњег блока.</p>
+            <p>Njehsoni vlerat e shprehjeve të njëjta në fletore dhe krahasojini me rezultatet e pranuara nga MakeCode. Nëse vëreni gabime, analizoni procedurën e zgjidhjes dhe përmirësojini ato.</p>
+<p>Përkufizojmë variablën GjatësiaERrugës (DuzinaPuta) e cila do të ruajë vlerën e rrugës së përshkruar në kilometra, të njehsuar me ndihmën e bllokut të mëposhtëm.</p>
 <a class="reference internal image-reference" href="_images/188.png"><img alt="_images/188.png" class="align-center" src="_images/188.png" style="width: 350px;" /></a>
-<p>Кликом на дугме А, потребно је применити аритметичке операције којим се израчунава вредност пређене километраже. Уједно приказује се дата вредност на екрану микробита:</p>
+<p>Pasi të klikoni butonin А duhet të ndryshoni operacionet aritmetike me të cilat njehsohet vlera e kilometrazhit të kaluar. Njëkohësisht, në ekranin e Micro:Bit-it shfaqet vlera e dhënë:</p>
 <a class="reference internal image-reference" href="_images/189.png"><img alt="_images/189.png" class="align-center" src="_images/189.png" style="width: 600px;" /></a>
-<p>Коначан изгледа програма:</p>
+<p>Si duket kodi në fund:</p>
 <a class="reference internal image-reference" href="_images/190.png"><img alt="_images/190.png" class="align-center" src="_images/190.png" style="width: 600px;" /></a>
-<p>Тестирајмо поново програм. Програм ради као треба.</p>
-<p>Поред основних аритметичких оперција, јако корисна рачунска операција је и целобројно дељење. Често се користи у програмирању.</p>
-<p>И у Мејккоду можеш да израчунаш остатак при целобројном дељењу. Потребно је да користиш оператор <a class="reference internal" href="_images/191.png"><img alt="ostatak" src="_images/191.png" style="width: 150px;" /></a>.</p>
-<p>Хајде да искористимо овај оператор и направимо програм којим се проверава да ли је измерена вредност нивоа осветљења паран број?</p>
-<p><strong>Фаза 1</strong></p>
-<p>Размишљање о проблему: Број је паран ако је дељив бројем 2 без остатка.</p>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод за одабир и слагање блокова у простор за програмирање.</p>
-<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme6" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Услов којим проверавамо да ли је ниво осветљења паран број можемо представити блоком:</p>
+<p>Testojmë programin përsëri. Programi punon si duhet.</p>
+<p>Përveç operacioneve kryesore aritmetike, një tjetër operacion njehsues është edhe pjesëtimi i numrave të plotë. Përdoret shpesh në programim.</p>
+<p>Edhe në blloqe mund të njehsoni mbetjet në pjesëtimin e numrave të plotë. Duhet të përdorni operatorin <a class="reference internal" href="_images/191.png"><img alt="ostatak" src="_images/191.png" style="width: 150px;" /></a>.</p>
+<p>Të përdorim këtë operator dhe të krijojmë një program me të cilin kontrollohet nëse vlera e matur e nivelit të ndriçimit është numër çift?</p>
+<p><strong>Faza 1</strong></p>
+<p>Të menduarit për problemin: Numri është çift nëse pjesëtohet me numrin 2 pa mbetje.</p>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.
+Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar butonin <a class="reference internal" href="_images/86.png"><img alt="dugme6" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Kushti me të cilin kontrollohet nëse niveli i ndriçimit është numër çift mund të paraqitet me bllokun:</p>
 <a class="reference internal image-reference" href="_images/192.png"><img alt="_images/192.png" class="align-center" src="_images/192.png" style="width: 400px;" /></a>
-<p>Коначан изглед кода:</p>
+<p>Pamja përfundimtare e kodit:</p>
 <a class="reference internal image-reference" href="_images/193.png"><img alt="_images/193.png" class="align-center" src="_images/193.png" style="width: 400px;" /></a>
-<p><strong>Фаза 3</strong></p>
-<p>Тестирање и анализа програма.</p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p><strong>Faza 3</strong></p>
+<p>Testimi dhe analiza e programit.</p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
+<li><p>ta nisim atë në simulator duke klikuar butonin <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
+<li><p>ta kalojmë atë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me kompjuterin me kabllo USB. Klikoni butonin  <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> për të shkarkuar skedarin .hex në kompjuterin tuaj. Duke tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
 </ol>
 </div></blockquote>
-<p>Поред основих аритметичких операција у категорији <em>Math</em> можемо пронаћи и следеће блокове:</p>
-<table class="colwidths-given docutils align-default" id="id2">
-<caption><span class="caption-text">Функције у категорији <em>Math</em></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<p>Përveç operacioneve kryesore aritmetike, në kategorinë Math mund të gjejmë edhe blloqet si vijon:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Funksionet në kategorinë <em>Math</em></span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Блок операције</p></th>
-<th class="head"><p>Објашњење блока</p></th>
+<tr class="row-odd"><th class="head"><p>Blloku i operacionit</p></th>
+<th class="head"><p>Sqarimi i bllokut</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/194.png"><img alt="a1" src="_images/194.png" style="width: 200px;" /></a></p></td>
-<td><p>Одређивање минималне вредности бројева из датог интервала.</p></td>
+<td><p>Caktimi i vlerës minimale të numrave nga intervali i paraqitur.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/195.png"><img alt="a2" src="_images/195.png" style="width: 200px;" /></a></p></td>
-<td><p>Одређивање максималне вредности бројева из датог интервала.</p></td>
+<td><p>Caktimi i vlerës maksimale të numrave nga intervali i paraqitur.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/196.png"><img alt="a3" src="_images/196.png" style="width: 200px;" /></a></p></td>
-<td><p>Апсолутна вредност броја.</p></td>
+<td><p>Vlera absolute e numrit.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/197.png"><img alt="a4" src="_images/197.png" style="width: 200px;" /></a></p></td>
-<td><p>Квадрат броја.</p></td>
+<td><p>Katrori i numrit.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/198.png"><img alt="a5" src="_images/198.png" style="width: 200px;" /></a></p></td>
-<td><p>Квадратни корен броја.</p></td>
+<td><p>Rrënja katrore e numrit.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/199.png"><img alt="a6" src="_images/199.png" style="width: 200px;" /></a></p></td>
-<td><p>Заокругљивање бројева (приказивање бројева у децималном запису) на жељени број децимала. Заокругљивање броја 6.78 је број 7, а броја 9.3 је број 9.</p></td>
+<td><p>Rrumbullakosja e numrave (numrave me presje dhjetore) në numrin më të përafërt me numrin me presje dhjetore. Rrumbullakosja e numrit 6.78 është numri 7, ndërsa i numrit 9.3 është numri 9.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/200.png"><img alt="a7" src="_images/200.png" style="width: 200px;" /></a></p></td>
-<td><p>Да бисмо променили број у наредни већи цели број, узимамо горњу вредност горње тачке броја. Вредност горње границе за 1.234 је 2, јер је то следећи већи цели број. За негативни број -3,63, његова горња граница је -3.</p></td>
+<td><p>Për ta ndryshuar numrin me presje dhjetore në numrin e plotë pasues me vlerën më të lartë, marrim vlerën më të lartë të numrit. P.sh., vlera më e lartë pasuese për 1.234 është 2, sepse ai është numri i plotë pasues me vlerën më të lartë i 1-shit. Për numrat negativë, p.sh, -3.63, vlera më e lartë pasuese është -3</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/201.png"><img alt="a8" src="_images/201.png" style="width: 200px;" /></a></p></td>
-<td><p>Да бисмо променили број у наредни мањи цели број, узимамо доњу вредност броја. Доња вредност за 8,76 је 8 јер је то следећи доњи цео број. За негативни број 6,17, његов следећи број је -7, јер је то следећи доњи цели број.</p></td>
+<td><p>Për ta ndryshuar numrin me presje dhjetore në numrin e plotë pasues me vlerën më të ulët, marrim vlerën më të ulët të numrit. P.sh., vlera më e ulët pasuese për 8.76 është 8, sepse ai është numri i plotë pasues me vlerën më të ulët i 8-s. Për numrat negativë, p.sh., -6.17, vlera më e ulët pasuese është -7, sepse është numri i plotë pasues me vlerën më të ulët</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/202.png"><img alt="a9" src="_images/202.png" style="width: 200px;" /></a></p></td>
-<td><p>Скраћивање броја. Ако број има вредност 54.234, скраћена вредност је 54. Скраћивање се врши на исти начин и за негативни број. Скраћена вредност -34.913 је -34.</p></td>
+<td><p>Shkurtimi i numrave. Nëse numri ka vlerën 54.234, vlera e shkurtuar është 54. Shkurtimi i numrave bëhet në mënyrë të njëjtë edhe për numrat negativë. Vlera e shkurtuar e -34.913 është -34.</p></td>
 </tr>
 </tbody>
 </table>
@@ -437,32 +438,32 @@
         <div class="course-content">
             <p>
 <dl class="simple">
-<dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>променљива се може да се схвати као простор у меморији рачунара, у коме се, за време извршавања програма, чувају неке међувредности.</p></li>
-<li><p>променљиве имају своја имена.</p></li>
-<li><p>начин креирања променљивих.</p></li>
-<li><p>оператори који омогућавају рачунање (сабирање, одузимање, дељење, множење) називају се аритметички оператори.</p></li>
-<li><p>блокови који представљају аритметичке операторе и математичке функције се налазе у категорији Math.</p></li>
+<dt><strong>Çfarë mësuam?</strong></dt><dd><ul class="simple">
+<li><p>variabla mund të kuptohet si hapësirë në memorien e kompjuterit në të cilën gjatë ekzekutimit të programit ruhen disa vlera të ndërmjetme.</p></li>
+<li><p>variablat kanë emrat e tyre.</p></li>
+<li><p>mënyrën e krijimit të variablave.</p></li>
+<li><p>operatorët të cilët mundësojnë njehsimin (mbledhjen, zbritjen, pjesëtimin, shumëzimin) quhen operatorë aritmetikë.</p></li>
+<li><p>blloqet që paraqesin operatorët aritmetikë dhe funksionet matematike janë të vendosura në kategorinë Math.</p></li>
 </ul>
 </dd>
 </dl>
 
     </p></div></div>
-<div class="section" id="id1">
-<h2>Квиз<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="test">
+<h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L10P1">
-            <p>Q-627: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-6: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/203.png"><img alt="_images/203.png" class="align-center" src="_images/203.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P1_opt_a">42875</li><li data-component="feedback" id="L10P1_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P1_opt_a">42875</li><li data-component="feedback" id="L10P1_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P1_opt_b">35</li><li data-component="feedback" id="L10P1_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P1_opt_b">35</li><li data-component="feedback" id="L10P1_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P1_opt_c">105</li><li data-component="feedback" id="L10P1_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P1_opt_c">105</li><li data-component="feedback" id="L10P1_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P1_opt_d">70</li><li data-component="feedback" id="L10P1_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P1_opt_d">70</li><li data-component="feedback" id="L10P1_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -470,16 +471,16 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L10P2">
-            <p>Q-628: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-7: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/204.png"><img alt="_images/204.png" class="align-center" src="_images/204.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P2_opt_a">56</li><li data-component="feedback" id="L10P2_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P2_opt_a">56</li><li data-component="feedback" id="L10P2_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P2_opt_b">55</li><li data-component="feedback" id="L10P2_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P2_opt_b">55</li><li data-component="feedback" id="L10P2_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P2_opt_c">57</li><li data-component="feedback" id="L10P2_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P2_opt_c">57</li><li data-component="feedback" id="L10P2_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P2_opt_d">50</li><li data-component="feedback" id="L10P2_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P2_opt_d">50</li><li data-component="feedback" id="L10P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -487,16 +488,16 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L10P3">
-            <p>Q-629: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-8: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/205.png"><img alt="_images/205.png" class="align-center" src="_images/205.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P3_opt_a">988</li><li data-component="feedback" id="L10P3_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P3_opt_a">988</li><li data-component="feedback" id="L10P3_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P3_opt_b">987</li><li data-component="feedback" id="L10P3_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P3_opt_b">987</li><li data-component="feedback" id="L10P3_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P3_opt_c">980</li><li data-component="feedback" id="L10P3_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P3_opt_c">980</li><li data-component="feedback" id="L10P3_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P3_opt_d">990</li><li data-component="feedback" id="L10P3_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P3_opt_d">990</li><li data-component="feedback" id="L10P3_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -504,16 +505,16 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L10P4">
-            <p>Q-630: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-9: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/206.png"><img alt="_images/206.png" class="align-center" src="_images/206.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P4_opt_a">58</li><li data-component="feedback" id="L10P4_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P4_opt_a">58</li><li data-component="feedback" id="L10P4_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P4_opt_b">57</li><li data-component="feedback" id="L10P4_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P4_opt_b">57</li><li data-component="feedback" id="L10P4_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P4_opt_c">59</li><li data-component="feedback" id="L10P4_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P4_opt_c">59</li><li data-component="feedback" id="L10P4_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P4_opt_d">60</li><li data-component="feedback" id="L10P4_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P4_opt_d">60</li><li data-component="feedback" id="L10P4_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -521,16 +522,16 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L10P5">
-            <p>Q-631: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-10: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/207.png"><img alt="_images/207.png" class="align-center" src="_images/207.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P5_opt_a">3</li><li data-component="feedback" id="L10P5_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P5_opt_a">3</li><li data-component="feedback" id="L10P5_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P5_opt_b">1</li><li data-component="feedback" id="L10P5_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P5_opt_b">1</li><li data-component="feedback" id="L10P5_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P5_opt_c">0</li><li data-component="feedback" id="L10P5_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P5_opt_c">0</li><li data-component="feedback" id="L10P5_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P5_opt_d">4</li><li data-component="feedback" id="L10P5_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P5_opt_d">4</li><li data-component="feedback" id="L10P5_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -538,16 +539,16 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false" data-random id="L10P6">
-            <p>Q-632: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-11: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/208.png"><img alt="_images/208.png" class="align-center" src="_images/208.png" style="width: 300px;" /></a>
 
-            <li data-component="answer" data-correct id="L10P6_opt_a">бројеве из интервала од 0 до 10, укључујући  0 и 10.</li><li data-component="feedback" id="L10P6_opt_a">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P6_opt_a">numrat nga intervali nga 0 deri 10, duke mos përfshirë 0 dhe 10.</li><li data-component="feedback" id="L10P6_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L10P6_opt_b">бројеве из интервала од 0 до 10, укључујући и 0, а не 10.</li><li data-component="feedback" id="L10P6_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P6_opt_b">numrat nga intervali nga 0 deri 10, duke përfshirë 0 dhe 10.</li><li data-component="feedback" id="L10P6_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P6_opt_c">бројеве из интервала од 0 до 10, укључујући и 10, а не 0.</li><li data-component="feedback" id="L10P6_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P6_opt_c">numrat nga intervali nga 0 deri 10, duke përfshirë edhe 10, por jo 0.</li><li data-component="feedback" id="L10P6_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L10P6_opt_d">бројеве из интервала од 0 до 10, не укључујући  0 и 10.</li><li data-component="feedback" id="L10P6_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P6_opt_d">numrat nga intervali nga 0 deri 10, duke përfshirë edhe 0, por jo 10.</li><li data-component="feedback" id="L10P6_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -555,12 +556,12 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false" data-random id="L10P7">
-            <p>Q-633: Шта ће бити резултат извршавања следећег блока:</p>
+            <p>Q-12: Cili do të jetë rezultati pas ekzekutimit të bllokut më poshtë:</p>
 <a class="reference internal image-reference" href="_images/209.png"><img alt="_images/209.png" class="align-center" src="_images/209.png" style="width: 300px;" /></a>
 
-            <li data-component="answer"  id="L10P7_opt_a">вредност променљиве item је -5.</li><li data-component="feedback" id="L10P7_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L10P7_opt_a">vlera e variablës item është -5</li><li data-component="feedback" id="L10P7_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L10P7_opt_b">вредност променљиве item је 5.</li><li data-component="feedback" id="L10P7_opt_b">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L10P7_opt_b">vlera e variablës item është 5.</li><li data-component="feedback" id="L10P7_opt_b">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
 
             </ul>
@@ -572,10 +573,17 @@
   
       <div class="col-md-12">
 <ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Mësimi 9 – Përsëritja' data-toggle="tooltip"><a href="Mësimi 9 – Përsëritja.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Mësimi 11 –Algoritmi i Euklidit' data-toggle="tooltip"><a href="Mësimi 11 – Algoritmi i Euklidit.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 9 – Përsëritja' data-toggle="tooltip"><a href="Mësimi 9 – Përsëritja.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Mësimi 11 –Algoritmi i Euklidit' data-toggle="tooltip"><a href="Mësimi 11 – Algoritmi i Euklidit.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

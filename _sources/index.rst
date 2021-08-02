@@ -54,4 +54,8 @@ PËRMBAJTJA
 
    Mësimi 8 –Ushtrimorja
 
+   Mësimi 9 – Përsëritja
 
+   Mësimi 10 – Operacionet aritmetike dhe variablat
+
+   Mësimi 11 – Algoritmi i Euklidit
