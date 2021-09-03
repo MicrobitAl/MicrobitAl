@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Час 13 - Вежбаоница &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
+<title>Mësimi 13 - Ushtrimorja &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -30,8 +30,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
@@ -60,8 +59,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +74,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +140,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +171,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_statis/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
 <meta charset='utf-8'>
@@ -234,15 +236,15 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
-  <div class="section" id="id1">
-<h1>Час 13 - Вежбаоница<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Вежбаоница је место где ћеш провежбати све што до сада знаш о понављању делова програма коришћењем блокова за понављање одређени број пута, или блокова за условно понављање, начину дефинисања променљивих и употребу аритметичких операција и додатних математичким оперцијама за извођење одређених рачунања.</p>
+  <div class="section" id="mesimi-13-ushtrimorja">
+<h1>Mësimi 13 - Ushtrimorja<a class="headerlink" href="#mesimi-13-ushtrimorja" title="Permalink to this headline">¶</a></h1>
+<p>Ushtrimorja është vendi ku do të ushtroni gjithçka që keni mësuar deri më tani për përsëritjen e pjesëve të programit duke përdorur blloqet për përsëritje për një numër të caktuar herësh ose blloqet për përsëritje të kushtëzuar, mënyrën si përcaktohen variablat dhe përdorimin e operacioneve aritmetike dhe operacioneve shtesë matematikore për kryerjen e llogaritjeve të caktuara.</p>
 <ol class="arabic simple">
-<li><p>Написати програм којим се приказују сви бројеви из интервала од 1 до 20 који су дељиви са 3. Упореди своје решење са нашим: <a class="reference external" href="https://makecode.microbit.org/_iX1aPqA81TyE">https://makecode.microbit.org/_iX1aPqA81TyE</a></p></li>
-<li><p>Написати програм којим се симулира бацање коцкице. Упореди своје решење са нашим: <a class="reference external" href="https://makecode.microbit.org/_JUwMfMLCYW1R">https://makecode.microbit.org/_JUwMfMLCYW1R</a></p></li>
-<li><p>Надогради програм тако да се уместо бројева приказује графичка репрезентација броје, на пример. број 6 се приказује у облику шест тачкица на екрану микробита. Упореди своје решење са нашим: <a class="reference external" href="https://makecode.microbit.org/_T1zD4z5T3b6C">https://makecode.microbit.org/_T1zD4z5T3b6C</a></p></li>
-<li><p>Креирај програм који симулира игру Папир-Камен-Маказе. Упореди своје решење са нашим: <a class="reference external" href="https://makecode.microbit.org/_U4qgUMAa2bTP">https://makecode.microbit.org/_U4qgUMAa2bTP</a></p></li>
-<li><p>Корисник игра Папир-камен-маказе против другог корисника. Код оба микробита се насумице бира један од облика: папир, камен или маказе. За дефинисање опција користи низове. Победник се бира на основу правила игре: маказе су јаче од папира (маказе секу папир); камен је јачи од маказа (камен разбија маказе); папир је јачи од камена (папиром може да се обавије и зароби камен). У случају да оба играча изаберу исти знак, на екрану трећег микробита треба да буде приказана порука “Нерешено!”. У супротном, приказује се порука о победнику (“Победник 1 или Победник 2”).</p></li>
+<li><p>Të shkruani programin me të cilin paraqiten të gjithë numrat nga intervali 1 deri 20 të cilët mund të pjesëtohen me 3. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_iX1aPqA81TyE">https://makecode.microbit.org/_iX1aPqA81TyE</a></p></li>
+<li><p>Të shkruani programin me të cilin simulohet hedhja e zarit. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_JUwMfMLCYW1R">https://makecode.microbit.org/_JUwMfMLCYW1R</a></p></li>
+<li><p>Të mbindërtoni programin që në vend të numrave të paraqiten numrat në formë grafike, për shembull numri 6 paraqitet në formë të gjashtë pikave në ekranin e Micro:bit-it. Krahasoni zgjidhjen tuaj me tonën: https://makecode.microbit.org/_T1zD4z5T3b6C</p></li>
+<li><p>Të krijoni programin i cili simulon lojën Gurë-Letër-Gërshërë. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_U4qgUMAa2bTP">https://makecode.microbit.org/_U4qgUMAa2bTP</a></p></li>
+<li><p>Përdoruesi luan Gurë-Letër-Gërshërë kundër përdoruesit tjetër. Tek te dy Micro:bit-ët, në mënyrë të rastësishme, përzgjidhet një nga format: gurë, letër ose gërshërë. Për përkufizimin e opsioneve përdoret vargu. Fituesi shpallet në bazë të rregullave të lojës: gërshërët janë më të forta se letra (gërshërët presin letrën); guri është më i fortë se gërshërët (guri shkatërron gërshërët); letra është më e fortë se guri (me letër mund të mbështillet dhe të zihet peng guri). Nëse dy lojtarët zgjedhin shenjën e njëjtë, në ekranin e Micro:bit-it të tretë duhet të paraqitet mesazhi “Barazim!”. Në të kundërtën del mesazhi për fituesin (“Fituesi 1” ose “Fituesi 2”).</p></li>
 </ol>
 </div>
 

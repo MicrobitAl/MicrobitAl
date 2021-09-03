@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mësimi 11 –Algoritmi i Euklidit &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
+<title>Mësimi 16 - Ushtrimorja &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -176,8 +176,7 @@
     <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Mësimi 12 - Ushtrimorja" href="Mësimi 12 - Ushtrimorja.html" />
-    <link rel="prev" title="Mësimi 10 – Operacionet aritmetike dhe variablat" href="Mësimi 10 – Operacionet aritmetike dhe variablat.html" />
+    <link rel="prev" title="Mësimi 15 – Funksionet" href="Mësimi 15 – Funksionet.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -239,144 +238,53 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
-  <div class="section" id="mesimi-11-algoritmi-i-euklidit">
-<h1>Mësimi 11 –Algoritmi i Euklidit<a class="headerlink" href="#mesimi-11-algoritmi-i-euklidit" title="Permalink to this headline">¶</a></h1>
-<p>Në këtë orë do të flasim për: ¬</p>
-<ul class="simple">
-<li><p>algoritmin e Euklidit.</p></li>
-</ul>
-<p>Para vetes keni një problem. Në dispozicion keni dy litarë. Njëri është i gjatë 40 metra, tjetri 15 metra. Litarët duhen prerë në mënyrë që të gjitha pjesët e përftuara të jenë me gjatësi të njëjtë. Litarët duhet të priten në atë mënyrë që të fitojmë pjesë sa më të gjata sa të jetë e mundur.</p>
-<p><strong>Faza 1</strong></p>
-<p>Pra, litarin e parë dhe të dytë duhet t’i ndajmë në pjesë me gjatësi të njëjtë, për shembull k. Problemi katë bëjë me përcaktimin e vlerës k.</p>
-<a class="reference internal image-reference" href="_images/210.png"><img alt="_images/210.png" class="align-center" src="_images/210.png" style="width: 500px;" /></a>
-<p>Nëse shikoni me kujdes, mund të nxirrni përfundimin se numri duhet të jetë i tillë që edhe 40 edhe 15 të plotpjesëtohen me të, d.m.th., pas pjesëtimit mbetja të jetë 0. Pra, k të plotpjesëtohet me të dy numrat dhe duhet të jetë më i madhi nga numrat që e kanë këtë veçori. Matematikanët do ta quanin më shkurt pjesëtuesi më i madh i përbashkët i numrave 40 dhe 15.</p>
-<p><strong>Shënim:</strong> Pjesëtuesi më i madh i përbashkët i numrave (PMP) është numri më i madh me të cilin secili nga këta numra pjesëtohet pa mbetje.</p>
-<p>Erdhëm tek problemi i dytë. E dini çfarë kërkoni, por problemi është si do ta bëni këtë? Janë disa procedura të cilat mund t’ju çojnë te zgjidhja.</p>
-<p>Një nga mënyrat është që të përcaktoni cilët janë pjesëtuesit për secilin numër dhe në mesin e tyre të gjeni cilët numra janë të përbashkët për dy numrat dhe të gjeni më të madhin.</p>
-<p>Për shembull, për numrat 40 dhe 15, duhet të gjeni pjesëtuesit e thjeshtë:</p>
-<p>40=2*2*2*5</p>
-<p>15=3*5</p>
-<p>Numri më i madh që pjesëton numrat 40 dhe 15 është 5.</p>
-<p>Përveç kësaj ekziston edhe një procedurë tjetër e cila përdoret shumë shpesh, e në veçanti nga programuesit. Kjo procedurë është algoritmi i Euklidit.</p>
-<p><strong>Fakt interesant:</strong></p>
-<a class="reference internal image-reference" href="_images/211.jpg"><img alt="_images/211.jpg" class="align-center" src="_images/211.jpg" style="width: 200px;" /></a>
-<p>Euklidi (330 – 275 p.e.s.) ishte matematikan i famshëm nga Athina. Njihet për veprat e tij, Elementet, Data, Optika dhe për llogaritjen e pjesëtuesit më të madh të përbashkët (PMP), i cili u quajt sipas emrit të tij, algoritmi i Euklidit.</p>
-<p>Shkurtdhe jo krejt saktësisht, <strong>Algoritmi i Euklidit</strong> mund të përshkruhet si vijon: numri më i madh zvogëlohet për vlerën e të voglit, vlerat e reja të përftuara krahasohen dhe procedura përsëritet deri sa të barazohen numrat. Për shembull, procedura e përcaktimit të PMP-së për 40 dhe 15 duket kështu:</p>
-<p>Algoritmi i Euklidit bazohet mbi këtë fakt: nëse një numër pjesëtohet, edhe me numrin 40, edhe me numrin 15, ky numër duhet të pjesëtohet edhe me 40 - 15. Kështu, problemin e zbresim në nivel nënproblemi, me fjalë të tjera tani kërkojmë pjesëtuesin më të madh të përbashkët të numrave 25 dhe 15. Kjo procedurë (hap) përsëritet deri sa nuk fitojmë dy numra të barabartë. Më saktë:</p>
-<p>Procedura hap pas hapi:</p>
-<blockquote>
-<div><p>Nga numri 40 zbresim numrin 15, 40 - 15 = 25</p>
-<p>Pas krahasimit të numrave 25 dhe 15 konkludojmë se numrat nuk janë të barabartë: 25 ≠ 15</p>
-<p>Përsërisim procedurën.</p>
-<p><em>Përsërisim procedurën.</em></p>
-<p>Nga numri 25 zbresim numrin 15, 25 - 15 = 10</p>
-<p>Pas krahasimit të numrave 15 dhe 10 konkludojmë se numrat nuk janë të barabartë: 15 ≠10</p>
-<p><em>Përsërisim procedurën.</em> Nga numri 15 zbresim numrin 10, 15 - 10 = 5</p>
-<p>Pas krahasimit të numrave 10 dhe 5 konkludojmë se numrat nuk janë të barabartë: 10 ≠ 5</p>
-<p><em>Përsërisim procedurën.</em> Nga numri 10 zbresim numrin 5, 10 - 5 = 5</p>
-<p>Pas krahasimit të numrave 5 dhe 5 konkludojmë se numrat janë të barabartë: 5 = 5</p>
-<p><em>Përsërisim procedurën.</em> Nga numri 5 zbresim numrin 5, 5 - 5 = 0.</p>
-<p>Procedura mbaron.</p>
-</div></blockquote>
-<p>Konkludojmë se numri më i madh me të cilin mund të pjesëtohen numrat 40 dhe 15 është numri 5.</p>
-<a class="reference internal image-reference" href="_images/212.png"><img alt="_images/212.png" class="align-center" src="_images/212.png" style="width: 600px;" /></a>
-<p>Pas zbatimit të algoritmit të Euklidit konkludojmë se litari i gjatë duhet të ndahet në 8 pjesë në gjatësi nga 5 metra, ndërsa litari i shkurtër në 3 pjesë me gjatësi nga 5 metra. Grumbulli i përftuar i litarëve përmban 11 copëza me gjatësi nga 5 metra.</p>
-<p>Si është e mundur që algoritmi na ofron një zgjidhje vërtet të mirë? Arsyeja për këtë ka të bëjë me veçoritë e operacioneve të zbritjes dhe shumëzimit, pasoja e të cilave është kjo: Pjesëtuesi më i madh i përbashkët i dy numrave do të jetë PMP-jaediferencës ndërmjet këtyre dy numrave dhe të numrit më të vogël. Siç mund ta vëreni, algoritmi i Euklidit përsëritet në mënyrë të tillë që, në çdo hap vijues, pjesëtuesi nga hapi paraprak bëhet herësi, ndërsa pjesëtuesi është mbetja nga hapi paraprak.</p>
-<p><strong>Faza 2</strong></p>
-<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.</p>
-<p>Në faqen e internetit nëhttps://makecode.microbit.org filloni një projekt të ri duke klikuar butonin New Project  <a class="reference internal" href="_images/86.png"><img alt="dugme7" src="_images/86.png" style="width: 70px;" /></a>.</p>
-<p>Që programi të llogarisë pjesëtuesin më të madh të përbashkët të numrave të ndryshëm duhet të krijojmë dy variabla: <strong>Numrin e parë</strong> dhe <strong>Numrin e dytë</strong>. Variablën e krijojmë pasi në kategorinë Variables, klikojmë butonin Make a variable dhe në fushë shënojmë emrin e variablës, në rastin tonë <strong>Numri i parë</strong>, <a class="reference internal" href="_images/213.png"><img alt="br1" src="_images/213.png" style="width: 200px;" /></a>. Në të njëjtën mënyrë përkufizojmë variablën <strong>Numri i dytë</strong> , <a class="reference internal" href="_images/214.png"><img alt="br2" src="_images/214.png" style="width: 200px;" /></a>.</p>
-<p>Tani duhet të përcaktojmë vlerën fillestare për variablat <strong>Numri i parë</strong> dhe <strong>Numri i dytë</strong>. Le të vendosim si vlerë fillestare për dy variablat një vlerë me përzgjedhje të rastësishme prej intervalit nga 1 deri në 10. Vlerën e rastësishme nga intervali i dëshiruar e përftojmë duke shfrytëzuar bllokun  <a class="reference internal" href="_images/215.png"><img alt="random1" src="_images/215.png" style="width: 200px;" /></a> nga kategoria <em>Math</em>.</p>
-<p>Vendosim që vlera fillestare e variablës <strong>Numri i parë</strong> të jetë vlerë e përzgjedhur rastësisht nga 0 deri 10. Kjo mund të bëhet duke tërhequr bllokun set <em>Numri i parë to 0</em> nga kategoria <em>Variables</em> në bllokun <a class="reference internal" href="_images/216.png"><img alt="onbuttonA" src="_images/216.png" style="width: 200px;" /></a>.</p>
-<p>Si duket kodi:</p>
-<a class="reference internal image-reference" href="_images/217.png"><img alt="_images/217.png" class="align-center" src="_images/217.png" style="width: 400px;" /></a>
-<p>Në të njëjtën mënyrë përkufizojmë variablën <strong>Numri i dytë</strong> .</p>
-<p>Si duket kodi:</p>
-<a class="reference internal image-reference" href="_images/218.png"><img alt="_images/218.png" class="align-center" src="_images/218.png" style="width: 400px;" /></a>
-<p>Nëse analizojmë më vëmendje algoritmin e Euklidit vërejmë se:</p>
+  <div class="section" id="mesimi-16-ushtrimorja">
+<h1>Mësimi 16 - Ushtrimorja<a class="headerlink" href="#mesimi-16-ushtrimorja" title="Permalink to this headline">¶</a></h1>
+<p>Ushtrimorja është vendi ku do të ushtroni gjithçka që keni mësuar deri më tani për ruajtjen e një numri më të madh të dhënash, krijimin e vargjeve dhe zbatimin e tyre, përdorimin e funksioneve të cilat përdoruesi i krijon për të ndarë programet e ndërlikuara në tërësi më të thjeshta, mënyrën e përkufizimit të funksioneve dhe përdorimin e parametrave dhe argumenteve.</p>
 <ol class="arabic simple">
-<li><p>gjithmonë zbresim numrin e vogëlnga numri i madh.</p></li>
+<li><p>Shkruani programin për këngën e preferuar.</p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/219.png"><img alt="_images/219.png" class="align-center" src="_images/219.png" style="width: 400px;" /></a>
+<p>Ndihmë e vogël:</p>
+<a class="reference internal image-reference" href="_images/81.png"><img alt="_images/81.png" class="align-center" src="_images/81.png" style="width: 300px;" /></a>
+<p>Sa zgjat secila notë: <a class="reference internal" href="_images/82.png"><img alt="nota" src="_images/82.png" style="width: 400px;" /></a></p>
+<p>Nëse nuk mund të përzgjidhni këngën e preferuar, përdorni këngën e ditëlindjes.</p>
+<a class="reference internal image-reference" href="_images/83.jpg"><img alt="_images/83.jpg" class="align-center" src="_images/83.jpg" style="width: 600px;" /></a>
+<p>Krahasoni zgjidhjen tuaj me tonën:  <a class="reference external" href="https://makecode.microbit.org/_f90EYb4LcVtV">https://makecode.microbit.org/_f90EYb4LcVtV</a></p>
 <ol class="arabic simple" start="2">
-<li><p>procedura e zbritjes përsëritet deri sa numrat bëhen të barabartë.</p></li>
+<li><p>Krijoni funksionin me të cilin gjeneroni vargun me 20 elemente, vlera e të cilëve janë numra të rastësishëm nga 1 deri në 100. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_ExgfE8ej1Jii">https://makecode.microbit.org/_ExgfE8ej1Jii</a></p></li>
+<li><p>Krijoni funksionin blink me dy parametra x dhe y që aktivizon dhe ndal diodat në koordinatat e caktuara me parametra x dhe y. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_g0tcAz5dmVVc">https://makecode.microbit.org/_g0tcAz5dmVVc</a></p></li>
+<li><p>Krijoni funksionin blink me dy parametra x dhe y që aktivizon dhe ndal të gjitha diodat LED një pas tjetrës. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_1ECLegEjf61L">https://makecode.microbit.org/_1ECLegEjf61L</a></p></li>
+<li><p>Shkruani programin i cili mundëson që të ndriçojë dioda e ekranit e cila është më afërt me veriun. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_Mug9F7aJ0JF0">https://makecode.microbit.org/_Mug9F7aJ0JF0</a></p></li>
 </ol>
-<a class="reference internal image-reference" href="_images/220.png"><img alt="_images/220.png" class="align-center" src="_images/220.png" style="width: 400px;" /></a>
-<p>Skripti përfundimtar duket kështu:</p>
-<a class="reference internal image-reference" href="_images/221.png"><img alt="_images/221.png" class="align-center" src="_images/221.png" style="width: 700px;" /></a>
-<p><strong>Faza 3</strong></p>
-<p>Për të testuar programin kemi dy mundësi:</p>
+<ol class="arabic simple" start="6">
+<li><p>Krijoni funksionin Diagonale me anë të të cilit diodat do të aktivizohen sipas diagonales, respektivisht do të ndizen diodat që kanë vlerë të njëjtë për koordinatën x dhe y (p.sh. (0, 0), (1, 1), (2, 2), … (4, 4)). Simulimi i aktivizimit të diodave mundësohet me futjen e bllokut <a class="reference internal" href="_images/84.png"><img alt="pauza" src="_images/84.png" style="width: 150px;" /></a>. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_eamEJ0725CgA">https://makecode.microbit.org/_eamEJ0725CgA</a></p></li>
+<li><p>Krijoni funksionin Katror, me anë të të cilit do të aktivizohen diodat për të formuar katrorin. Pozita fillestar për vizatimin e katrorit është pika (1, 1). Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_9seAtiJEs1dX">https://makecode.microbit.org/_9seAtiJEs1dX</a></p></li>
+<li><p>Krijoni funksionin Diametri i trekëndëshit me brinjë të barabarta me parametra a dhe b. Gjatësia e anëve krijohet duke përdorur bllokun për përzgjedhje të rastësishme të vlerave numerike. Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_6w4ACt5M95xX">https://makecode.microbit.org/_6w4ACt5M95xX</a></p></li>
+<li><p>Krijoni funksionet në këtë mënyrë:</p></li>
+</ol>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p>ta nisim në simulator duke klikuar butonin  <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 50px;" /></a>.</p></li>
-<li><p>ta kalojmë në Micro:bit. Për ta kaluar programin në Micro:bit duhet ta lidhim me një kompjuter me kabllo USB. Pasi të klikoni butonin  <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> shkarkoni skedarin .hex në kompjuterin tuaj. Duke e tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p></li>
+<div><ol class="loweralpha simple">
+<li><p>Në procedurën Mbledhje në mënyrë të rastësishme, duhet të gjenerohen dy numra: mbledhësi i parë a [10,20] dhe mbledhësi i dytë b nga intervali [1,15]. Në bazë të tyre duhet formuar shuma c = a+b.</p></li>
+<li><p>Në procedurën Zbritje në mënyrë të rastësishme, duhet të kategorizohen dy numra, mbledhësi i parë a [10,20] dhe mbledhësi i dytë b nga intervali [1,15]. Në bazë të tyre duhet formuar shuma c = a-b.</p></li>
+<li><p>Në procedurën Shumëzim në mënyrë të rastësishme, duhet të kategorizohen dy numra, mbledhësi i parë a [10,20] dhe mbledhësi i dytë b nga intervali [1,15]. Në bazë të tyre duhet formuar shuma c = a*b.</p></li>
+<li><p>Në procedurën Pjesëtim në mënyrë të rastësishme, duhet të kategorizohen dy numra, mbledhësi i parë a [10,20] dhe mbledhësi i dytë b nga intervali [1,15]. Në bazë të tyre duhet formuar shuma c = a/b.</p></li>
 </ol>
 </div></blockquote>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p><strong>Çfarë mësuam?</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>algoritmi i Euklidit përdoret për përllogaritjen e pjesëtuesit më të madh të përbashkët (PMP);</p></li>
-<li><p>me ndihmën e algoritmit të Euklidit vijmë tek pjesëtuesi më i madh i përbashkët duke e zbritur vlerën e numrit të vogëlnga numri më i madh, krahasojmë vlerat e numrave të rinj të përftuar dhe e përsërisim procedurën derisa numrat të bëhen të barabartë.</p></li>
-</ul>
-</div></blockquote>
-
-    </p></div></div>
-<div class="section" id="testi">
-<h2>Testi<a class="headerlink" href="#testi" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L11P1">
-            <p>Q-13: Cila është PMP-ja për numrat 120 dhe 68? Zbatoni algoritmin e Euklidit.</p>
-
-            <li data-component="answer" data-correct id="L11P1_opt_a">4</li><li data-component="feedback" id="L11P1_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
-            
-            <li data-component="answer"  id="L11P1_opt_b">8</li><li data-component="feedback" id="L11P1_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-            <li data-component="answer"  id="L11P1_opt_c">12</li><li data-component="feedback" id="L11P1_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-            <li data-component="answer"  id="L11P1_opt_d">6</li><li data-component="feedback" id="L11P1_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-
-            </ul>
-            </div>
-            
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L11P2">
-            <p>Q-14: Në njërën shportë ndodhen 24 mollë, në tjetrën ndodhen 63 dardha. Sa fëmijë duhen për t’i ndarë këto mollë dhe dardha në mënyrë që secili fëmijë të marrë një numër të barabartë mollësh dhe një numër të barabartë dardhash? Zbatoni algoritmin e Euklidit.</p>
-
-            <li data-component="answer" data-correct id="L11P2_opt_a">6</li><li data-component="feedback" id="L11P2_opt_a">Ju lumtë! Përgjigja juaj është e saktë.</li>
-            
-            <li data-component="answer"  id="L11P2_opt_b">2</li><li data-component="feedback" id="L11P2_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-            <li data-component="answer"  id="L11P2_opt_c">1</li><li data-component="feedback" id="L11P2_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-            <li data-component="answer"  id="L11P2_opt_d">3</li><li data-component="feedback" id="L11P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
-            
-
-            </ul>
-            </div>
-            </div>
+<p>Krahasoni zgjidhjen tuaj me tonën: <a class="reference external" href="https://makecode.microbit.org/_gby1X26hvTv0">https://makecode.microbit.org/_gby1X26hvTv0</a></p>
 </div>
 
 
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Mësimi 10 – Operacionet aritmetike dhe variablat' data-toggle="tooltip"><a href="Mësimi 10 – Operacionet aritmetike dhe variablat.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Mësimi 15 – Funksionet' data-toggle="tooltip"><a href="Mësimi 15 – Funksionet.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Mësimi 12 - Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 12 - Ushtrimorja.html">kapitulli tjeter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 10 – Operacionet aritmetike dhe variablat' data-toggle="tooltip"><a href="Mësimi 10 – Operacionet aritmetike dhe variablat.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 15 – Funksionet' data-toggle="tooltip"><a href="Mësimi 15 – Funksionet.html">Претходно поглавље</a></li> -->
     <!--  -->
-    <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Mësimi 12 - Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 12 - Ushtrimorja.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

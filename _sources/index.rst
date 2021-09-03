@@ -59,3 +59,13 @@ PËRMBAJTJA
    Mësimi 10 – Operacionet aritmetike dhe variablat
 
    Mësimi 11 – Algoritmi i Euklidit
+
+   Mësimi 12 - Ushtrimorja
+
+   Mësimi 13 - Ushtrimorja
+
+   Mësimi 14 – Vargu
+
+   Mësimi 15 – Funksionet
+
+   Mësimi 16 - Ushtrimorja

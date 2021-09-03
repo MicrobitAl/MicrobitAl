@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mësimi 4 –Ushtrimorja" href="Mësimi 4 –Ushtrimorja.html" />
@@ -254,7 +257,7 @@
 <p><strong>Shënim:</strong> ASCII është një grup karakteresh, d.m.th. kodesh, të cilat përdoren më shpesh në informatikë, por edhe në pajisjet e komunikimit dhe administrimit në punën me tekstin.</p>
 <p>Le të krijojmë tani disa programe më të thjeshta nëpërmjet përdorimit të blloqeve nga kategoria <a class="reference internal" href="_images/59_1.png"><img alt="basic" src="_images/59_1.png" style="width: 150px;" /></a> dhe <a class="reference internal" href="_images/60_1.png"><img alt="music" src="_images/60_1.png" style="width: 150px;" /></a>. Në të gjitha këto programe, blloqet do t’i rendisim njëra pas tjetrës. Këto programe me të cilat blloqet ekzekutohen sipas renditjes në të cilën janë vendosur, quhen programe lineare.</p>
 <p>Le të marrim si shembull treguesin e zemrës që rreh (e cila simulon veprimin e zemrës) në ekranin e Micro:bit-it.</p>
-<p>Поступак решавања било ког задатка (проблема) подразумева прелазак кроз сваку од следећих фаза:</p>
+<p>Procedura e zgjidhjes së cilësdo detyre (problemi) nënkupton kalimin në të gjitha fazat si vijon:</p>
 <blockquote>
 <div><p><strong>Faza 1</strong>: Mendoni për problemin dhe shkruani ose vizatoni algoritmin (hapat) për ta zgjidhur atë.</p>
 <p><strong>Faza 2</strong>: Sipas algoritmit, zgjidhni dhe rregulloni blloqet.</p>
@@ -298,7 +301,7 @@
 </ol>
 </div></blockquote>
 <p><strong>Gabimi 1.</strong> Blloqet bëhen vetëm një herë.</p>
-<p><strong>Korrigjimi i bug-eve.</strong> Do të ndryshojmë mënyrën e fillimit të programit, në vend të bllokut оn start, ku blloqet e renditura ekzekutohen vetëm një herë, do ta tërheqim bllokun <a class="reference internal" href="_images/68.png"><img alt="Forever" src="_images/68.png" style="width: 150px;" /></a> nga kategoria Basicnë hapësirën për programim. Коришћењем блока <em>forever</em> блокови се извршавају (приказују) непрекидно, све док се микробит не искључи са напајања или док се симулација не прекине кликом на дугме <a class="reference internal" href="_images/69.png"><img alt="break" src="_images/69.png" style="width: 50px;" /></a>.</p>
+<p><strong>Korrigjimi i bug-eve.</strong> Do të ndryshojmë mënyrën e fillimit të programit, në vend të bllokut оn start, ku blloqet e renditura ekzekutohen vetëm një herë, do ta tërheqim bllokun <a class="reference internal" href="_images/68.png"><img alt="Forever" src="_images/68.png" style="width: 150px;" /></a> nga kategoria Basicnë hapësirën për programim. Me përdorimin e bllokut <em>forever</em> blloqet ekzekutohen (paraqiten) pandërprerë, derisa Micro:bit-i të shkyçet nga furnizimi ose derisa simulimi të ndërpritet pas klikimit në buton <a class="reference internal" href="_images/69.png"><img alt="break" src="_images/69.png" style="width: 50px;" /></a>.</p>
 <p>Pamja e kodit të ndryshuar:</p>
 <a class="reference internal image-reference" href="_images/70.png"><img alt="_images/70.png" class="align-center" src="_images/70.png" style="width: 200px;" /></a>
 <p><strong>Mendoni:</strong> Blloqe të tillë me pamje të dy zemrave, a simulojnë rrahjet e zemrës, a ndodh ndonjë ndryshim? Pse?</p>
@@ -376,7 +379,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P1">
-            <p>Q-25: Në cilën kategori ndodhet blloku i notës G?</p>
+            <p>Q-33: Në cilën kategori ndodhet blloku i notës G?</p>
 
             <li data-component="answer"  id="L3P1_opt_a">Input</li><li data-component="feedback" id="L3P1_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
@@ -392,7 +395,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P2">
-            <p>Q-26: Studioni me kujdes kodin</p>
+            <p>Q-34: Studioni me kujdes kodin</p>
 <a class="reference internal image-reference" href="_images/78.png"><img alt="_images/78.png" class="align-center" src="_images/78.png" style="width: 500px;" /></a>
 <p>Çfarë do të ndodhë pas ekzekutimit të kodit të dhënë:</p>
 
@@ -410,7 +413,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P3">
-            <p>Q-27: Në cilën kategori ndodhet blloku për shfaqjen e fytyrës së qeshur?</p>
+            <p>Q-35: Në cilën kategori ndodhet blloku për shfaqjen e fytyrës së qeshur?</p>
 
             <li data-component="answer"  id="L3P3_opt_a">Input</li><li data-component="feedback" id="L3P3_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
@@ -426,7 +429,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L3P4">
-            <p>Q-28: Në cilën kategori ndodhet blloku që përcakton intervalin kohor që pason ekzekutimin e një blloku?</p>
+            <p>Q-36: Në cilën kategori ndodhet blloku që përcakton intervalin kohor që pason ekzekutimin e një blloku?</p>
 
             <li data-component="answer"  id="L3P4_opt_a">Input</li><li data-component="feedback" id="L3P4_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
@@ -448,7 +451,7 @@
 <ul class="pager">
         <li id="relations-prev" title='Previous chapter - Mësimi 2 - Ambienti i punës MakeCode' data-toggle="tooltip"><a href="Mësimi 2 - Ambienti i punës MakeCode.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Mësimi 4 –Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 4 –Ushtrimorja.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Mësimi 4 –Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 4 –Ushtrimorja.html">kapitulli tjeter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->

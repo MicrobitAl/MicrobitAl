@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mësimi 10 – Operacionet aritmetike dhe variablat" href="Mësimi 10 – Operacionet aritmetike dhe variablat.html" />
@@ -331,7 +334,7 @@
 <a class="reference internal image-reference" href="_images/159.png"><img alt="_images/159.png" class="align-center" src="_images/159.png" style="width: 200px;" /></a>
 <p><strong>Faza 2</strong></p>
 <p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim. Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin New Project  <a class="reference internal" href="_images/86.png"><img alt="dugme5" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Megjithatë, kjo detyrë zgjidhet në një mënyrë më elegante me përdorimin e bllokut  <a class="reference internal" href="_images/160.png"><img alt="blok" src="_images/160.png" style="width: 200px;" /></a> nga kategoria <em>Loops</em>. Овај блок се користи за понављање дела програма онолико пута колико желите (граница се означава у блоку to <a class="reference internal" href="_images/161.png"><img alt="b1" src="_images/161.png" style="width: 60px;" /></a>) користећи променљиву <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>. (Për variablat do të flasim më me hollësi në mësimin e ardhshëm, e mund t’i konsideroni si “kujdestarë” të vlerave të ndryshme, numerike apo tekstuale).
+<p>Megjithatë, kjo detyrë zgjidhet në një mënyrë më elegante me përdorimin e bllokut  <a class="reference internal" href="_images/160.png"><img alt="blok" src="_images/160.png" style="width: 200px;" /></a> nga kategoria <em>Loops</em>. Ky bllok përdoret për përsëritjen e pjesës së programit aq herë sa dëshironi (limiti shënohet te blloku  <a class="reference internal" href="_images/161.png"><img alt="b1" src="_images/161.png" style="width: 60px;" /></a>) me përdorimin e variablës <a class="reference internal" href="_images/162.png"><img alt="p1" src="_images/162.png" style="width: 100px;" /></a>. (Për variablat do të flasim më me hollësi në mësimin e ardhshëm, e mund t’i konsideroni si “kujdestarë” të vlerave të ndryshme, numerike apo tekstuale).
 Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufiri nga i cili nis numërimi është 0, ndërsa aty ku përfundon është 4 sepse, në këtë rast, pozita e diodave LED në ekranin e Micro:bit-it përkufizohet sipas horizontales dhe vertikales nga 0 deri 4.</p>
 <p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/163.png"><img alt="_images/163.png" class="align-center" src="_images/163.png" style="width: 300px;" /></a>
@@ -403,7 +406,7 @@ Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufi
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P1">
-            <p>Q-39: Studioni kodin me kujdes:</p>
+            <p>Q-47: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/175.png"><img alt="_images/175.png" class="align-center" src="_images/175.png" style="width: 300px;" /></a>
 <p>Çfarë do të shfaqet në Micro:bit?</p>
 
@@ -421,7 +424,7 @@ Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufi
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P2">
-            <p>Q-40: Studioni kodin me kujdes:</p>
+            <p>Q-48: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/176.png"><img alt="_images/176.png" class="align-center" src="_images/176.png" style="width: 300px;" /></a>
 <p>Çfarë do të shfaqet në Micro:bit?</p>
 
@@ -437,7 +440,7 @@ Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufi
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P3">
-            <p>Q-41: Studioni kodin me kujdes:</p>
+            <p>Q-49: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/177.png"><img alt="_images/177.png" class="align-center" src="_images/177.png" style="width: 300px;" /></a>
 <p>Çfarë do të shfaqet në Micro:bit?</p>
 
@@ -455,7 +458,7 @@ Në bllokun <em>forever</em> tërheqim bllokun <em>for … from to</em> … Kufi
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L9P4">
-            <p>Q-42: Studioni kodin me kujdes:</p>
+            <p>Q-50: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/178.png"><img alt="_images/178.png" class="align-center" src="_images/178.png" style="width: 300px;" /></a>
 <p>Çfarë do të shfaqet në Micro:bit?</p>
 

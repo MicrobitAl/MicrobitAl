@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mësimi 7 –Vendimmarrja" href="Mësimi 7 –Vendimmarrja.html" />
@@ -275,7 +278,7 @@
 <p><strong>Të menduarit e problemit:</strong> Koordinata x paraqet pozitën horizontale (me vlera 0,1,2,3,4) dhe koordinata y paraqet pozitën vertikale (0, 1, 2, 3, 4). Vlera e nivelit të ndriçimit ndryshon nga 0 (zi) deri në 255 (dritë).</p>
 <p><strong>Faza 2</strong></p>
 <p>Hapni MakeCode për t’i zgjedhur dhe renditur blloqet në hapësirën për programim. Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin New Project <a class="reference internal" href="_images/86.png"><img alt="dugme2" src="_images/86.png" style="width: 80px;" /></a>.</p>
-<p>Për të përcaktuar nivelin e ndriçimit për diodat LED përdorim bllokun <a class="reference internal" href="_images/112.png"><img alt="setb" src="_images/112.png" style="width: 200px;" /></a> nga kategoria <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a>. А, да бисмо укључили лед диоду користимо блок <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 180px;" /></a> из исте категорије.</p>
+<p>Për të përcaktuar nivelin e ndriçimit për diodat LED përdorim bllokun <a class="reference internal" href="_images/112.png"><img alt="setb" src="_images/112.png" style="width: 200px;" /></a> nga kategoria <a class="reference internal" href="_images/109.png"><img alt="led" src="_images/109.png" style="width: 180px;" /></a>. Ndërsa, për të kyçur diodën LED përdorim bllokun x nga kategoria e njëjtë. <a class="reference internal" href="_images/108.png"><img alt="plot" src="_images/108.png" style="width: 180px;" /></a> из исте категорије.</p>
 <p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/113.png"><img alt="_images/113.png" class="align-center" src="_images/113.png" style="width: 200px;" /></a>
 <p><strong>Faza 3</strong></p>
@@ -308,7 +311,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L6P1">
-            <p>Q-32: Cila është pozita (koordinatat) e diodës LED lart majtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.</p>
+            <p>Q-40: Cila është pozita (koordinatat) e diodës LED lart majtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.</p>
 
             <li data-component="answer"  id="L6P1_opt_a">(1,1)</li><li data-component="feedback" id="L6P1_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
@@ -324,7 +327,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L6P2">
-            <p>Q-33: Cila është pozita (koordinatat) e diodës LED poshtë djathtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.</p>
+            <p>Q-41: Cila është pozita (koordinatat) e diodës LED poshtë djathtas në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.</p>
 
             <li data-component="answer"  id="L6P2_opt_a">(3,3)</li><li data-component="feedback" id="L6P2_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
@@ -340,7 +343,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L6P3">
-            <p>Q-34: Cila është pozita (koordinatat) e diodës LED së ndezur në ekranin e Micro:bit-it të paraqitur në fotografinë poshtë?</p>
+            <p>Q-42: Cila është pozita (koordinatat) e diodës LED së ndezur në ekranin e Micro:bit-it të paraqitur në fotografinë poshtë?</p>
 <a class="reference internal image-reference" href="_images/114.png"><img alt="_images/114.png" class="align-center" src="_images/114.png" style="width: 300px;" /></a>
 <p>Zgjidhni përgjigjen e saktë.</p>
 
@@ -358,7 +361,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L6P4">
-            <p>Q-35: Studioni kodin me kujdes:</p>
+            <p>Q-43: Studioni kodin me kujdes:</p>
 <a class="reference internal image-reference" href="_images/115.png"><img alt="_images/115.png" class="align-center" src="_images/115.png" style="width: 200px;" /></a>
 <p>Çfarë do të paraqitet në ekranin e Micro:bit-it? Zgjidhni përgjigjen e saktë.</p>
 

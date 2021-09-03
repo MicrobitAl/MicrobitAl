@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mësimi 6 –Kontrolli i diodave LED të ekranit" href="Mësimi 6 –Kontrolli i diodave LED të ekranit.html" />
@@ -263,14 +266,14 @@
 <p>Për ta paraqitur nivelin e ndriçimit në dhomë fillimisht duhet ta tërheqim në bllokun e sipërm bllokun <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> nga kategoria <em>Basic</em>, nga kategoria Basic, i cili përdoret për paraqitjen e vlerave numerike. Këtë bllok e shfrytëzojmë për paraqitje pasi niveli momental i ndriçimit në dhomë paraqitet nga 0 deri në 255, ku 0 paraqet errësirën në dhomë, ndërsa 255 paraqet ndriçim të fortë.</p>
 <p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/89.png"><img alt="_images/89.png" class="align-center" src="_images/89.png" style="width: 200px;" /></a>
-<p>Вредност нивоа осветљења у просторији “чува” се у блоку <a class="reference internal" href="_images/90.png"><img alt="light" src="_images/90.png" style="width: 100px;" /></a>. Ne e tërheqim këtë bllok në fushën e bllokut <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> , të caktuar për vlerën numerike. Ju rikujtojmë edhe një herë, blloku <a class="reference internal" href="_images/90.png"><img alt="light" src="_images/90.png" style="width: 100px;" /></a> e ruan vlerën e lexuar nga sensori i ndriçimit i cili, në fakt, është një ekran (display) i Micro:bit-it (rrjeti i diodave LED në ekranin e Micro:bit-it paraqet sensorin e dritës).</p>
+<p>Vlera e nivelit të ndriçimit në dhomë “ruhet” në bllok <a class="reference internal" href="_images/90.png"><img alt="light" src="_images/90.png" style="width: 100px;" /></a>. Ne e tërheqim këtë bllok në fushën e bllokut <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> , të caktuar për vlerën numerike. Ju rikujtojmë edhe një herë, blloku <a class="reference internal" href="_images/90.png"><img alt="light" src="_images/90.png" style="width: 100px;" /></a> e ruan vlerën e lexuar nga sensori i ndriçimit i cili, në fakt, është një ekran (display) i Micro:bit-it (rrjeti i diodave LED në ekranin e Micro:bit-it paraqet sensorin e dritës).</p>
 <p>Si duket kodi në fund:</p>
 <a class="reference internal image-reference" href="_images/91.png"><img alt="_images/91.png" class="align-center" src="_images/91.png" style="width: 300px;" /></a>
 <p>Për të mundësuar që Micro:bit-i ta pranojë informatën nga përdoruesi, pasi përdoruesi të shtypë butonin A, nga kategoria Input zgjedhim dhe tërheqim në hapësirën e programimit bllokun:<a class="reference internal" href="_images/87.png"><img alt="dugmeA" src="_images/87.png" style="width: 200px;" /></a>.</p>
 <p>Nga lista rënëse zgjedhim butonin B. Për të paraqitur temperaturat në dhomë fillimisht duhet ta tërheqim në bllokun e sipërm bllokun <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> nga kategoria Basic, i cili përdoret për paraqitjen e vlerave numerike.</p>
 <p>Si duket kodi:</p>
 <a class="reference internal image-reference" href="_images/92.png"><img alt="_images/92.png" class="align-center" src="_images/92.png" style="width: 300px;" /></a>
-<p>Vlera e temperaturës momentale në dhomë “ruhet” në bllokun <a class="reference internal" href="_images/93.png"><img alt="temperatura" src="_images/93.png" style="width: 150px;" /></a>. Овај блок превлачимо у поље блока <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> të caktuar për vlerën numerike.</p>
+<p>Vlera e temperaturës momentale në dhomë “ruhet” në bllokun <a class="reference internal" href="_images/93.png"><img alt="temperatura" src="_images/93.png" style="width: 150px;" /></a>. Këtë bllok e tërheqim në fushën e bllokut <a class="reference internal" href="_images/88.png"><img alt="shownumber" src="_images/88.png" style="width: 150px;" /></a> të caktuar për vlerën numerike.</p>
 <p>Blloku <a class="reference internal" href="_images/93.png"><img alt="temperatura" src="_images/93.png" style="width: 150px;" /></a> e ruan vlerën e lexuar të sensorit për temperaturën e mikroprocesorit të Micro:bit-it, pasi nuk ekziston një sensor i veçantë për temperaturë i instaluar në Micro:bit. Vlera e lexuar nga sensori paraqitet në celsius.</p>
 <p>Si duket pjesa e kryer e kodit:</p>
 <a class="reference internal image-reference" href="_images/94.png"><img alt="_images/94.png" class="align-center" src="_images/94.png" style="width: 300px;" /></a>
@@ -309,7 +312,7 @@
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L5P1">
-            <p>Q-29: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
+            <p>Q-37: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
 <a class="reference internal image-reference" href="_images/102.png"><img alt="_images/102.png" class="align-center" src="_images/102.png" style="width: 300px;" /></a>
 <p>Zgjidhni përgjigjen e saktë.</p>
 
@@ -327,7 +330,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L5P2">
-            <p>Q-30: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
+            <p>Q-38: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
 <a class="reference internal image-reference" href="_images/103.png"><img alt="_images/103.png" class="align-center" src="_images/103.png" style="width: 300px;" /></a>
 <p>Zgjidhni përgjigjen e saktë.</p>
 
@@ -345,7 +348,7 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L5P3">
-            <p>Q-31: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
+            <p>Q-39: Çfarë do të shfaqet në Micro:bit pas zbatimit të kodit të paraqitur poshtë:</p>
 <a class="reference internal image-reference" href="_images/104.png"><img alt="_images/104.png" class="align-center" src="_images/104.png" style="width: 700px;" /></a>
 <p>Zgjidhni përgjigjen e saktë.</p>
 

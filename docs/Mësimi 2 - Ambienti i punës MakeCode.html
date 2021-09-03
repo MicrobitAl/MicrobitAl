@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mësimi 3 - Renditja e blloqeve" href="Mësimi 3 - Renditja e blloqeve.html" />
@@ -264,7 +267,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P1">
-            <p>Q-15: Cilin bllok duhet të përdorni që numri 9 të shfaqet në ekran?</p>
+            <p>Q-23: Cilin bllok duhet të përdorni që numri 9 të shfaqet në ekran?</p>
 <a class="reference internal image-reference" href="_images/16.png"><img alt="_images/16.png" class="align-center" src="_images/16.png" style="width: 200px;" /></a>
 <p>Zgjidhni një nga përgjigjet më poshtë</p>
 <ol class="upperalpha simple">
@@ -288,7 +291,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P2">
-            <p>Q-16: Cilin bllok duhet të përdorni për të shfaqur ikonën <a class="reference internal" href="_images/22.png"><img alt="slicica" src="_images/22.png" style="width: 25px;" /></a>  në ekran.</p>
+            <p>Q-24: Cilin bllok duhet të përdorni për të shfaqur ikonën <a class="reference internal" href="_images/22.png"><img alt="slicica" src="_images/22.png" style="width: 25px;" /></a>  në ekran.</p>
 <a class="reference internal image-reference" href="_images/21.png"><img alt="_images/21.png" class="align-center" src="_images/21.png" style="width: 200px;" /></a>
 <p>Zgjidhni një nga përgjigjet më poshtë</p>
 <ol class="upperalpha simple">
@@ -317,7 +320,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P3">
-            <p>Q-17: Cilin bllok duhet të përdorni për të ruajtur vlerat e intensitetit të dritës?</p>
+            <p>Q-25: Cilin bllok duhet të përdorni për të ruajtur vlerat e intensitetit të dritës?</p>
 <p>Zgjidhni një nga përgjigjet më poshtë.</p>
 <ol class="upperalpha simple">
 <li><p><a class="reference internal" href="_images/26.png"><img alt="prva1" src="_images/26.png" style="width: 180px;" /></a></p></li>
@@ -340,7 +343,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P4">
-            <p>Q-18: Cili bllok përcakton nëse butoni A, B ose të dy janë shtypur në të njëjtën kohë, në Micro:bit?</p>
+            <p>Q-26: Cili bllok përcakton nëse butoni A, B ose të dy janë shtypur në të njëjtën kohë, në Micro:bit?</p>
 <p>Zgjidhni një nga përgjigjet më poshtë.</p>
 <ol class="upperalpha simple">
 <li><p><a class="reference internal" href="_images/30.png"><img alt="prva2" src="_images/30.png" style="width: 180px;" /></a></p></li>
@@ -358,12 +361,12 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
             </ul>
             </div>
             <p><strong>Kategoria Music</strong></p>
-<p>У овој категорији се налазе блокови за рад са музиком, тачније креирање музичких тонова кроз пин P0.</p>
+<p>Në këtë kategori janë blloqet për punë me muzikë, ose më saktësisht për krijimin e toneve muzikore me pin P0.</p>
 <a class="reference internal image-reference" href="_images/33.png"><img alt="_images/33.png" class="align-center" src="_images/33.png" style="width: 800px;" /></a>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P5">
-            <p>Q-19: Cilin bllok duhet të përdorni për të luajtur melodinë?</p>
+            <p>Q-27: Cilin bllok duhet të përdorni për të luajtur melodinë?</p>
 <p>Zgjidhni një nga përgjigjet më poshtë.</p>
 <ol class="upperalpha simple">
 <li><p><a class="reference internal" href="_images/34.png"><img alt="prva3" src="_images/34.png" style="width: 250px;" /></a></p></li>
@@ -389,7 +392,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P6">
-            <p>Q-20: Cilin bllok duhet të përdorni për të ndezur diodën LED?</p>
+            <p>Q-28: Cilin bllok duhet të përdorni për të ndezur diodën LED?</p>
 <p>Zgjidhni një nga përgjigjet më poshtë.</p>
 <ol class="upperalpha simple">
 <li><p><a class="reference internal" href="_images/39.png"><img alt="prva4" src="_images/39.png" style="width: 180px;" /></a></p></li>
@@ -415,7 +418,7 @@ Kategoritë Loops, Logic, Variables dhe Math ofrojnë qasje në strukturat theme
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P7">
-            <p>Q-21: Cilin bllok duhet të përdorni për të formuar të njëjtin grup për komunikimin midis dy ose më shumë pajisjeve Micro:bit?</p>
+            <p>Q-29: Cilin bllok duhet të përdorni për të formuar të njëjtin grup për komunikimin midis dy ose më shumë pajisjeve Micro:bit?</p>
 <p>Zgjidhni një nga përgjigjet më poshtë.</p>
 <ol class="upperalpha simple">
 <li><p><a class="reference internal" href="_images/44.png"><img alt="prva5" src="_images/44.png" style="width: 200px;" /></a></p></li>
@@ -485,7 +488,7 @@ Më tej, duhet të transferoni (kopjoni, ose zhvendosni) skedarin .hex në Micro
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P8">
-            <p>Q-22: Zgjidhni një nga përgjigjet më poshtë. Cilat Blloqe ndodhen në kategorinë Basic?</p>
+            <p>Q-30: Zgjidhni një nga përgjigjet më poshtë. Cilat Blloqe ndodhen në kategorinë Basic?</p>
 
             <li data-component="answer"  id="L2P8_opt_a">Blloqet e vendimeve</li><li data-component="feedback" id="L2P8_opt_a">Përgjigja juaj nuk është e saktë</li>
             
@@ -501,7 +504,7 @@ Më tej, duhet të transferoni (kopjoni, ose zhvendosni) skedarin .hex në Micro
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L2P9">
-            <p>Q-23: Cili është roli i busullës në pajisjen Micro:bit (Zgjidhni një nga përgjigjet më poshtë)</p>
+            <p>Q-31: Cili është roli i busullës në pajisjen Micro:bit (Zgjidhni një nga përgjigjet më poshtë)</p>
 <a class="reference internal image-reference" href="_images/56.png"><img alt="_images/56.png" class="align-center" src="_images/56.png" style="width: 300px;" /></a>
 
             <li data-component="answer" data-correct id="L2P9_opt_a">do të luhet një notë C prej 1000 milisekondash</li><li data-component="feedback" id="L2P9_opt_a">Ju lumtë! Përgjigja juaj është e saktë!</li>
@@ -520,7 +523,7 @@ Më tej, duhet të transferoni (kopjoni, ose zhvendosni) skedarin .hex në Micro
 
 <div class="course-box course-box-problem course-content">
 <ul data-component="dragndrop" id="pygame_quiz_koordinate_ocitaj">
-    <span data-component="question">Q-24: Duke u Bazuar në imazhin e mësipërm, bashkoni numrat dhe termat përkatës.</span>
+    <span data-component="question">Q-32: Duke u Bazuar në imazhin e mësipërm, bashkoni numrat dhe termat përkatës.</span>
 	<span data-component=feedback>Përgjigja juaj nuk është e saktë</span>
 
     <li data-component="draggable" id="pygame_quiz_koordinate_ocitaj_drag1">Shiriti i menusë</li>
@@ -546,7 +549,7 @@ Më tej, duhet të transferoni (kopjoni, ose zhvendosni) skedarin .hex në Micro
 <ul class="pager">
         <li id="relations-prev" title='Previous chapter - MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje Micro:bit-i' data-toggle="tooltip"><a href="MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje microbiti.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Mësimi 3 - Renditja e blloqeve' data-toggle="tooltip"><a href="Mësimi 3 - Renditja e blloqeve.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Mësimi 3 - Renditja e blloqeve' data-toggle="tooltip"><a href="Mësimi 3 - Renditja e blloqeve.html">kapitulli tjeter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->

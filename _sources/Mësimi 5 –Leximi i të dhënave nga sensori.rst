@@ -50,7 +50,7 @@ Si duket kodi:
 .. |light| image:: ../_images/90.png
               :width: 100px
 
-Вредност нивоа осветљења у просторији "чува" се у блоку |light|. Ne e tërheqim këtë bllok në fushën e bllokut |shownumber| , të caktuar për vlerën numerike. Ju rikujtojmë edhe një herë, blloku |light| e ruan vlerën e lexuar nga sensori i ndriçimit i cili, në fakt, është një ekran (display) i Micro:bit-it (rrjeti i diodave LED në ekranin e Micro:bit-it paraqet sensorin e dritës).
+Vlera e nivelit të ndriçimit në dhomë “ruhet” në bllok |light|. Ne e tërheqim këtë bllok në fushën e bllokut |shownumber| , të caktuar për vlerën numerike. Ju rikujtojmë edhe një herë, blloku |light| e ruan vlerën e lexuar nga sensori i ndriçimit i cili, në fakt, është një ekran (display) i Micro:bit-it (rrjeti i diodave LED në ekranin e Micro:bit-it paraqet sensorin e dritës).
 
 Si duket kodi në fund:
 
@@ -72,7 +72,7 @@ Si duket kodi:
 .. |temperatura| image:: ../_images/93.png
                    :width: 150px
 
-Vlera e temperaturës momentale në dhomë “ruhet” në bllokun |temperatura|. Овај блок превлачимо у поље блока |shownumber| të caktuar për vlerën numerike.
+Vlera e temperaturës momentale në dhomë “ruhet” në bllokun |temperatura|. Këtë bllok e tërheqim në fushën e bllokut |shownumber| të caktuar për vlerën numerike.
 
 Blloku |temperatura| e ruan vlerën e lexuar të sensorit për temperaturën e mikroprocesorit të Micro:bit-it, pasi nuk ekziston një sensor i veçantë për temperaturë i instaluar në Micro:bit. Vlera e lexuar nga sensori paraqitet në celsius.
 

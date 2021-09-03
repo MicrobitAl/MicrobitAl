@@ -209,7 +209,7 @@ Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për progr
 .. |p1| image:: ../_images/162.png
           :width: 100px
 
-Megjithatë, kjo detyrë zgjidhet në një mënyrë më elegante me përdorimin e bllokut  |blok| nga kategoria *Loops*. Овај блок се користи за понављање дела програма онолико пута колико желите (граница се означава у блоку to |b1|) користећи променљиву |p1|. (Për variablat do të flasim më me hollësi në mësimin e ardhshëm, e mund t’i konsideroni si “kujdestarë” të vlerave të ndryshme, numerike apo tekstuale).
+Megjithatë, kjo detyrë zgjidhet në një mënyrë më elegante me përdorimin e bllokut  |blok| nga kategoria *Loops*. Ky bllok përdoret për përsëritjen e pjesës së programit aq herë sa dëshironi (limiti shënohet te blloku  |b1|) me përdorimin e variablës |p1|. (Për variablat do të flasim më me hollësi në mësimin e ardhshëm, e mund t’i konsideroni si “kujdestarë” të vlerave të ndryshme, numerike apo tekstuale).
 Në bllokun *forever* tërheqim bllokun *for ... from to* … Kufiri nga i cili nis numërimi është 0, ndërsa aty ku përfundon është 4 sepse, në këtë rast, pozita e diodave LED në ekranin e Micro:bit-it përkufizohet sipas horizontales dhe vertikales nga 0 deri 4.
 
 Si duket kodi:

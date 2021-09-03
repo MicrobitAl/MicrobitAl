@@ -186,7 +186,7 @@ Në këtë kategori ndodhen blloqe me anë të të cilëve përcaktohen ndodhit�
 
 **Kategoria Music**
 
-У овој категорији се налазе блокови за рад са музиком, тачније креирање музичких тонова кроз пин P0.
+Në këtë kategori janë blloqet për punë me muzikë, ose më saktësisht për krijimin e toneve muzikore me pin P0.
 
 .. image:: ../_images/33.png
      :align: center

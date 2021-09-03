@@ -32,7 +32,7 @@ Le të krijojmë tani disa programe më të thjeshta nëpërmjet përdorimit të
 
 Le të marrim si shembull treguesin e zemrës që rreh (e cila simulon veprimin e zemrës) në ekranin e Micro:bit-it. 
 
-Поступак решавања било ког задатка (проблема) подразумева прелазак кроз сваку од следећих фаза:
+Procedura e zgjidhjes së cilësdo detyre (problemi) nënkupton kalimin në të gjitha fazat si vijon:
 
       **Faza 1**: Mendoni për problemin dhe shkruani ose vizatoni algoritmin (hapat) për ta zgjidhur atë. 
 
@@ -125,7 +125,7 @@ Ja se si hiqen bug-et e një programi:
 .. |break| image:: ../_images/69.png
              :width: 50px
 
-**Korrigjimi i bug-eve.** Do të ndryshojmë mënyrën e fillimit të programit, në vend të bllokut оn start, ku blloqet e renditura ekzekutohen vetëm një herë, do ta tërheqim bllokun |Forever| nga kategoria Basicnë hapësirën për programim. Коришћењем блока *forever* блокови се извршавају (приказују) непрекидно, све док се микробит не искључи са напајања или док се симулација не прекине кликом на дугме |break|.
+**Korrigjimi i bug-eve.** Do të ndryshojmë mënyrën e fillimit të programit, në vend të bllokut оn start, ku blloqet e renditura ekzekutohen vetëm një herë, do ta tërheqim bllokun |Forever| nga kategoria Basicnë hapësirën për programim. Me përdorimin e bllokut *forever* blloqet ekzekutohen (paraqiten) pandërprerë, derisa Micro:bit-i të shkyçet nga furnizimi ose derisa simulimi të ndërpritet pas klikimit në buton |break|.
 
 Pamja e kodit të ndryshuar: 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Час 14 - Низови &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
+<title>Mësimi 14 –Vargu &#8212; Programimi i një pajisje Micro:bit në MakeCode </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -172,9 +173,11 @@
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
-    <script type="text/javascript" src="_statis/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mësimi 15 – Funksionet" href="Mësimi 15 – Funksionet.html" />
+    <link rel="prev" title="Mësimi 13 - Ushtrimorja" href="Mësimi 13 - Ushtrimorja.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -236,128 +239,123 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
-  <div class="section" id="id1">
-<h1>Час 14 - Низови<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>На овом часу говорићемо о: ­</p>
+  <div class="section" id="mesimi-14-vargu">
+<h1>Mësimi 14 –Vargu<a class="headerlink" href="#mesimi-14-vargu" title="Permalink to this headline">¶</a></h1>
+<p>Në këtë mësim do të flasim për:</p>
 <ul class="simple">
-<li><p>­­чувању већег броја података;</p></li>
-<li><p>низовима и њиховој примени.</p></li>
+<li><p>ruajtjen e një numri më të madh të të dhënave;</p></li>
+<li><p>vargjet dhe përdorimin e tyre.</p></li>
 </ul>
-<p>Сваки колекционар маркица, новчаница или сличица зна да je у неком тренутку потребно да организује своју колекцију, како би на што лакши начин могли да пронађу одређене сличице или новчанице. На пример, колекционар кованица може имати кутију за кованице нумерисане на овај начин (као на доњој слици):</p>
+<p>Çdo koleksionist pullash postare, kartëmonedhash ose fotografish e di që në një moment të caktuar duhet ta organizojë koleksionin e vet për t’i gjetur sa më lehtë fotografitë ose kartëmonedhat e caktuara. Për shembull, numizmatiku mund të ketë një kuti për monedhat me numra si vijon (si në fotografinë poshtë):</p>
 <a class="reference internal image-reference" href="_images/222.png"><img alt="_images/222.png" class="align-center" src="_images/222.png" style="width: 500px;" /></a>
-<p>Свакој кованици (новчићу) у колекцији потребан је властити простор за складиштење и јединствена адреса (0, 1, 2,…) како бисмо касније могли да пронађемо жељену кованицу.
-Како се наши МејкКоду програми све више усложњавају и захтевају више променљивих да бисмо пратили одређене ствари, мораћемо да уместо променљивих које смо до сада изучили да пронађемо друге начине за складиштење и организовање свих својих података. Ситуације у којима треба да сачуваш већи број података честе су у раду сваког програмера. Оне захтевају примену другачије врсте променљивих, потребно је користити <strong>низове</strong>. За то у МејкКоду можемо користити блок <a class="reference internal" href="_images/223.png"><img alt="niz" src="_images/223.png" style="width: 150px;" /></a>.</p>
-<p>Низови представљају колекцију податка и можеш да га схватиш као „полицу” на којој се налази велики број “кутија”. Свака од “кутија” нумерисана је бројем (од 0 надаље). У свакој од “кутија” чува се по један податак (број, реч, знак,…). Дакле, у низовима се могу чувати бројеви, речи или музичке ноте, који се једним именом називају <strong>елементи низа</strong>.</p>
-<p>Сваки елемент у низу је дефинисан <strong>индексом</strong>, број којим је одређен положај елемента у низу. Први елемент у низу има индекс 0. Дужина низа односи се на укупан број елемената у низу, а индекс последњег елемента у низу је увек један мањи од његове дужине (нпр. ако је дужина низа 5, индекс последњег елемента низа је 4).</p>
-<p>Листу креираш тако што у категорији <em>Advanced</em> изабереш подкатегорију <em>Array</em> и изабереш блок:</p>
+<p>Për secilën monedhë në koleksion nevojitet hapësirë e veçantë për ruajtje, si dhe adresa unike (0, 1, 2,…) që më vonë të kemi mundësi të gjejmë metelikun e dëshiruar. Pasi programet tona MakeCode shtresëzohen çdo herë e më shumë dhe kërkojnë më shumë variabla për të ndjekur gjëra të caktuara, në vend të variablave që kemi mësuar deri tani do të na duhet të gjejmë mënyra të tjera për ruajtjen dhe organizimin e të dhënave tona. Situatat në të cilat duhet të ruhet një numër më i madh të dhënash janë shumë të shpeshta në punën e çdo programuesi. Ato kërkojnë përdorimin e një lloji tjetër variablash - duhet të përdoret vargu. Për këtë, në MakeCode, mund të shfrytëzojmë bllokun <a class="reference internal" href="_images/223.png"><img alt="niz" src="_images/223.png" style="width: 150px;" /></a>.</p>
+<p>Vargu është një koleksion të dhënash dhe mund të kuptohet si “raft” në të cilin mund të vendosen shumë “kuti”. Çdo “kuti” shënohet me një numër (nga 0 në vazhdim). Në secilën “kuti” ruhet nga një e dhënë (numri, fjala, shenja…). Pra, në vargje mund të ruhen numrat, fjalët ose notat muzikore, të cilat, më fjalë të tjera, quhen <strong>elementet e vargut</strong>.</p>
+<p>Secili element në varg përkufizohet me një <strong>indeks</strong>, një numër me të cilin caktohet pozita e caktuar e elementit në varg. Elementi i parë në varg ka indeksin 0. Gjatësia e vargut ka të bëjë me numrin e përgjithshëm të elementeve në varg, ndërsa indeksi i elementit të fundit në varg është gjithnjë një numër më i vogël nga gjatësia e tij (p.sh. nëse gjatësia e vargut është 5, indeksi i elementit të fundit në varg është 4).</p>
+<p>Lista krijohet pasi në kategorinë Advanced përzgjidhet nënkategoria <em>Array</em> dhe zgjidhet blloku:</p>
 <a class="reference internal image-reference" href="_images/224.png"><img alt="_images/224.png" class="align-center" src="_images/224.png" style="width: 400px;" /></a>
-<p>Горњи блок креира празну листу под именом <strong>Lista</strong> (одабиром опције <em>New variable…</em> из падајуће листе).</p>
+<p>Blloku i epërm krijon listën boshe të emëruar si Listë (duke përzgjedhur opsionin <em>New variable</em>… nga lista rënëse).</p>
 <a class="reference internal image-reference" href="_images/225.png"><img alt="_images/225.png" class="align-center" src="_images/225.png" style="width: 400px;" /></a>
-<p>Затим, листу можемо попунити са пет бројева, индексираних од 0 до 4. Елементе додајеш кликом на знак “+” уписивањем вредности у одговарајући  простор.</p>
+<p>Lista pastaj mund të plotësohet me pesë numra, të indeksuar nga 0 deri 4. Elementet shtohen pas klikimit mbi shenjën “+” dhe futjen e vlerës në hapësirën e duhur.</p>
 <a class="reference internal image-reference" href="_images/227.png"><img alt="_images/227.png" class="align-center" src="_images/227.png" style="width: 400px;" /></a>
-<p>Хајде да направимо програм помоћу кога ћеш провежбати падеже, тачније утврдити падежни облик одређене речи (нпр. Који падежни облик добијаш одговором на питања ко, шта?).</p>
-<p><strong>Фаза 1</strong></p>
-<p>Размисли о проблему: За сваки падежни облик поставља се одговарајуће питање. Кликом на дугме А биће приказано питање, које ће се насумично бирати, док ће кликом на дугме Б бити приказан падежни облика који одговара том питању.</p>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод одабери и сложи блокове у простор за програмирање.</p>
-<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme8" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Сваком падежном облику одговара одређено питање. Потребно је да се креирају две листе: <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a> и <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. У ове низове уносиш елементе приказане на следећој слици:</p>
-<p>Изглед низова:</p>
+<p>Të bëjmë një program me të cilin do të mund të ushtroni rasat, respektivisht, të përcaktoni rasën për emra të caktuar (Për shembull, cila trajtë e rasës i përgjigjet pyetjes “kush, cili?”).</p>
+<p><strong>Faza 1</strong></p>
+<p>Të menduarit për problemin: Për çdo rasë parashtrohet pyetja e duhur. Pasi të klikohet butoni A do të paraqitet pyetja, e cila do të dalë rastësisht, ndërsa duke klikuar butonin B do të paraqitet rasa e cila i përgjigjet pyetjes.</p>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.
+Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar në butonin <a class="reference internal" href="_images/86.png"><img alt="dugme8" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Për secilën pyetje për rasën ka një përgjigje. Duhet të krijohen dy lista: <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a> и <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. Në këto vargje futen elementet e paraqitura në fotografinë më poshtë:</p>
+<p>Pamja e vargjeve:</p>
 <a class="reference internal image-reference" href="_images/230.png"><img alt="_images/230.png" class="align-center" src="_images/230.png" style="width: 600px;" /></a>
-<p>Дефинисање низова <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a> и <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. Поред тога потребно је да дефинишемо и променљиву <a class="reference internal" href="_images/231.png"><img alt="odgovor" src="_images/231.png" style="width: 100px;" /></a> као текстуалну променљиву (стринг) која ће чувати вредности низа <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>: <a class="reference internal" href="_images/232.png"><img alt="blok1" src="_images/232.png" style="width: 200px;" /></a>.</p>
-<p>Изглед кода:</p>
+<p>Përkufizimi i vargjeve <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a> dhe <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. Поред тога потребно је да дефинишемо и променљиву <a class="reference internal" href="_images/231.png"><img alt="odgovor" src="_images/231.png" style="width: 100px;" /></a> као текстуалну променљиву (стринг) која ће чувати вредности низа <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>: <a class="reference internal" href="_images/232.png"><img alt="blok1" src="_images/232.png" style="width: 200px;" /></a>.</p>
+<p>Pamja e vargjeve:</p>
 <a class="reference internal image-reference" href="_images/233.png"><img alt="_images/233.png" class="align-center" src="_images/233.png" style="width: 300px;" /></a>
-<p>Питања која се постављају за падежни облик треба да буду елементи низа <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. Падежни облик се налазе у низу <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>.</p>
-<p>Као што видиш, величина (димензија) низа је 7, тј. оба низа имају по 7 елемената.</p>
-<p>У горњим низовима, уочаваш да питање на позицији 1 низа <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a> има одговор на позицији 1 низа <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>. Ово важи и за све остале елементе низа. Овакав принцип нам је важан због спаривања питања са падежним обликом.
-Да би игра била што занимљивија (да питања не би увек кретала од првог и ишла до  последњег), можеш да уведеш насумични одабир питања из листе <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>.</p>
-<p>Тачно је да ће игра бити интересантнија, али је исто тако тачно да, ако рачунару кажеш да насумично бира питање, нећеш знати које питање је изабрао. Чим не знаш питање, не можеш знати ни падеж.</p>
-<p>У овој ситуацији, добро је да користиш обичну променљиву у којој ћеш чувати редни број питања.</p>
-<p>Креирај променљиву <a class="reference internal" href="_images/234.png"><img alt="blok2" src="_images/234.png" style="width: 100px;" /></a>.</p>
+<p>Pyetjet që parashtrohen për trajtën e rasës duhet të jenë elemente të vargut <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>. Падежни облик се налазе у низу <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>.</p>
+<p>Siç vërehet, madhësia (dimensioni) e vargut është 7, respektivisht, të dy vargjet kanë nga 7 elemente.</p>
+<p>ë vargjet më lart vini re se pyetja në pozitën 1 të vargut është  <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a> има одговор на позицији 1 низа <a class="reference internal" href="_images/228.png"><img alt="list1" src="_images/228.png" style="width: 90px;" /></a>. E njëjta pyetje vlen edhe elementet e e tjera të vargut. Ky parim është i rëndësishëm për shkak të bashkimit të pyetjes me trajtën e rasës. Që loja të bëhet më interesante (që pyetjet të mos shkojnë nga e para deri te e fundit) mund të përcaktoni përzgjedhjen e rastësishme të pyetjeve nga lista <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>.</p>
+<p>Është e vërtetë se loja do të bëhet më interesante, por po ashtu është e vërtetë se nëse i thoni kompjuterit të zgjedhë pyetjet rastësisht, nuk do të dini se cilën pyetje ka zgjedhur. Kur nuk e dini pyetjen, nuk mund ta dini as rasën.</p>
+<p>Në këtë situatë mirë është të përdoret variabla e thjeshtë në të cilën do të ruhet numri rendor i pyetjes.</p>
+<p>Krijoni variablën
+<a class="reference internal" href="_images/234.png"><img alt="blok2" src="_images/234.png" style="width: 100px;" /></a>.</p>
 <p>Нека променљива <a class="reference internal" href="_images/234.png"><img alt="blok2" src="_images/234.png" style="width: 100px;" /></a> узима насумичну вредност од 1 до величине низа (броја елемената у низу можемо дефинисати  коришћењем блока <a class="reference internal" href="_images/235.png"><img alt="blok3" src="_images/235.png" style="width: 150px;" /></a>):</p>
 <p>Ако је садржај променљиве <a class="reference internal" href="_images/234.png"><img alt="blok2" src="_images/234.png" style="width: 100px;" /></a> број 6, биће постављено шесто питање из низа <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a>.</p>
-<p>Када је притиснут тастер А на Микробиту потребно је насумично изабрати питање из низа <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a> и приказати га на екрану.</p>
-<p>Да бисмо приказали одређени елемент низа (нпр. трећи елемент низа) можемо приказати на екрану коришћењем следећег блока <a class="reference internal" href="_images/236.png"><img alt="blok4" src="_images/236.png" style="width: 400px;" /></a>.</p>
-<p>Изглед кода:</p>
+<p>Kur në Micro:bit shtypet butoni А, pyetja duhet të zgjidhet rastësisht nga vargu <a class="reference internal" href="_images/229.png"><img alt="list2" src="_images/229.png" style="width: 100px;" /></a> dhe të paraqitet në ekran.</p>
+<p>Për të paraqitur një element të caktuar të vargut (p.sh. elementin e tretë të vargut) në ekran, mund të përdorim bllokun në vijim <a class="reference internal" href="_images/236.png"><img alt="blok4" src="_images/236.png" style="width: 400px;" /></a>.</p>
+<p>Pamja e kodit:</p>
 <a class="reference internal image-reference" href="_images/238.png"><img alt="_images/238.png" class="align-center" src="_images/238.png" style="width: 600px;" /></a>
-<p>Када је притиснут тастер B на микробиту биће приказан падежни облик који одговара датом питању и приказаће га на екрану.</p>
-<p>Изглед кода:</p>
+<p>Pasi të klkoni butonin B në Micro:bit do të paraqitet trajta e rasës e cila i përgjigjet pyetjes së dhënë dhe ajo do të paraqitet në ekran.</p>
+<p>Pamja e kodit:</p>
 <a class="reference internal image-reference" href="_images/239.png"><img alt="_images/239.png" class="align-center" src="_images/239.png" style="width: 600px;" /></a>
-<p>Коначан код: <a class="reference external" href="https://makecode.microbit.org/_fyhKwVhhUEXT">https://makecode.microbit.org/_fyhKwVhhUEXT</a></p>
-<p><strong>Фаза 3</strong></p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p>Kodi në fund: <a class="reference external" href="https://makecode.microbit.org/_fyhKwVhhUEXT">https://makecode.microbit.org/_fyhKwVhhUEXT</a></p>
+<p><strong>Faza 3</strong></p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
-</ol>
+<div><p>1 - ta nisim atë në simulator duke klikuar butonin <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p>
+<p>2 - ta kalojmë atë në Micro:bit. Për ta kaluar programin në Micro:bit. duhet ta lidhim atë me kompjuterin me kabllo USB. Klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> për të shkarkuar skedarin .hex në kompjuterin tuaj. Duke tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p>
 </div></blockquote>
-<p>Још један пример употребе низова, али на нумеричке вредности. Потребно је да у зависности од броја који је генерисан случајним избором из интервала од -10 до 10, пронађемо број у низу од бројева -10, -5, -2, 0, 2 5, 6, 4, 10 који је мањи од њега.</p>
-<p><strong>Фаза 1</strong></p>
-<p>Размисли о проблему: Број који добијамо случаним избором из интервала од -10 до 10 потребно је да упоредимо са сваким од елемената низа бројева -5, -10, 0, -2, 2, 5, 6, 4, 10. Ако је на пример генерисани број -1, вредност која је мања од ње је -10.</p>
-<p><strong>Фаза 2</strong></p>
-<p>Покрени МејкКод одабери и сложи блокове у простор за програмирање.</p>
-<p>На интернет страници на адреси <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> покрени нов пројекат кликом на дугме New Project <a class="reference internal" href="_images/86.png"><img alt="dugme8" src="_images/86.png" style="width: 90px;" /></a>.</p>
-<p>Дефинишемо променљиву Najmanji чија се вредност добија случаним избором броја из интервала од -10 до 10:</p>
+<p>Një shembull tjetër i përdorimit të vargut, por me vlera numerike. Në varësi të numrit i cili është gjeneruar rastësisht nga -10 deri 10, në vargun e numrave -10, -5, -2, 0, 2 5, 6, 4, 10 duhet të gjejmë numrin i cili është më i vogël nga ky numër..</p>
+<p><strong>Faza 1</strong></p>
+<p>Të menduarit për problemin: Numri që del me përzgjedhje të rastësishme nga intervali nga -10 deri 10 duhet të krahasohet me secilin element të vargut të numrave -5, -10, 0, -2, 2, 5, 6, 4, 10. Nëse, për shembull, numri i gjeneruar është -1, vlera më e vogël nga ky është -10.</p>
+<p><strong>Faza 2</strong></p>
+<p>Hapni MakeCode për të zgjedhur dhe renditur blloqet në hapësirën për programim.</p>
+<p>Në faqen e internetit në <a class="reference external" href="https://makecode.microbit.org">https://makecode.microbit.org</a> filloni një projekt të ri duke klikuar butonin <a class="reference internal" href="_images/86.png"><img alt="dugme8" src="_images/86.png" style="width: 90px;" /></a>.</p>
+<p>Përkufizojmë variablën Më i vogli, vlera e së cilës përftohet me përzgjedhje të rastësishme të numrit në intervalin nga -10 deri 10:</p>
 <a class="reference internal image-reference" href="_images/240.png"><img alt="_images/240.png" class="align-center" src="_images/240.png" style="width: 400px;" /></a>
-<p>Креирамо и низ Niz чији су елементи -5, -10, 0, -2, 2, 5, 6, 4, 10:</p>
+<p>Krijojmë edhe Vargun me elementet -5, -10, 0, -2, 2, 5, 6, 4, 10:</p>
 <a class="reference internal image-reference" href="_images/241.png"><img alt="_images/241.png" class="align-center" src="_images/241.png" style="width: 300px;" /></a>
-<p>Да бисмо проверили сваки елемент (чува се у променљивој value) листе Niz користимо блок <a class="reference internal" href="_images/242.png"><img alt="blok5" src="_images/242.png" style="width: 200px;" /></a>.</p>
-<p>Да бисмо проверили која је вредност низа мања од броја Najmanji, и да бисмо сачували најамњу вредност користимо следеће блокове:</p>
+<p>Për të kontrolluar secilin element (ruhet në variabël) në listën Vargu përdorim bllokun <a class="reference internal" href="_images/242.png"><img alt="blok5" src="_images/242.png" style="width: 200px;" /></a>.</p>
+<p>Për të kontrolluar cila vlerë e vargut është më e vogël nga numri Më i vogli, dhe për të ruajtur vlerën më të vogël, përdoren blloqet në vijim:</p>
 <a class="reference internal image-reference" href="_images/243.png"><img alt="_images/243.png" class="align-center" src="_images/243.png" style="width: 400px;" /></a>
-<p>Коначан изглед кода:</p>
+<p>Pamja përfundimtare e kodit:</p>
 <a class="reference internal image-reference" href="_images/244.png"><img alt="_images/244.png" class="align-center" src="_images/244.png" style="width: 400px;" /></a>
-<p><strong>Фаза 3</strong></p>
-<p>Да бисмо тестирали програм имамо две могућности:</p>
+<p><strong>Faza 3</strong></p>
+<p>Për të testuar programin kemi dy mundësi:</p>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p>да га покренемо у симулатору кликом на дугме <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p></li>
-<li><p>да га пребацимо на микробит. Да бисмо програм пребацили на микробит треба да га прикачимо на рачунар коришћењем USB кабла. Кликом на дугме <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> преузмите .hex фајл на ваш рачунар. Превлачењем фајла на микробит, уређај је спреман за рад.</p></li>
-</ol>
+<div><p>1 - ta nisim atë në simulator duke klikuar butoni <a class="reference internal" href="_images/96.png"><img alt="startuj" src="_images/96.png" style="width: 60px;" /></a>.</p>
+<p>2 - ta kalojmë atë në Micro:bit. Për ta kaluar programin në Micro:bit. duhet ta lidhim atë me kompjuterin me kabllo USB. Klikoni butonin <a class="reference internal" href="_images/97.png"><img alt="download" src="_images/97.png" style="width: 200px;" /></a> për të shkarkuar skedarin .hex në kompjuterin tuaj. Duke tërhequr skedarin në Micro:bit, pajisja është gati për të punuar.</p>
 </div></blockquote>
-<p>Уради</p>
-<p>Креирај низ елемената 1, 2, 3. Затим, у већ креиран низ додај број 5 на крај низа. Мала помоћ: користи блок <a class="reference internal" href="_images/245.png"><img alt="blok6" src="_images/245.png" style="width: 300px;" /></a>.</p>
-<p>Могуће решење:</p>
+<p>Krijimi</p>
+<p>Krijoni disa elemente 1, 2, 3. Pastaj, në vargun tashmë të krijuar, shtoni numrin 5 në fund të vargut. Ndihmë e vogël: përdorni bllokun <a class="reference internal" href="_images/245.png"><img alt="blok6" src="_images/245.png" style="width: 300px;" /></a>.</p>
+<p>Zgjidhja e mundshme:</p>
 <a class="reference internal image-reference" href="_images/246.png"><img alt="_images/246.png" class="align-center" src="_images/246.png" style="width: 400px;" /></a>
-<p>Поред нумеричких вредности могуће је да користите низове и за чување нота у облику стринга. Нота је представљена октавом, као и дужином. Облик једне ноте је: C:2. То значи да се чује нота C током 2 откуцаја времена. Паузу можемо да представимо у облику R:1, где R значи одмор и одмор за један ритам. Одмор је време тишине, у звуку. Дефинишемо низ Ноте 1 да бисмо представили првих пет нота Тwinkle twinkle little star:</p>
+<p>Përveç vlerave numerike, vargjet mund të përdoren edhe për ruajtjen e notave në formën e vargut. Nota paraqitet me oktavë dhe me gjatësi. Forma e një note është: C:2. Kjo nënkupton se dëgjohet nota C për 2 rrahje ritmi. Pauza mund të paraqitet në formën R:1, ku R nënkupton pushim dhe 1 - pushim për një rrahje ritmi. Pushimi është koha gjatë së cilës nuk ka tinguj. Përcaktojmë vargun e Notës 1 për të paraqitur 5 notat e para të melodisë Тwinkle twinkle little star:</p>
 <a class="reference internal image-reference" href="_images/247.png"><img alt="_images/247.png" class="align-center" src="_images/247.png" style="width: 400px;" /></a>
-<p>Тестирање и анализа програма.</p>
+<p>Testimi dhe analiza e programit.</p>
 
     <div class="course-box course-box-info">
         <div class="course-content">
             <p>
 <dl class="simple">
-<dt><strong>Шта смо научили?</strong></dt><dd><ul class="simple">
-<li><p>низ – тип података сложене структуре који омогућава чување више вредности истовремено.</p></li>
-<li><p>у низовима се могу чувати бројеви, речи или музичке ноте, који се једним именом називају елементи низа.</p></li>
-<li><p>сваки елемент у низу је дефинисан индексом, број којим је одређен положај елемента у низу.</p></li>
-<li><p>први елемент у низу има индекс 0.</p></li>
-<li><p>индекс последњег елемента у низу је увек један мањи од његове дужине.</p></li>
-<li><p>дужина низа односи се на укупан број елемената у низу.</p></li>
-<li><p>низове креирамо из категорије Advanced - Array.</p></li>
+<dt><strong>Çfarë mësuam?</strong></dt><dd><ul class="simple">
+<li><p>vargu – lloj i të dhënave me një strukturë të ndërlikuar, i cili mundëson ruajtjen e disa vlerave njëkohësisht.</p></li>
+<li><p>në vargje mund të ruhen numra, fjalë ose nota muzikore, të cilat quhen në mënyrë të përbashkët elementet e vargut.</p></li>
+<li><p>secili element në varg përkufizohet me një indeks, numri me të cilin përcaktohet pozita e elementit në varg.</p></li>
+<li><p>elementi i parë në varg ka indeksin 0.</p></li>
+<li><p>indeksi i elementit të fundit në varg është gjithnjë për një më i vogël se gjatësia e tij.</p></li>
+<li><p>gjatësia e vargut ka të bëjë me numrin total të elementeve në varg.</p></li>
+<li><p>Vargjet i krijojmë nga kategoria advanced – array.</p></li>
 </ul>
 </dd>
 </dl>
 
     </p></div></div>
-<div class="section" id="id2">
-<h2>Квиз<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="test">
+<h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L14P1">
-            <p>Q-43: Проучи блок.</p>
+            <p>Q-15: Studioni bllokun.</p>
 <a class="reference internal image-reference" href="_images/248.png"><img alt="_images/248.png" class="align-center" src="_images/248.png" style="width: 400px;" /></a>
-<p>Коју вредност има елемент са индексом 3?</p>
+<p>Cila është vlera e elementit me indeks 3?</p>
 
-            <li data-component="answer"  id="L14P1_opt_a">4</li><li data-component="feedback" id="L14P1_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P1_opt_a">4</li><li data-component="feedback" id="L14P1_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P1_opt_b">2</li><li data-component="feedback" id="L14P1_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P1_opt_b">2</li><li data-component="feedback" id="L14P1_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P1_opt_c">3</li><li data-component="feedback" id="L14P1_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P1_opt_c">3</li><li data-component="feedback" id="L14P1_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L14P1_opt_d">1</li><li data-component="feedback" id="L14P1_opt_d">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L14P1_opt_d">1</li><li data-component="feedback" id="L14P1_opt_d">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L14P1_opt_e">5</li><li data-component="feedback" id="L14P1_opt_e">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P1_opt_e">5</li><li data-component="feedback" id="L14P1_opt_e">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -365,19 +363,19 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L14P2">
-            <p>Q-44: Проучи блок.</p>
+            <p>Q-16: Studioni bllokun.</p>
 <a class="reference internal image-reference" href="_images/249.png"><img alt="_images/249.png" class="align-center" src="_images/249.png" style="width: 400px;" /></a>
-<p>Коју вредност има елемент са индексом 3?</p>
+<p>Cila është vlera e elementit me indeks 3?</p>
 
-            <li data-component="answer"  id="L14P2_opt_a">4</li><li data-component="feedback" id="L14P2_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P2_opt_a">4</li><li data-component="feedback" id="L14P2_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P2_opt_b">2</li><li data-component="feedback" id="L14P2_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P2_opt_b">2</li><li data-component="feedback" id="L14P2_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L14P2_opt_c">3</li><li data-component="feedback" id="L14P2_opt_c">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L14P2_opt_c">3</li><li data-component="feedback" id="L14P2_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L14P2_opt_d">1</li><li data-component="feedback" id="L14P2_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P2_opt_d">1</li><li data-component="feedback" id="L14P2_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P2_opt_e">5</li><li data-component="feedback" id="L14P2_opt_e">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P2_opt_e">5</li><li data-component="feedback" id="L14P2_opt_e">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -385,19 +383,19 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L14P3">
-            <p>Q-45: Проучи блок.</p>
+            <p>Q-17: Studioni bllokun.</p>
 <a class="reference internal image-reference" href="_images/250.png"><img alt="_images/250.png" class="align-center" src="_images/250.png" style="width: 400px;" /></a>
-<p>Која вредност ће бити приказана након извршавање следећег кода?</p>
+<p>Cila vlerë do të paraqitet pas ekzekutimit të kodit të paraqitur?</p>
 
-            <li data-component="answer"  id="L14P3_opt_a">4</li><li data-component="feedback" id="L14P3_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P3_opt_a">4</li><li data-component="feedback" id="L14P3_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P3_opt_b">3</li><li data-component="feedback" id="L14P3_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P3_opt_b">3</li><li data-component="feedback" id="L14P3_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L14P3_opt_c">1</li><li data-component="feedback" id="L14P3_opt_c">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L14P3_opt_c">1</li><li data-component="feedback" id="L14P3_opt_c">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
-            <li data-component="answer"  id="L14P3_opt_d">5</li><li data-component="feedback" id="L14P3_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P3_opt_d">5</li><li data-component="feedback" id="L14P3_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P3_opt_e">На екрану микробита биће приказана грешка.</li><li data-component="feedback" id="L14P3_opt_e">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P3_opt_e">Në ekranin e Micro:bit-it do të paraqitet gabimi.</li><li data-component="feedback" id="L14P3_opt_e">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
 
             </ul>
@@ -405,19 +403,19 @@
             
             <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="L14P4">
-            <p>Q-46: Проучи блок.</p>
+            <p>Q-18: Studioni bllokun.</p>
 <a class="reference internal image-reference" href="_images/251.png"><img alt="_images/251.png" class="align-center" src="_images/251.png" style="width: 400px;" /></a>
-<p>Коју вредност има елемент са индексом 2?</p>
+<p>Cila është vlera e elementit me indeks 2?</p>
 
-            <li data-component="answer"  id="L14P4_opt_a">4</li><li data-component="feedback" id="L14P4_opt_a">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P4_opt_a">4</li><li data-component="feedback" id="L14P4_opt_a">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P4_opt_b">2</li><li data-component="feedback" id="L14P4_opt_b">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P4_opt_b">2</li><li data-component="feedback" id="L14P4_opt_b">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P4_opt_c">3</li><li data-component="feedback" id="L14P4_opt_c">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P4_opt_c">3</li><li data-component="feedback" id="L14P4_opt_c">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer"  id="L14P4_opt_d">1</li><li data-component="feedback" id="L14P4_opt_d">Твој одговор није тачан. Покушај поново!</li>
+            <li data-component="answer"  id="L14P4_opt_d">1</li><li data-component="feedback" id="L14P4_opt_d">Përgjigja juaj nuk është e saktë. Provoni përsëri!</li>
             
-            <li data-component="answer" data-correct id="L14P4_opt_e">На екрану микробита биће приказана грешка.</li><li data-component="feedback" id="L14P4_opt_e">Браво! Твој одговор је тачан.</li>
+            <li data-component="answer" data-correct id="L14P4_opt_e">Në ekranin e Micro:bit-it do të paraqitet gabimi.</li><li data-component="feedback" id="L14P4_opt_e">Ju lumtë! Përgjigja juaj është e saktë.</li>
             
 
             </ul>
@@ -429,10 +427,17 @@
   
       <div class="col-md-12">
 <ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Mësimi 13 - Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 13 - Ushtrimorja.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Mësimi 15 – Funksionet' data-toggle="tooltip"><a href="Mësimi 15 – Funksionet.html">kapitulli tjeter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Mësimi 13 - Ushtrimorja' data-toggle="tooltip"><a href="Mësimi 13 - Ushtrimorja.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Mësimi 15 – Funksionet' data-toggle="tooltip"><a href="Mësimi 15 – Funksionet.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 

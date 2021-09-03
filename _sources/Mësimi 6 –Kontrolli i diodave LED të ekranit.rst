@@ -90,7 +90,7 @@ Hapni MakeCode për t’i zgjedhur dhe renditur blloqet në hapësirën për pro
 .. |setb| image:: ../_images/112.png
             :width: 200px
 
-Për të përcaktuar nivelin e ndriçimit për diodat LED përdorim bllokun |setb| nga kategoria |led|. А, да бисмо укључили лед диоду користимо блок |plot| из исте категорије.
+Për të përcaktuar nivelin e ndriçimit për diodat LED përdorim bllokun |setb| nga kategoria |led|. Ndërsa, për të kyçur diodën LED përdorim bllokun x nga kategoria e njëjtë. |plot| из исте категорије.
 
 Si duket kodi:
 

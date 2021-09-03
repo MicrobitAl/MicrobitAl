@@ -30,13 +30,13 @@
     <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
     <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/petlja-runestone.css" type="text/css" />
+    <link rel="stylesheet" href="_staticnbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -60,8 +60,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -77,6 +75,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -141,7 +141,8 @@
     <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
     <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/petljavideo.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr.js"></script>
     <script type="text/javascript" src="_static/mchoice-i18n.sr-Latn.js"></script>
@@ -171,6 +172,8 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje Micro:bit-i" href="MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje microbiti.html" />
@@ -290,6 +293,17 @@
 <li class="toctree-l2"><a class="reference internal" href="Mësimi 11 – Algoritmi i Euklidit.html#testi">Testi</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="Mësimi 12 - Ushtrimorja.html">Mësimi 12 - Ushtrimorja</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mësimi 13 - Ushtrimorja.html">Mësimi 13 - Ushtrimorja</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mësimi 14 – Vargu.html">Mësimi 14 –Vargu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Mësimi 14 – Vargu.html#test">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Mësimi 15 – Funksionet.html">Mësimi 15 – Funksionet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Mësimi 15 – Funksionet.html#test">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Mësimi 16 - Ushtrimorja.html">Mësimi 16 - Ushtrimorja</a></li>
 </ul>
 </div>
 </div>
@@ -299,7 +313,7 @@
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-next" title='Next chapter - MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje Micro:bit-i' data-toggle="tooltip"><a href="MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje microbiti.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje Micro:bit-i' data-toggle="tooltip"><a href="MËSIMI 1 - Gjithçka që duhet të dini në lidhje me një pajisje microbiti.html">kapitulli tjeter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
