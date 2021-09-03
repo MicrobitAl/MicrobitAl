@@ -108,8 +108,8 @@ ClickableArea.prototype.renderNewElements = function () {
 };
 
 ClickableArea.prototype.createButtons = function () {
-    this.submitButton = document.createElement("button");    // Check me button
-    this.submitButton.textContent = "Check Me";
+    this.submitButton = document.createElement("button");    // Kontrolloni button
+    this.submitButton.textContent = "Kontrolloni";
     $(this.submitButton).attr({
         "class": "btn btn-success",
         "name": "do answer",
