@@ -19,7 +19,7 @@ Sa zgjat secila notë: |nota|
 
 Nëse nuk mund të përzgjidhni këngën e preferuar, përdorni këngën e ditëlindjes.
 
-.. image:: ../_images/83.jpg
+.. image:: ../_images/83.png
      :align: center
      :width: 600px
 
